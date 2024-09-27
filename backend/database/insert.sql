@@ -1,15 +1,15 @@
 DROP TABLE IF EXISTS artikel;
 CREATE TABLE artikel(
-                        FKArtikelID     INTEGER  NOT NULL PRIMARY KEY
-    ,Bezeichnung1    VARCHAR(50) NOT NULL
+     FKArtikelID     INTEGER NOT NULL PRIMARY KEY
+    ,Bezeichnung1    VARCHAR(50)
     ,Bezeichnung2    VARCHAR(63)
-    ,Laenge          NUMERIC(7,1) NOT NULL
-    ,Breite          INTEGER  NOT NULL
-    ,Hoehe           NUMERIC(4,1) NOT NULL
-    ,Durchmesser     NUMERIC(4,1) NOT NULL
+    ,Laenge          NUMERIC(7,1)
+    ,Breite          INTEGER
+    ,Hoehe           NUMERIC(4,1)
+    ,Durchmesser     NUMERIC(4,1)
     ,Lagerort        VARCHAR(30)
-    ,Lagerstand      NUMERIC(12,4) NOT NULL
-    ,LagereinheitBez VARCHAR(5) NOT NULL
+    ,Lagerstand      NUMERIC(12,4)
+    ,LagereinheitBez VARCHAR(5)
     ,Stellplatz      VARCHAR(20)
 );
 INSERT INTO artikel(FKArtikelID,Bezeichnung1,Bezeichnung2,Laenge,Breite,Hoehe,Durchmesser,Lagerort,Lagerstand,LagereinheitBez,Stellplatz) VALUES (834,'Gestellschraube 10x70 vz','DIN 571',70,0,0,0,NULL,1351,'Stk','PL-06-06-02');
