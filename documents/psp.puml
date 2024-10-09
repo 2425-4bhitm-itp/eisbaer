@@ -1,0 +1,9 @@
+@startuml
+
+object Project
+object Avatar
+object DatabaseConnection
+
+Project -- Avatar
+Project -- DatabaseConnection
+@endumlS
