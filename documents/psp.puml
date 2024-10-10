@@ -1,9 +1,20 @@
-@startuml
-
-object Project
-object Avatar
-object DatabaseConnection
-
-Project -- Avatar
-Project -- DatabaseConnection
-@endumlS
+@startwbs
+* Eisbär (130h)
+** Planung
+*** Projektantrag (4h)
+*** PSP (4h)
+** Durchführung
+*** Avatar
+**** Modellieren (15h)
+**** Animieren (8h)
+*** Backend
+**** Datenbankanbindung (15h)
+**** Usereigaben verarbeiten (50h)
+**** Speech to Text (3h)
+*** Frontend
+**** Screendesign (8h)
+**** Anzeigen der Ergebnisse von Useranfragen (8h)
+** Testen
+*** Dialog testen (5h)
+*** Erfolgsgrad messen (10h)
+@endwbs
