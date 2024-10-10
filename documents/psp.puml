@@ -1,5 +1,5 @@
 @startwbs
-* Eisbär (130h)
+* Eisbär
 ** Planung
 *** Projektantrag (4h)
 *** PSP (4h)
@@ -10,7 +10,7 @@
 *** Backend
 **** Datenbankanbindung (15h)
 **** Usereigaben verarbeiten (50h)
-**** Speech to Text (3h)
+**** Speech to Text (5h)
 *** Frontend
 **** Screendesign (8h)
 **** Anzeigen der Ergebnisse von Useranfragen (8h)
