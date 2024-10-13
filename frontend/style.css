@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    margin: 2.5em;
+}
+
+input {
+    margin: 0.5em;
+}
+
+#userInput {
+    width: 35vw;
+    height: 2.5em;
+}
+
+#submitButton {
+    padding: 0.5em;
+}
