@@ -1,4 +1,4 @@
-const url = "http://localhost:8080/api/articles/"
+const url = "http://localhost:8080/Articles/getArticle/"
 let id = document.getElementById("userInput").innerText;
 
 function getArticlePosition() {
