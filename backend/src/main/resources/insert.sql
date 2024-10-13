@@ -1,17 +1,17 @@
--- DROP TABLE IF EXISTS artikel;
--- CREATE TABLE artikel(
---      FKArtikelID     INTEGER NOT NULL
---     ,Bezeichnung1    VARCHAR(50)
---     ,Bezeichnung2    VARCHAR(63)
---     ,Laenge          NUMERIC(7,1)
---     ,Breite          INTEGER
---     ,Hoehe           NUMERIC(4,1)
---     ,Durchmesser     NUMERIC(4,1)
---     ,Lagerort        VARCHAR(30)
---     ,Lagerstand      NUMERIC(12,4)
---     ,LagereinheitBez VARCHAR(5)
---     ,Stellplatz      VARCHAR(20)
--- );
+DROP TABLE IF EXISTS artikel;
+CREATE TABLE artikel(
+     FKArtikelID     INTEGER NOT NULL
+    ,Bezeichnung1    VARCHAR(50)
+    ,Bezeichnung2    VARCHAR(63)
+    ,Laenge          NUMERIC(7,1)
+    ,Breite          INTEGER
+    ,Hoehe           NUMERIC(4,1)
+    ,Durchmesser     NUMERIC(4,1)
+    ,Lagerort        VARCHAR(30)
+    ,Lagerstand      NUMERIC(12,4)
+    ,LagereinheitBez VARCHAR(5)
+    ,Stellplatz      VARCHAR(20)
+);
 INSERT INTO artikel(FKArtikelID,Bezeichnung1,Bezeichnung2,Laenge,Breite,Hoehe,Durchmesser,Lagerort,Lagerstand,LagereinheitBez,Stellplatz) VALUES (834,'Gestellschraube 10x70 vz','DIN 571',70,0,0,0,NULL,1351,'Stk','PL-06-06-02');
 INSERT INTO artikel(FKArtikelID,Bezeichnung1,Bezeichnung2,Laenge,Breite,Hoehe,Durchmesser,Lagerort,Lagerstand,LagereinheitBez,Stellplatz) VALUES (901,'Nylondübel S8',NULL,0,0,0,0,NULL,6809,'Stk','KL-10-02-06');
 INSERT INTO artikel(FKArtikelID,Bezeichnung1,Bezeichnung2,Laenge,Breite,Hoehe,Durchmesser,Lagerort,Lagerstand,LagereinheitBez,Stellplatz) VALUES (911,'Drahtstifte blank 16/30','1 kg',30,0,0,0,NULL,3.5,'kg','KL-09-01-05');
