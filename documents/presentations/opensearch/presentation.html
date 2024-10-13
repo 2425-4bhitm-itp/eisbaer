@@ -28,6 +28,15 @@
         #useCaseH2 {
             font-size: 2.7vw;
         }
+        .useCaseP {
+            font-size: 1.5vw;
+        }
+        #volltextUl {
+            font-size: 2vw;
+        }
+        #gettingStartedOl li {
+            font-size: 2vw;
+        }
     </style>
 </head>
 <body>
@@ -65,10 +74,13 @@
         <section>
             <h2>Use Cases generell</h2>
 
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul id="volltextUl">
+                <li>Volltextsuche </li>
+                <p class="useCaseP">Inhalte auf Websites, in Dokumenten, Datenbanken oder Anwendungen untersuchen.</p>
+                <li>Log- und Ereignisanalyse</li>
+                <p class="useCaseP">Opensearch wird häufig zur Analyse von Log Daten eingesetzt und hilft somit DevOps Systemprobleme zu erkennen.</p>
+                <li>Data analytics</li>
+                <p class="useCaseP">Opensearch kann eingesetzt werden um durch die Analyse von großen Mengen an Daten eine Übersicht über Geschäftsmetriken und Trends bereitzustellen.</p>
             </ul>
         </section>
 
@@ -76,19 +88,20 @@
             <h2 id="useCaseH2">Use Case in unserem Project - Eisbär!</h2>
 
             <ul>
-                <li>Daten analysieren......</li>
-                <li></li>
-                <li></li>
+                <li>Passende Produkte aus der Datenbank liefern.</li>
+                <p class="useCaseP">Opensearch hilft uns dabei aus der riesigen Datenbank ein passendes Resultat für spezifische Kundeanfragen zu liefern.</p>
+                <p class="useCaseP">Wir nutzen also hauptsächlich die Volltextanalyse.</p>
             </ul>
         </section>
 
         <section>
             <h2>Getting Started</h2>
-            <ol>
+            <ol id="gettingStartedOl">
                 <li>OpenSearch installieren</li>
-                <li>...</li>
-                <li></li>
-                <li></li>
+                <li>OpenSearch starten (commandline)</li>
+                <li>Produktdaten für OpenSearch in ausgewähltem Format vorbereiten (zb.: JSON)</li>
+                <li>OpenSearch API verwenden um die Daten zu indexieren.</li>
+                <li>OpenSearch in das System integrieren und durch HTTP - Requests im Backend Suchanfragen an OpenSearch stellen.</li>
 
             </ol>
         </section>
@@ -96,18 +109,20 @@
 
         <section>
             <h2>Conclusion</h2>
-            <p>...</p>
+            <p>OpenSearch ist ein starkes Tool, das wir verwenden können um für bestimmte Beschreibungen eines Produkts das richtige Ergebnis aus der Datenbank zu finden. Ebenfalls kann es genutzt werden um Log Daten zu analysieren, damit die DevOps einen besseren Überblick über mögliche Systemfehler haben und diese schneller gelöst werden können. </p>
         </section>
 
         <section>
             <h2>Quellen</h2>
             <ul id="sourcesList">
                 <li>https://www.elastic.co/de/elasticsearch/opensearch</li>
+                <li>https://opensearch.org/docs/latest/data-prepper/common-use-cases/common-use-cases/</li>
+                <li>https://aws.amazon.com/what-is/opensearch/</li>
             </ul>
         </section>
 
         <section>
-            <h2>Fragen?</h2>
+            <h2>Danke für eure Aufmerksamkeit</h2>
         </section>
     </div>
 </div>
