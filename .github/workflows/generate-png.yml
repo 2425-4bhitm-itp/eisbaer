@@ -3,7 +3,7 @@ name: Generate PNG from PUML
 on:
   push:
     paths:
-      - './documents/psp.puml'  # Triggers only when the psp.puml file changes
+      - 'documents/psp.puml'  # Triggers only when the psp.puml file changes
 
 jobs:
   generate-png:
@@ -23,14 +23,14 @@ jobs:
       # Step 3: Generate PNG from the PUML file
       - name: Generate PNG
         run: |
-          plantuml ./documents/psp.puml
+          plantuml documents/psp.puml
 
       # Step 4: Commit and push the new PNG if it has changed
       - name: Commit and push PNG
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add ./documents/psp.png
+          git add documents/psp.png
           git commit -m "Updated psp.png after psp.puml changes"
           git push
         # Prevents errors if no changes were made
