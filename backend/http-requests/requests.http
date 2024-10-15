@@ -1,2 +1,2 @@
-GET http://localhost:8080/Articles/getArticle/834
+GET http://localhost:8080/Articles/getArticle/911
 Content-Type: */*

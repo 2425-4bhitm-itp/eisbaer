@@ -5,7 +5,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 @Entity
-public class Article {
+public class Artikel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long FKArtikelid;
@@ -21,7 +21,7 @@ public class Article {
     private String LagereinheitBez;
     private String Stellplatz;
 
-    public Article(String Bezeichnung1, String Bezeichnung2, double Laenge, double Breite, double Hoehe, double Druchmesser, String Lagerort, String Lagerstand, String LagereinheitBez, String Stellplatz) {
+    public Artikel(String Bezeichnung1, String Bezeichnung2, double Laenge, double Breite, double Hoehe, double Druchmesser, String Lagerort, String Lagerstand, String LagereinheitBez, String Stellplatz) {
         this.Bezeichnung1 = Bezeichnung1;
         this.Bezeichnung2 = Bezeichnung2;
         this.Laenge = Laenge;
@@ -34,7 +34,7 @@ public class Article {
         this.Stellplatz = Stellplatz;
     }
 
-    public Article() {
+    public Artikel() {
 
     }
 }
