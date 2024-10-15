@@ -1,24 +1,24 @@
 @startwbs
 * Eisbär (2080h)
-** Planung
+** Planung (245h)
 *** Projektantrag (5h)
 *** PSP (5h)
 *** Wireframe (125h)
 *** Technologie Evaluierung (100h)
 *** Pflichtenheft (10h)
-** Durchführung
-*** Avatar
+** Durchführung (1460h)
+*** Avatar (760h)
 **** Modellieren (350h)
 **** Animieren (225h)
 **** Texturierung (185h)
-*** Backend
+*** Backend (625h)
 **** Datenbankanbindung (150h)
 **** Usereingaben verarbeiten (400h)
 **** Speech to Text (75h)
-*** Frontend
+*** Frontend (75h)
 **** Screendesign (45h)
 **** Anzeigen der Ergebnisse von Useranfragen (30h)
-** Testen
+** Testen (375h)
 *** Dialog testen (150h)
 *** Erfolgsgrad messen (125h)
 *** Usability-Test (100h)
