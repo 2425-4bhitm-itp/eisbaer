@@ -17,4 +17,5 @@ erstellt von Stützner, Öller, Michel, Brandstätter, Klaffenböck am 15.10.202
 ( 52 - ( 2 * 5 )) * 8 * 5 = 1680
 
 #### Fazit
-Für 5 Personen stehen in 52 Schulwochen insgesamt 1680 Arbwitsstunden zur verfügung, wenn jede Person 2 Wochen krank ist.
+Für 5 Personen stehen in 52 Schulwochen insgesamt 1680 Arbeitsstunden zur verfügung, wenn jede Person 2 Wochen krank ist.
+Ansonsten stehen 2080 Stunden zur Verfügung.
