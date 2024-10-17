@@ -32,3 +32,10 @@ Otherwise there would be 2080 working hours.
 * *Added:* a commit of the type _added_ adds a new file or feature
 * *Changed:* a commit of the type _changed_ changes a file or a code part
 * *Removed:* a commit of the type _removed_ removes a file or a code part
+
+=== Message examples
+* fixed: wrong result when calling getArticle
+* fixing in progress: wrong result when doing GET on ArticleResource
+* added: 'message examples' in README.adoc
+* changed: return type in getDate method
+* removed: method calculateBirthDate
