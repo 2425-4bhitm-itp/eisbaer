@@ -1,22 +1,26 @@
 = EISBÄR
 
-== PSP vom Projekt Eisbär
+== PSP project Eisbär
 image::./documents/psp.png[]
 
-erstellt von Stützner, Öller, Michel, Brandstätter, Klaffenböck am 15.10.2024
+creators: Stützner, Öller, Michel, Brandstätter, Klaffenböck on 15.10.2024
 
-=== Berechnung der Stunden:
-* 52 Wochen
-* 2 Wochen pro Person krank
-* 5 Personen
-* 8 Stunden pro Woche pro Person
+=== Calculation of hours:
+* 52 weeks
+* 2 weeks sick leave per person
+* 5 persons
+* 8 hours per person per week
 
-==== Rechnung
-(52 Wochen - (2 Wochen krank * 5 Personen)) * 8 Stunden pro Woche * 5 Personen
+==== Formula
+(52 weeks - (2 weeks ill * 5 persons)) * 8 hours per week * 5 persons
 
-==== Ergebnis
+==== Result
 ( 52 - ( 2 * 5 )) * 8 * 5 = 1680
 
-==== Fazit
-Für 5 Personen stehen in 52 Schulwochen insgesamt 1680 Arbeitsstunden zur verfügung, wenn jede Person 2 Wochen krank ist.
-Ansonsten stehen 2080 Stunden zur Verfügung.
+==== Conclusion
+In 52 school weeks there are 1680 working hours for 5 persons if everyone is ill for 2 weeks.
+Otherwise there would be 2080 working hours.
+
+== Commit messages
+
+=== Message
