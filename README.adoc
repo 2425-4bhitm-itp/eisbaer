@@ -1,4 +1,8 @@
+:toc: macro
+
 = EISBÄR
+
+toc::[]
 
 == PSP project Eisbär
 image::./documents/psp.png[]
