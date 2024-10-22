@@ -4,6 +4,18 @@
 
 toc::[]
 
+== Description
+
+The projects helps customers to find desired products in a store.
+They can talk to a polar bear avatar, which tells them the location of the requested items.
+
+=== USP
+A talking Polar Bear Avatar
+
+=== Problem
+Customers take a long time searching for their desired products in the store.
+With a talking avatar, the employees of the store are relieved and have more time to focus on other tasks.
+
 == PSP project Eisbär
 image::./documents/psp.png[]
 
