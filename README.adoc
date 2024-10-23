@@ -57,3 +57,26 @@ Otherwise there would be 2080 working hours.
 * changed: return type in getDate method
 * removed: method calculateBirthDate
 * moved: index.html from 'documents' to 'resources'
+
+== Startup Guide
+
+=== Copy the Git repo on your device
+1. Click on the green 'Code <>' button
+2. Select 'SSH'
+3. Copy the path
+4. Open the command line and move to your prefered folder
+5. Type the command 'git clone <path>'
+
+=== Open the project
+1. On the command line move to the folder 'eisbaer' with the command 'cd eisbaer'
+2. open the project with your preferred IDE (With command: 'idea .' or 'code .')
+
+=== Start Quarkus
+1. Open the console in your IDE
+2. move to the backend folder with 'cd backend'
+3. Type command 'mvn clean quarkus:dev'
+
+=== View the frontend of the project
+1. Open your preferred Browser
+2. type 'http://localhost:8080/' and press enter
+
