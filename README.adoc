@@ -64,7 +64,7 @@ Otherwise there would be 2080 working hours.
 1. Click on the green 'Code <>' button
 2. Select 'SSH'
 3. Copy the path
-4. Open the command line and move to your prefered folder
+4. Open the command line and move to your preferred folder
 5. Type the command 'git clone <path>'
 
 === Open the project
