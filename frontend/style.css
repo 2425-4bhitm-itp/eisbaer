@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: 'Verdana', sans-serif;
 }
 
 body {
@@ -37,4 +38,12 @@ input {
 
 #outputPlace {
 
+}
+
+/* Avatar */
+
+#avatarContainer {
+    width: 35vw;
+    height: 40em;
+    background-color: #cccccc;
 }
