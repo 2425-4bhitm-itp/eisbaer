@@ -1,3 +1,0 @@
-# eisbär
-
-Hello World

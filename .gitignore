@@ -29,3 +29,4 @@ replay_pid*
 
 # VS Code
 settings.json
+/src/main/resources/data/database.trace.db

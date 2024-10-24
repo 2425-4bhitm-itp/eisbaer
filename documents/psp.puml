@@ -1,20 +1,47 @@
 @startwbs
-* Eisbär (130h)
-** Planung
-*** Projektantrag (4h)
-*** PSP (4h)
-** Durchführung
-*** Avatar
-**** Modellieren (15h)
-**** Animieren (8h)
-*** Backend
-**** Datenbankanbindung (15h)
-**** Usereigaben verarbeiten (50h)
-**** Speech to Text (3h)
-*** Frontend
-**** Screendesign (8h)
-**** Anzeigen der Ergebnisse von Useranfragen (8h)
-** Testen
-*** Dialog testen (5h)
-*** Erfolgsgrad messen (10h)
+title: PSP vom Projekt Eisbär
+
+* Eisbär (2080h)
+
+** Planung (300h)
+
+*** Projektantrag (20h)
+*** PSP (20h)
+*** Wireframe (100h)
+*** Technologie Evaluierung (100h)
+*** Pflichtenheft (50h)
+
+**  Implementierung (1400h)
+
+*** Avatar (700h)
+
+**** Modellieren (350h)
+**** Animieren (200h)
+**** Texturierung (150h)
+
+*** Backend (600h)
+
+**** Datenbankimplementierung (50h)
+**** Datenbankanbindung (150h)
+**** Usereingaben verarbeiten (300h)
+***** LLM
+**** Speech to Text (50h)
+**** Text to Speech (50h)
+
+*** Frontend (Wire-Frame Umsetzung) (100h)
+
+**** Screendesign (50h)
+**** Anzeigen der Ergebnisse von Useranfragen (50h)
+
+** Evaluierung (350h)
+
+*** Testen (250h)
+
+**** Dialog testen (100h)
+**** Erfolgsgrad messen (100h)
+**** Usability-Test (50h)
+
+*** Übergabe (20h)
+
+*** Dokumentation (50h)
 @endwbs

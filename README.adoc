@@ -1,0 +1,82 @@
+:toc: macro
+
+= EISBÄR
+
+toc::[]
+
+== Description
+
+The projects helps customers to find desired products in a store.
+They can talk to a polar bear avatar, which tells them the location of the requested items.
+
+=== USP
+A talking Polar Bear Avatar
+
+=== Problem
+Customers take a long time searching for their desired products in the store.
+With a talking avatar, the employees of the store are relieved and have more time to focus on other tasks.
+
+== PSP project Eisbär
+image::./documents/psp.png[]
+
+creators: Stützner, Öller, Michel, Brandstätter, Klaffenböck on 15.10.2024
+
+=== Calculation of hours:
+* 52 weeks
+* 2 weeks sick leave per person
+* 5 persons
+* 8 hours per person per week
+
+==== Formula
+(52 weeks - (2 weeks ill * 5 persons)) * 8 hours per week * 5 persons
+
+==== Result
+( 52 - ( 2 * 5 )) * 8 * 5 = 1680
+
+==== Conclusion
+In 52 school weeks there are 1680 working hours for 5 persons if everyone is ill for 2 weeks.
+Otherwise there would be 2080 working hours.
+
+== Commit messages
+
+=== Message template
+<type>: <description>
+
+=== Type explanation
+* *Fixed:* a commit of the type _fixed_ patches a bug in your code
+* *Fixing in progress:* a commit of the type _fixing in progress_ shows that a patch of a bug is not finished yet
+* *Added:* a commit of the type _added_ adds a new file or feature
+* *Changed:* a commit of the type _changed_ changes a file or a code part
+* *Removed:* a commit of the type _removed_ removes a file or a code part
+* *Moved* : a commit of the type _moved_ moves a file to a different folder
+
+=== Message examples
+* fixed: wrong result when calling getArticle
+* fixing in progress: wrong result when doing GET on ArticleResource
+* added: 'message examples' in README.adoc
+* changed: return type in getDate method
+* removed: method calculateBirthDate
+* moved: index.html from 'documents' to 'resources'
+
+== Startup Guide
+
+=== Copy the Git repo on your device
+1. Click on the green 'Code <>' button
+2. Select 'SSH'
+3. Copy the path
+4. Open the command line and move to your preferred folder
+5. Type the command 'git clone <path>'
+
+=== Open the project
+1. On the command line move to the folder 'eisbaer' with the command 'cd eisbaer'
+2. open the project with your preferred IDE (With command: 'idea .' or 'code .')
+
+=== Start Quarkus
+1. Open the console in your IDE
+2. move to the backend folder with 'cd backend'
+3. Type command 'mvn clean quarkus:dev'
+
+=== View the frontend of the project
+1. Open your preferred Browser
+2. type 'http://localhost:8080/' and press enter
+
