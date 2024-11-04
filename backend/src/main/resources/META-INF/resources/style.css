@@ -32,8 +32,8 @@ input {
     margin: 2.5em;
 }
 
-#outputName {
-
+.outputName {
+    font-weight: bold;
 }
 
 #outputPlace {
