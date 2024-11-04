@@ -1,0 +1,91 @@
+= Besprechungsprotokoll 17.10.2024
+firstname lastname
+1.0, {docdate}: Some notes
+ifndef::imagesdir[:imagesdir: images]
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+//:toc: left
+
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/asciidoctor-docker-template] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+
+.Teilnehmer
+|===
+|anwesend |Verteiler
+
+|Vorname Nachname
+|
+
+|A. Christian Aberger
+|A. Christian Aberger
+
+|B. Christian Hammer
+|B. Christian Hammer
+
+|C. Michael Stützner
+|C. Michael Stützner
+
+|D. Jakob Michel
+|D. Jakob Michel
+
+|E. Elias Brandstätter
+|E. Elias Brandstätter
+
+|F. Jakob Klaffenböck
+|F. Jakob Klaffenböck
+
+|G. Konstantin Öller
+|G. Konstantin Öller
+
+|
+|H. Thomas Stütz
+|===
+
+.Ort und Zeit
+[cols=2*]
+|===
+|Ort
+|ITP Unterricht HTL-Leonding
+
+|von-bis
+|Do. 17.10.2024, 4. EH
+|Dauer
+|30 min
+|===
+
+
+
+== Besprochene Themen
+
+* Technologiefindung(Cinema 4D/Blender),
+keine Cinema 4D Lizenzen
+* Allgemeines wie Readme und github
+* Artikel nicht nur mit id sondern auch Suchstring finden
+
+
+== Vereinbarungen und Entscheidungen
+
+.Was wurde vereinbart?
+[%autowidth]
+|===
+|wer |macht was |bis wann
+
+| Eisbär Scrum Team
+a| sauberes github repository erstellen
+| 05.11.2024
+
+|Eisbär Scrum Team
+a| gut strukturiertes Readme mit commit message guidelines
+|05.11.2024
+
+|Eisbär Scrum Team
+a|Erste Ansätze für Eisbär 3D Modell mit Blender
+|05.11.2024
+|===
