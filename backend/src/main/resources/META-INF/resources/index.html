@@ -5,6 +5,15 @@
   <title>EISBÄR</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="3dModel.js" type="module"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script>
 </head>
 <body>
   <h1>Eisbär</h1>
@@ -17,8 +26,8 @@
   <input type="submit" id="submitButton" name="submit" value="submit" onclick="getArticlePosition()">
 
   <div id="outputContainer">
-    <h3 id="outputName"></h3>
-    <p id="outputPlace"></p>
+    <h3 id="outputName">asasd</h3>
+    <p id="outputPlace">ssss</p>
   </div>
 </body>
 </html>
