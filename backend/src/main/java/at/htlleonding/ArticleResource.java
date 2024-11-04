@@ -45,7 +45,6 @@ public class ArticleResource {
                 String Lagereinheitbez = resultSet.getString("Lagereinheitbez");
                 String Stellplatz = resultSet.getString("Stellplatz");
 
-                System.out.println(matchingArticles);
                 Artikel artikel = new Artikel(FKArtikelId, Bezeichnung1, Bezeichnung2, Laenge,
                         Breite, Hoehe, Durchmesser, Lagerort, Lagerstand, Lagereinheitbez, Stellplatz);
                 matchingArticles.add(artikel);
