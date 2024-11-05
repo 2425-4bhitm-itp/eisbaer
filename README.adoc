@@ -41,9 +41,12 @@ Otherwise there would be 2080 working hours.
 
 === Message template
 if there is an issue for the current commit:
+
 <type> <#issue number>: <description>
 
+
 if there is no issue for the commit (f.e. A small commit for updating the README) just leave out the issue number:
+
 <type>: <description>
 
 === Type explanation
