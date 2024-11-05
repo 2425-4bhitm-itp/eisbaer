@@ -40,6 +40,13 @@ Otherwise there would be 2080 working hours.
 == Commit messages
 
 === Message template
+if there is an issue for the current commit:
+
+<type> <#issue number>: <description>
+
+
+if there is no issue for the commit (f.e. A small commit for updating the README) just leave out the issue number:
+
 <type>: <description>
 
 === Type explanation
@@ -51,12 +58,12 @@ Otherwise there would be 2080 working hours.
 * *Moved* : a commit of the type _moved_ moves a file to a different folder
 
 === Message examples
-* fixed: wrong result when calling getArticle
-* fixing in progress: wrong result when doing GET on ArticleResource
-* added: 'message examples' in README.adoc
-* changed: return type in getDate method
-* removed: method calculateBirthDate
-* moved: index.html from 'documents' to 'resources'
+* fixed #12: wrong result when calling getArticle
+* fixing in progress #4: wrong result when doing GET on ArticleResource
+* added #6: 'message examples' in README.adoc
+* changed #23: return type in getDate method
+* removed #12: method calculateBirthDate
+* moved #5: index.html from 'documents' to 'resources'
 
 == Startup Guide
 
