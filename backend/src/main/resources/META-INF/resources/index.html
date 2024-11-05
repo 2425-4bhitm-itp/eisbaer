@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "jsm/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script> <!-- three/addons/ -->
+
   <meta charset="UTF-8">
   <title>EISBÄR</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script type="module" src="3dModel.js"></script>
+
 </head>
 <body>
   <h1>Eisbär</h1>
 
-  <div id="avatarContainer">
+  <div id="avatarContainer" style="width: 600px; height: 650px;">
     <!-- Polar Bear 3D Avatar will go here -->
   </div>
 
@@ -17,8 +28,7 @@
   <input type="submit" id="submitButton" name="submit" value="submit" onclick="getArticlePosition()">
 
   <div id="outputContainer">
-    <h3 id="outputName"></h3>
-    <p id="outputPlace"></p>
+
   </div>
 </body>
 </html>
