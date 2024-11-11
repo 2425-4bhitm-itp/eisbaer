@@ -6,32 +6,32 @@ let avatarContainer = document.getElementById('avatarContainer');
 const w = avatarContainer.offsetWidth;
 const h = avatarContainer.offsetHeight;
 
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
+camera.position.x = 5;
+camera.lookAt(0, 0, 0);
+
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(w, h);
 avatarContainer.appendChild(renderer.domElement);
 
-const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-camera.position.z = 2;
-
-const scene = new THREE.Scene();
-scene.background = new THREE.Color(0xcccccc);
-
-const globalLight = new THREE.AmbientLight(0x404040, 1);
+const globalLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(globalLight);
 
+var bearGLB;
+
 const loader = new GLTFLoader();
-loader.load('./3d/eisbaer.gltf', function (gltf) {
-    scene.add(gltf.scene);
+loader.load('./3d/eisbaer.glb', function (glb) {
+    bearGLB = glb.scene;
+    scene.add(bearGLB);
 }, undefined, function (error) {
     console.error(error);
 });
 
-const controls = new OrbitControls(camera, renderer.domElement);
-
-// Animation loop to render continuously
 function animate() {
-    requestAnimationFrame(animate);
-    controls.update(); // Only necessary if controls.enableDamping or other dynamic settings are used
-    renderer.render(scene, camera);
+    if (bearGLB) {
+        bearGLB.rotation.y += 0.008;
+    }
+    renderer.render( scene, camera );
 }
-animate();
+renderer.setAnimationLoop( animate );
