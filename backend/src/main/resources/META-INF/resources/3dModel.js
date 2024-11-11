@@ -15,13 +15,13 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(w, h);
 avatarContainer.appendChild(renderer.domElement);
 
-const globalLight = new THREE.AmbientLight(0x404040, 1);
+const globalLight = new THREE.AmbientLight(0xffffff, 1);
 scene.add(globalLight);
 
 var bearGLB;
 
 const loader = new GLTFLoader();
-loader.load('./eisbaer.glb', function (glb) {
+loader.load('./3d/eisbaer.glb', function (glb) {
     bearGLB = glb.scene;
     scene.add(bearGLB);
 }, undefined, function (error) {
