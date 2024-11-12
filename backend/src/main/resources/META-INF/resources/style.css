@@ -10,6 +10,13 @@ body {
     flex-direction: column;
 }
 
+#content {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+}
+
 h1 {
     text-align: center;
     margin: 2.5em;
