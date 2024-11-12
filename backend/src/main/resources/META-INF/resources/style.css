@@ -36,7 +36,11 @@ input {
 }
 
 #outputContainer {
-    margin: 2.5em;
+    padding: 2.5em;
+}
+
+#queryOutput {
+
 }
 
 .outputName {

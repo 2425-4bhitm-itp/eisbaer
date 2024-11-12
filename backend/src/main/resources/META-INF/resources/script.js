@@ -1,6 +1,6 @@
 const url = "http://localhost:8080/Articles/getArticle/"
 let idInput = document.getElementById("userInput");
-let output = document.getElementById("outputContainer");
+let output = document.getElementById("queryOutput");
 
 function getArticlePosition() {
     let id = idInput.value;
@@ -21,7 +21,7 @@ function getArticlePosition() {
 
 function showArticlePosition(position) {
 
-    document.getElementById("outputContainer").innerHTML = "";
+    document.getElementById("queryOutput").innerHTML = "";
 
     let table = document.createElement("table");
     table.classList.add("outputTable");
