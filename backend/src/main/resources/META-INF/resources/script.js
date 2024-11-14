@@ -1,6 +1,12 @@
 const url = "http://localhost:8080/Articles/getArticle/"
-let idInput = document.getElementById("userInput");
+const urlOpenSearch = "http://localhost:9200/items/_search"
+
+let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
+
+//only for testing
+const username = 'amdmin';
+const password = 'Str0ngP@ssw0rd!';
 
 function getArticlePosition() {
     let id = idInput.value;
@@ -17,6 +23,51 @@ function getArticlePosition() {
             console.log(response);
         })
         .catch(err => console.error(err));
+}
+
+async function getArticlePositionWithOpenSearch() {
+
+    const query = input.value;
+
+    // Create the JSON request body
+    const requestBody = {
+        query: {
+            match: {
+                Bezeichnung1: {
+                    query: query,
+                    fuzziness: 'AUTO',
+                    operator: 'and',
+                    prefix_length: 1
+                }
+            }
+        }
+    };
+
+    try {
+        // Encode the username and password in Base64 for basic authentication
+        const authHeader = 'Basic ' + btoa(`${username}:${password}`);
+
+        // Send the POST request using fetch with the Authorization header
+        const response = await fetch(urlOpenSearch, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': authHeader
+            },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Search Results:', data.hits.hits);
+        return data.hits.hits; // Return or process the hits as needed
+
+    } catch (error) {
+        console.error('Error fetching search results:', error);
+    }
 }
 
 function showArticlePosition(position) {
