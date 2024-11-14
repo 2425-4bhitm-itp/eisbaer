@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
     margin: 0;
     font-family: 'Verdana', sans-serif;
@@ -10,12 +12,37 @@ body {
     flex-direction: column;
 }
 
+/* CONTAINERS */
+
 #content {
     display: flex;
 
     width: 100vw;
     height: 100vh;
 }
+
+#avatarContainer {
+
+}
+
+#outputContainer {
+    display: flex;
+    flex-direction: column;
+
+    width: 50vw;
+    height: 100vh;
+    padding: 2.5em;
+}
+
+#transcriptContainer {
+
+}
+
+#inputButtons {
+
+}
+
+/* PROPERTIES */
 
 h1 {
     text-align: center;
@@ -35,10 +62,6 @@ input {
     padding: 0.5em;
 }
 
-#outputContainer {
-    padding: 2.5em;
-}
-
 #queryOutput {
 
 }
@@ -48,11 +71,5 @@ input {
 }
 
 #outputPlace {
-
-}
-
-/* Avatar */
-
-#avatarContainer {
 
 }
