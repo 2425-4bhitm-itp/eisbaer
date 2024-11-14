@@ -28,13 +28,22 @@ body {
 #outputContainer {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 
     width: 50vw;
     height: 100vh;
-    padding: 2.5em;
+    /* padding: 2.5em; */
 }
 
 #transcriptContainer {
+    background-color: lightgray;
+}
+
+queryInputContainer {
+
+}
+
+#queryOutput {
 
 }
 
