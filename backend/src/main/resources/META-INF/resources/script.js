@@ -9,7 +9,7 @@ const username = 'amdmin';
 const password = 'Str0ngP@ssw0rd!';
 
 function getArticlePosition() {
-    let id = idInput.value;
+    let id = input.value;
     console.log(id)
     fetch(url + id, {
         method: 'GET',
