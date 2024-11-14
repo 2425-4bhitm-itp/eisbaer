@@ -21,16 +21,25 @@
   <!-- <h1>Eisbär</h1> -->
 
   <div id="content">
+    <!-- Left canvas with avatar -->
     <div id="avatarContainer" style="width: 50vw; height: 100vh;">
-        <!-- Polar Bear 3D Avatar is here -->
+        <!-- Polar Bear 3D Avatar is loaded here -->
     </div>
 
+    <!-- Left canvas with transcript -->
     <div id="outputContainer">
-      <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
-      <input type="submit" id="submitButton" name="submit" value="Suchen" onclick="getArticlePosition()">
+
+      <div id="transcriptContainer">
+        <!-- Transcript is generated here -->
+      </div>
 
       <div id="queryOutput">
-          <!-- Query results go here -->
+          <!-- Query results are generated here -->
+      </div>
+
+      <div id="inputButtons">
+        <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
+        <input type="submit" id="submitButton" name="submit" value="Suchen" onclick="getArticlePosition()">
       </div>
 
     </div>
