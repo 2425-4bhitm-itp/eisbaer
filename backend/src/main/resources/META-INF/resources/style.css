@@ -37,7 +37,9 @@ body {
 
 #transcriptContainer {
     background-color: lightgray;
+    padding: 1vw;
 }
+
 
 queryInputContainer {
 
