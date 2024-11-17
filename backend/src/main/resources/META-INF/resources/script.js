@@ -5,7 +5,7 @@ let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
 
 //only for testing
-const username = 'amdmin';
+const username = 'admin';
 const password = 'Str0ngP@ssw0rd!';
 
 function getArticlePosition() {
@@ -42,6 +42,7 @@ async function getArticlePositionWithOpenSearch() {
             }
         }
     };
+
 
     try {
         // Encode the username and password in Base64 for basic authentication
