@@ -84,23 +84,30 @@ function showArticlePosition(position) {
         length = 5;
     }
 
+    let counter = 1;
+
     for (let i = 0; i < length; i++) {
+        let rank = document.createElement("td");
         let tr = document.createElement("tr");
         let tdName = document.createElement("td");
         let tdPosition = document.createElement("td");
         let tdMiddle = document.createElement("td");
 
+        rank.innerHTML = ("" + counter + ". ");
         tdName.innerHTML = position[i].bezeichnung1;
         tdName.classList.add("outputName");
         tdMiddle.innerHTML = " ----- ";
         tdPosition.innerHTML = position[i].stellplatz;
         tdPosition.classList.add("outputPlace");
 
+        tr.appendChild(rank);
         tr.appendChild(tdName);
         tr.appendChild(tdMiddle);
         tr.appendChild(tdPosition);
 
         table.appendChild(tr);
+
+        counter++;
     }
 
     output.appendChild(table);
