@@ -88,16 +88,18 @@ input {
 }
 
 .transcriptEntry {
+}
+
+.transcriptName {
+    margin-left: 0.5vw;
+    font-size: 90%;
+    font-style: italic;
+}
+
+.transcriptText {
     background-color: #dedede;
     padding: 1vw;
     margin-bottom: 1em;
     border-radius: 0.5em;
-}
-
-.transcriptName {
-
-}
-
-.transcriptText {
 
 }
