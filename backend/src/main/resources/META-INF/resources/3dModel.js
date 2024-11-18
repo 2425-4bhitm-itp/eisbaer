@@ -7,8 +7,10 @@ const w = avatarContainer.offsetWidth;
 const h = avatarContainer.offsetHeight;
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color(0xffffff);
+
 const camera = new THREE.PerspectiveCamera(75, w / h, 0.1, 1000);
-camera.position.x = 5;
+camera.position.x = 7.5;
 camera.lookAt(0, 0, 0);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true });
