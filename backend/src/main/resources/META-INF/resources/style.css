@@ -36,12 +36,11 @@ body {
 }
 
 #transcriptContainer {
-    background-color: lightgray;
-    padding: 1vw;
+    width: 45vw;
 }
 
 
-queryInputContainer {
+#queryInputContainer {
 
 }
 
@@ -50,7 +49,10 @@ queryInputContainer {
 }
 
 #inputButtons {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 45vw;
 }
 
 /* PROPERTIES */
@@ -65,7 +67,7 @@ input {
 }
 
 #userInput {
-    width: 35vw;
+    width: 100%;
     height: 2.5em;
 }
 
@@ -82,5 +84,22 @@ input {
 }
 
 #outputPlace {
+
+}
+
+.transcriptEntry {
+}
+
+.transcriptName {
+    margin-left: 0.5vw;
+    font-size: 90%;
+    font-style: italic;
+}
+
+.transcriptText {
+    background-color: #dedede;
+    padding: 1vw;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
 
 }
