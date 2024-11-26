@@ -1,0 +1,4 @@
+server.name: opensearch
+server.host: "0"
+opensearch.hosts: http://localhost:9200
+#plugins.security.disabled: true
