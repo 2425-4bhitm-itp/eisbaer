@@ -78,6 +78,11 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 1. On the command line move to the folder 'eisbaer' with the command 'cd eisbaer'
 2. open the project with your preferred IDE (With command: 'idea .' or 'code .')
 
+=== Start Postgres and OpenSearch
+1. Open the console in your IDE
+2. type command 'cd backend/src/main/docker' to move to folder 'docker'
+3. type command 'docker-compose up' or 'docker compose up' depending on your version of docker compose
+
 === Start Quarkus
 1. Open the console in your IDE
 2. move to the backend folder with 'cd backend'
