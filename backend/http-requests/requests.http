@@ -1,2 +1,7 @@
+
+#### CREATING INDEX
+PUT http://localhost:8080/articles
+
+#### TEST
 GET http://localhost:8080/Articles/getArticle/Gestellschraube
 Content-Type: application/json

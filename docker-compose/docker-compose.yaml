@@ -10,6 +10,23 @@ services:
       - POSTGRES_PASSWORD=demo
       - POSTGRES_USER=demo
       - POSTGRES_DB=demo
+  opensearch:
+    image: opensearch
+    healthcheck:
+      test: curl --fail http://localhost:9200/_cluster/health
+    build:
+      context: .
+    ports:
+      - 9200:9200
+      - 9600:9600
+    environment:
+      - OPENSEARCH_SERVER_SSL_ENABLED=false
+      - OPENSEARCH_SSL_VERIFICATION_MODE=none
+      - OPENSEARCH_SERVER_SSL_CLIENTAUTHENTICATION=none
+      - OPENSEARCH_SECURITY_COOKIE_SECURE=false
+      - discovery.type=single-node
+      - OPENSEARCH_SECURITY_DISABLED=true
+      - OPENSEARCH_INITIAL_ADMIN_PASSWORD=Maniac4Something%VeryLong
 
 volumes:
   postgres:

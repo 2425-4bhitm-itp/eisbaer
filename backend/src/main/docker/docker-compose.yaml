@@ -1,4 +1,15 @@
 services:
+  postgres:
+    container_name: postgres
+    image: postgres:16-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=demo
+      - POSTGRES_USER=demo
+      - POSTGRES_DB=demo
   opensearch:
     image: opensearch
     healthcheck:
@@ -12,7 +23,11 @@ services:
       - OPENSEARCH_SERVER_SSL_ENABLED=false
       - OPENSEARCH_SSL_VERIFICATION_MODE=none
       - OPENSEARCH_SERVER_SSL_CLIENTAUTHENTICATION=none
-      - OPENSEARCH_SECURITY_COOKIE_SECURE=false       
+      - OPENSEARCH_SECURITY_COOKIE_SECURE=false
       - discovery.type=single-node
       - OPENSEARCH_SECURITY_DISABLED=true
       - OPENSEARCH_INITIAL_ADMIN_PASSWORD=Maniac4Something%VeryLong
+
+volumes:
+  postgres:
+
