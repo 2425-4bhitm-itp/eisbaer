@@ -1,1 +1,63 @@
 GET http://localhost:9200/_cluster/health
+
+### create Index
+PUT http://localhost:9200/articles
+Content-Type: application/json
+
+
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 1
+  },
+  "mappings": {
+    "properties": {
+      "Bezeichnung1": {
+        "type": "text"
+      },
+      "Bezeichnung2": {
+        "type": "text"
+      },
+      "Laenge": {
+        "type": "integer"
+      },
+      "Breite": {
+        "type": "integer"
+      },
+      "Hoehe": {
+        "type": "integer"
+      },
+      "Durchmesser": {
+        "type": "integer"
+      },
+      "Lagerort": {
+        "type": "text"
+      },
+      "Lagerstand": {
+        "type": "float"
+      },
+      "LagereinheitBez": {
+        "type": "keyword"
+      },
+      "Stellplatz": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+### upload data
+
+# curl -X POST "http://localhost:9200/_bulk" -H 'Content-Type: application/json' --data-binary @bulk_data
+POST http://localhost:9200/articles/_bulk
+Content-Type: application/json
+
+< bulk_data
+
+###
+
+# curl -X GET "http://localhost:9200/lagerdaten/_search?pretty=true&q=*"
+GET http://localhost:9200/articles/_search?pretty=true&q=*
+
+###
+

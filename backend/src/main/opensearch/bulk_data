@@ -1,0 +1,804 @@
+{"index": {"_id": "834"}}
+{"Bezeichnung1": "Gestellschraube 10x70 vz", "Bezeichnung2": "DIN 571", "Laenge": "70", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1351", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-02"}
+{"index": {"_id": "901"}}
+{"Bezeichnung1": "Nylond\u00fcbel S8", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "6809", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-06"}
+{"index": {"_id": "911"}}
+{"Bezeichnung1": "Drahtstifte blank 16/30", "Bezeichnung2": "1 kg", "Laenge": "30", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3.5", "LagereinheitBez": "kg", "Stellplatz": "KL-09-01-05"}
+{"index": {"_id": "911"}}
+{"Bezeichnung1": "Drahtstifte blank 16/30", "Bezeichnung2": "1 kg", "Laenge": "30", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3.5", "LagereinheitBez": "kg", "Stellplatz": "16201630"}
+{"index": {"_id": "911"}}
+{"Bezeichnung1": "Drahtstifte blank 16/30", "Bezeichnung2": "1 kg", "Laenge": "30", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "36.7", "LagereinheitBez": "kg", "Stellplatz": "KL-09-01-05"}
+{"index": {"_id": "911"}}
+{"Bezeichnung1": "Drahtstifte blank 16/30", "Bezeichnung2": "1 kg", "Laenge": "30", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "36.7", "LagereinheitBez": "kg", "Stellplatz": "16201630"}
+{"index": {"_id": "916"}}
+{"Bezeichnung1": "Drahtstifte blank 34/80", "Bezeichnung2": "5 kg", "Laenge": "80", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1442.5", "LagereinheitBez": "kg", "Stellplatz": "PL-07-04-01"}
+{"index": {"_id": "969"}}
+{"Bezeichnung1": "Gestellschraube 12x260 vz", "Bezeichnung2": "DIN 571", "Laenge": "260", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "280", "LagereinheitBez": "Stk", "Stellplatz": "KL-04-03-02"}
+{"index": {"_id": "970"}}
+{"Bezeichnung1": "Gestellschraube 12x220 vz", "Bezeichnung2": "DIN 571", "Laenge": "220", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "56", "LagereinheitBez": "Stk", "Stellplatz": "KL-04-04-04"}
+{"index": {"_id": "1049"}}
+{"Bezeichnung1": "SKT-Schraube M14x120-8.8 vz", "Bezeichnung2": "DIN 931", "Laenge": "120", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3981", "LagereinheitBez": "Stk", "Stellplatz": "PL-07-07-02"}
+{"index": {"_id": "1050"}}
+{"Bezeichnung1": "SKT-Schraube M14x70-8.8 vz", "Bezeichnung2": "DIN 931", "Laenge": "70", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "365", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-07-02"}
+{"index": {"_id": "1159"}}
+{"Bezeichnung1": "Nageld\u00fcbel N 5x30 FZ", "Bezeichnung2": null, "Laenge": "30", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2635", "LagereinheitBez": "Stk", "Stellplatz": "KL-08-01-01"}
+{"index": {"_id": "1166"}}
+{"Bezeichnung1": "Gewindestange M12 l=380mm", "Bezeichnung2": "verzinkt", "Laenge": "380", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "61", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-04"}
+{"index": {"_id": "1169"}}
+{"Bezeichnung1": "Nylond\u00fcbel S6", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1981", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-07"}
+{"index": {"_id": "1170"}}
+{"Bezeichnung1": "Nylond\u00fcbel S4", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "4000", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-07"}
+{"index": {"_id": "1171"}}
+{"Bezeichnung1": "Gewindestange M12 l=180mm", "Bezeichnung2": "verzinkt", "Laenge": "180", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "100", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-04"}
+{"index": {"_id": "1171"}}
+{"Bezeichnung1": "Gewindestange M12 l=180mm", "Bezeichnung2": "verzinkt", "Laenge": "180", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "240", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-04"}
+{"index": {"_id": "1183"}}
+{"Bezeichnung1": "Beilagscheibe DIN TOL. 522C", "Bezeichnung2": "St37-2/VZ  36x15mm s=4mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7461", "LagereinheitBez": "Stk", "Stellplatz": "KL-03-04-05"}
+{"index": {"_id": "3244"}}
+{"Bezeichnung1": "Distanzleiste Megawand", "Bezeichnung2": "L\u00e4nge 5 m", "Laenge": "5000", "Breite": "75", "Hoehe": "36", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2720", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "3300"}}
+{"Bezeichnung1": "Danske Classic Kiefer", "Bezeichnung2": "25 LT Gebinde", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-02-03"}
+{"index": {"_id": "3491"}}
+{"Bezeichnung1": "Baustopfen 1/2\"", "Bezeichnung2": "rot", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "146", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "3743"}}
+{"Bezeichnung1": "Gitterstreifen SK 48mm x 90m", "Bezeichnung2": null, "Laenge": "90000", "Breite": "48", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "263", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-07-01"}
+{"index": {"_id": "3747"}}
+{"Bezeichnung1": "Papierbewehrungsstreifen", "Bezeichnung2": "1 Rolle=75 m", "Laenge": "75000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "151", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-07-01"}
+{"index": {"_id": "3748"}}
+{"Bezeichnung1": "Fugenf\u00fcller", "Bezeichnung2": "1GB=5kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "38", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-04-01"}
+{"index": {"_id": "3766"}}
+{"Bezeichnung1": "Papierabdeckband 80\u00b0C  38mm x 50m", "Bezeichnung2": "1 Karton = 24 Rollen", "Laenge": "50000", "Breite": "38", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-08-02"}
+{"index": {"_id": "3766"}}
+{"Bezeichnung1": "Papierabdeckband 80\u00b0C  38mm x 50m", "Bezeichnung2": "1 Karton = 24 Rollen", "Laenge": "50000", "Breite": "38", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "476", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-08-02"}
+{"index": {"_id": "3767"}}
+{"Bezeichnung1": "Papierabdeckband 60\u00b0C 50mm x 50 m", "Bezeichnung2": "glatt", "Laenge": "50000", "Breite": "50", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "444", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-08-01"}
+{"index": {"_id": "3768"}}
+{"Bezeichnung1": "Fassadend\u00e4mmplatte PS 15", "Bezeichnung2": null, "Laenge": "1000", "Breite": "500", "Hoehe": "20", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "104", "LagereinheitBez": "Stk", "Stellplatz": "PL-08-04-03"}
+{"index": {"_id": "3770"}}
+{"Bezeichnung1": "Illbruck PU-Pistolenschaum", "Bezeichnung2": "Basic All Season MAXX B3", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "3770"}}
+{"Bezeichnung1": "Illbruck PU-Pistolenschaum", "Bezeichnung2": "Basic All Season MAXX B3", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "774", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "3771"}}
+{"Bezeichnung1": "Illbruck FM710 2K-Montageschaum B2", "Bezeichnung2": "400ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "126", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-02"}
+{"index": {"_id": "3773"}}
+{"Bezeichnung1": "Acrylkitt Riss- u. Fugendicht", "Bezeichnung2": "Illbruck LD703 wei\u00df 310ml (", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "154", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-02"}
+{"index": {"_id": "3774"}}
+{"Bezeichnung1": "Fischer Silikon transparent BBSI", "Bezeichnung2": "280ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "3774"}}
+{"Bezeichnung1": "Fischer Silikon transparent BBSI", "Bezeichnung2": "280ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "3774"}}
+{"Bezeichnung1": "Fischer Silikon transparent BBSI", "Bezeichnung2": "280ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "417", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "3787"}}
+{"Bezeichnung1": "Bauder TEC-KSA 100 kaltselbstklebend", "Bezeichnung2": "1 Rolle = 10 m", "Laenge": "10000", "Breite": "1000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "520", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-03-03-01"}
+{"index": {"_id": "3812"}}
+{"Bezeichnung1": "Mauersperrbahn 130 mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "130", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "3812"}}
+{"Bezeichnung1": "Mauersperrbahn 130 mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "130", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2473", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "3968"}}
+{"Bezeichnung1": "Balkenschuh 120/160 aussen vz", "Bezeichnung2": "1Pak=25Stk", "Laenge": "0", "Breite": "120", "Hoehe": "160", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-01"}
+{"index": {"_id": "3968"}}
+{"Bezeichnung1": "Balkenschuh 120/160 aussen vz", "Bezeichnung2": "1Pak=25Stk", "Laenge": "0", "Breite": "120", "Hoehe": "160", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "171", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-01"}
+{"index": {"_id": "3978"}}
+{"Bezeichnung1": "Balkenschuh 60/190 aussen vz", "Bezeichnung2": "1Pak=25Stk", "Laenge": "0", "Breite": "60", "Hoehe": "190", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-01"}
+{"index": {"_id": "3978"}}
+{"Bezeichnung1": "Balkenschuh 60/190 aussen vz", "Bezeichnung2": "1Pak=25Stk", "Laenge": "0", "Breite": "60", "Hoehe": "190", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "84", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-01"}
+{"index": {"_id": "3979"}}
+{"Bezeichnung1": "Sparrennagel VZ 60/260", "Bezeichnung2": "Din1052; Drakena", "Laenge": "260", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "339", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-01"}
+{"index": {"_id": "3999"}}
+{"Bezeichnung1": "Rillenn\u00e4gel 6/100vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "16050", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-02"}
+{"index": {"_id": "4005"}}
+{"Bezeichnung1": "Balkenschuh 100/140 au\u00dfen", "Bezeichnung2": "1 Pkg = 50 Stk", "Laenge": "0", "Breite": "100", "Hoehe": "140", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-02"}
+{"index": {"_id": "4005"}}
+{"Bezeichnung1": "Balkenschuh 100/140 au\u00dfen", "Bezeichnung2": "1 Pkg = 50 Stk", "Laenge": "0", "Breite": "100", "Hoehe": "140", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "126", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-02-02"}
+{"index": {"_id": "4006"}}
+{"Bezeichnung1": "Balkenschuh 80/180 aussen vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "80", "Hoehe": "180", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "4006"}}
+{"Bezeichnung1": "Balkenschuh 80/180 aussen vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "80", "Hoehe": "180", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "74", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "4059"}}
+{"Bezeichnung1": "FH-T-Eisen", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-03-06"}
+{"index": {"_id": "4060"}}
+{"Bezeichnung1": "Zierrosette 80x4x13 schwarz pulverbeschichtet", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "13", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-03-06"}
+{"index": {"_id": "4147"}}
+{"Bezeichnung1": "Balkonblech beschichtet 2m lg.", "Bezeichnung2": null, "Laenge": "2000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1", "LagereinheitBez": "Stk", "Stellplatz": "LL-03-05"}
+{"index": {"_id": "4165"}}
+{"Bezeichnung1": "L- Blech beschichtet 2m lg.", "Bezeichnung2": null, "Laenge": "2000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "20", "LagereinheitBez": "Stk", "Stellplatz": "LL-03-05"}
+{"index": {"_id": "4181"}}
+{"Bezeichnung1": "PVC Dunstrohr mit Haube", "Bezeichnung2": "Dunkelgrau  GP19; \u00dcberdachentl\u00fcfter komplett", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "37", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-07-01"}
+{"index": {"_id": "4198"}}
+{"Bezeichnung1": "Schneehaken rot", "Bezeichnung2": "f\u00fcr EDS", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3543", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-02"}
+{"index": {"_id": "4199"}}
+{"Bezeichnung1": "Schneehaken C370W kastanienrot", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2439", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-03"}
+{"index": {"_id": "4200"}}
+{"Bezeichnung1": "Schneehaken chaletbraun", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-03"}
+{"index": {"_id": "4201"}}
+{"Bezeichnung1": "Schneehaken C370W anthrazit", "Bezeichnung2": "VPE=100 St\u00fcck", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "4860", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-02"}
+{"index": {"_id": "4586"}}
+{"Bezeichnung1": "Fi/Ta-Schnittholz roh", "Bezeichnung2": "S 10 nach DIN 4074 Teil 1", "Laenge": "0", "Breite": "30", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "4586"}}
+{"Bezeichnung1": "Fi/Ta-Schnittholz roh", "Bezeichnung2": "S 10 nach DIN 4074 Teil 1", "Laenge": "0", "Breite": "30", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17777.72", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "6602"}}
+{"Bezeichnung1": "Hanfspule", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "6626"}}
+{"Bezeichnung1": "Primus-Drain Duschablauf mit Abdichtgarnitur", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "7950"}}
+{"Bezeichnung1": "Gestellschraube 12x200 vz", "Bezeichnung2": "DIN 571", "Laenge": "200", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "581", "LagereinheitBez": "Stk", "Stellplatz": "KL-04-03-04"}
+{"index": {"_id": "7951"}}
+{"Bezeichnung1": "Gestellschraube 12x240 vz", "Bezeichnung2": "DIN 571", "Laenge": "240", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "570", "LagereinheitBez": "Stk", "Stellplatz": "KL-04-03-03"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "NORM"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "KL-03-04-04"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "18210108"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11627", "LagereinheitBez": "Stk", "Stellplatz": "NORM"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11627", "LagereinheitBez": "Stk", "Stellplatz": "KL-03-04-04"}
+{"index": {"_id": "8022"}}
+{"Bezeichnung1": "Scheibe M8 DIN134  Vz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11627", "LagereinheitBez": "Stk", "Stellplatz": "18210108"}
+{"index": {"_id": "8085"}}
+{"Bezeichnung1": "Hutmutter M12 A2", "Bezeichnung2": "DIN1587", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "277", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-03-06"}
+{"index": {"_id": "8086"}}
+{"Bezeichnung1": "Karoscheiben 13 A2", "Bezeichnung2": "Din 9021", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1107", "LagereinheitBez": "Stk", "Stellplatz": "KL-03-03-05"}
+{"index": {"_id": "8203"}}
+{"Bezeichnung1": "Papierabdeckband 4515 PRO 19mmx50m", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-06-02"}
+{"index": {"_id": "8205"}}
+{"Bezeichnung1": "Allzweckband silber 50mm", "Bezeichnung2": "TESA L\u00e4nge: 50 Meter", "Laenge": "50000", "Breite": "48", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "110", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-07-02"}
+{"index": {"_id": "8206"}}
+{"Bezeichnung1": "PVC-Abdeckband 50 mm x 33 m", "Bezeichnung2": "gerillt weiss", "Laenge": "33", "Breite": "50", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "91", "LagereinheitBez": "Rolle", "Stellplatz": "PL-05-07-02"}
+{"index": {"_id": "8212"}}
+{"Bezeichnung1": "PE-Baufolie transparent tr\u00fcb", "Bezeichnung2": "1 Rolle = 2x50m", "Laenge": "0", "Breite": "2000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2400", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-03-03-02"}
+{"index": {"_id": "8233"}}
+{"Bezeichnung1": "Bugkappen braun", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "550", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-02"}
+{"index": {"_id": "8234"}}
+{"Bezeichnung1": "Bugkappen wei\u00df", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "800", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-03"}
+{"index": {"_id": "8235"}}
+{"Bezeichnung1": "Bugkappen gr\u00fcn", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "300", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-02"}
+{"index": {"_id": "8237"}}
+{"Bezeichnung1": "Bauklammern 30cm", "Bezeichnung2": "Karton = 50 Stk; 1Kg=3Stk", "Laenge": "300", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-03-03"}
+{"index": {"_id": "8249"}}
+{"Bezeichnung1": "Zinkfarbe-Spray 400ml", "Bezeichnung2": "Prefa-braun", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "39", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-07-03"}
+{"index": {"_id": "8250"}}
+{"Bezeichnung1": "Farbspray moosgr\u00fcn 400ml", "Bezeichnung2": "RAL 6005", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-08-03"}
+{"index": {"_id": "8350"}}
+{"Bezeichnung1": "Brunnenschaum PU1/500", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "86", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-04-01"}
+{"index": {"_id": "8351"}}
+{"Bezeichnung1": "Fassadend\u00e4mmplatte PS 15", "Bezeichnung2": null, "Laenge": "1000", "Breite": "500", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "33", "LagereinheitBez": "Stk", "Stellplatz": "PL-01-06-02"}
+{"index": {"_id": "8353"}}
+{"Bezeichnung1": "Sparrennagel VZ 60/330", "Bezeichnung2": "Din1052; Drakena", "Laenge": "330", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "894", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-01"}
+{"index": {"_id": "9248"}}
+{"Bezeichnung1": "Balkenschuh 70/125 aussen vz", "Bezeichnung2": "BMF; 1Pak=50Stk", "Laenge": "0", "Breite": "70", "Hoehe": "125", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "9248"}}
+{"Bezeichnung1": "Balkenschuh 70/125 aussen vz", "Bezeichnung2": "BMF; 1Pak=50Stk", "Laenge": "0", "Breite": "70", "Hoehe": "125", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "9249"}}
+{"Bezeichnung1": "Balkenschuh 51/135 aussen vz", "Bezeichnung2": "BMF; 1Pak=50Stk", "Laenge": "0", "Breite": "51", "Hoehe": "135", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "9249"}}
+{"Bezeichnung1": "Balkenschuh 51/135 aussen vz", "Bezeichnung2": "BMF; 1Pak=50Stk", "Laenge": "0", "Breite": "51", "Hoehe": "135", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "38", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-01-02"}
+{"index": {"_id": "9295"}}
+{"Bezeichnung1": "YTONG Planplatte P 2", "Bezeichnung2": "Dicke 12 cm", "Laenge": "625", "Breite": "120", "Hoehe": "250", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "276", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "9341"}}
+{"Bezeichnung1": "Firstklammer f\u00fcr EDS anthrazit", "Bezeichnung2": "+ Firstklammer f\u00fcr EDS rot", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "4717", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-01-02"}
+{"index": {"_id": "9342"}}
+{"Bezeichnung1": "Glockenschraube 115mm A2 komplett", "Bezeichnung2": "anthrazit / rot", "Laenge": "110", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3681", "LagereinheitBez": "Stk", "Stellplatz": "KL-09-03-03"}
+{"index": {"_id": "9415"}}
+{"Bezeichnung1": "YTONG Planm\u00f6rtel", "Bezeichnung2": "1 Geb= 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-06-01"}
+{"index": {"_id": "9415"}}
+{"Bezeichnung1": "YTONG Planm\u00f6rtel", "Bezeichnung2": "1 Geb= 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-06-01"}
+{"index": {"_id": "9669"}}
+{"Bezeichnung1": "First und Gratrolle", "Bezeichnung2": "TOP ROLL 310 mm rot", "Laenge": "5000", "Breite": "310", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "86", "LagereinheitBez": "Rolle", "Stellplatz": "PL-04-03-02"}
+{"index": {"_id": "9670"}}
+{"Bezeichnung1": "First und Gratrolle", "Bezeichnung2": "TOP ROLL 310 mm dunkelbraun", "Laenge": "5000", "Breite": "310", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "66", "LagereinheitBez": "Rolle", "Stellplatz": "PL-04-03-02"}
+{"index": {"_id": "9671"}}
+{"Bezeichnung1": "First und Gratrolle", "Bezeichnung2": "TOP ROLL 310 mm anthrazit", "Laenge": "5000", "Breite": "310", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "164", "LagereinheitBez": "Rolle", "Stellplatz": "PL-04-03-02"}
+{"index": {"_id": "10436"}}
+{"Bezeichnung1": "Gestellschraube 12x300 vz", "Bezeichnung2": "DIN 571", "Laenge": "300", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "591", "LagereinheitBez": "Stk", "Stellplatz": "KL-04-03-01"}
+{"index": {"_id": "10693"}}
+{"Bezeichnung1": "Quadratisch Giebell\u00fcftungsgit.", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "9", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "10760"}}
+{"Bezeichnung1": "Zinkfarbe-Spray 400ml", "Bezeichnung2": "Prefa-weiss RAL 9010", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "29", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-07-03"}
+{"index": {"_id": "14594"}}
+{"Bezeichnung1": "Bauder TEC-KSA 25 kaltselbstklebend", "Bezeichnung2": "1 Rolle = 10 m", "Laenge": "10000", "Breite": "250", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "880", "LagereinheitBez": "lfm", "Stellplatz": "PL-03-03-01"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "772", "LagereinheitBez": "m\u00b2", "Stellplatz": "Tor 98"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "772", "LagereinheitBez": "m\u00b2", "Stellplatz": "HTB"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "772", "LagereinheitBez": "m\u00b2", "Stellplatz": "230-060"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1096.92", "LagereinheitBez": "m\u00b2", "Stellplatz": "Tor 98"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1096.92", "LagereinheitBez": "m\u00b2", "Stellplatz": "HTB"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1096.92", "LagereinheitBez": "m\u00b2", "Stellplatz": "230-060"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1096.92", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-12-04-01"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "789", "LagereinheitBez": "m\u00b2", "Stellplatz": "Tor 98"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "789", "LagereinheitBez": "m\u00b2", "Stellplatz": "HTB"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "789", "LagereinheitBez": "m\u00b2", "Stellplatz": "230-060"}
+{"index": {"_id": "15040"}}
+{"Bezeichnung1": "OMEGA-Winddichtung 3 m", "Bezeichnung2": "3.00 m x 50 m", "Laenge": "50000", "Breite": "3000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "789", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-12-04-01"}
+{"index": {"_id": "15600"}}
+{"Bezeichnung1": "Tackernadeln f\u00fcr Fu\u00dfbodenheizung", "Bezeichnung2": "900 Stk/Pkg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-02-03"}
+{"index": {"_id": "15604"}}
+{"Bezeichnung1": "Verteilerschrank Unterputz f\u00fcr", "Bezeichnung2": "12 fachen Verteiler", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-03-02"}
+{"index": {"_id": "15830"}}
+{"Bezeichnung1": "St\u00fctzenfu\u00df PITZL 10921.1000 vz", "Bezeichnung2": "h\u00f6henverstellbar 142-207 mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "107", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-04-01"}
+{"index": {"_id": "16624"}}
+{"Bezeichnung1": "Trennvlies 300 g/m\u00b2", "Bezeichnung2": "Breite 200 cm/50 lfm", "Laenge": "50000", "Breite": "2000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-11-04"}
+{"index": {"_id": "17088"}}
+{"Bezeichnung1": "Spenglernieten 4x9.5 Alu/Edels.", "Bezeichnung2": "RAL 8004 kupferbraun", "Laenge": "9.5", "Breite": "0", "Hoehe": "0", "Durchmesser": "4", "Lagerort": null, "Lagerstand": "4940", "LagereinheitBez": "Stk", "Stellplatz": "KL-08-02-06"}
+{"index": {"_id": "17463"}}
+{"Bezeichnung1": "BMF Stabd\u00fcbel 12/160", "Bezeichnung2": "Art.Nr. 3322000", "Laenge": "160", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "92", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-07"}
+{"index": {"_id": "17535"}}
+{"Bezeichnung1": "Dichtungsband   10 x 20", "Bezeichnung2": "Iso Zell PE-Band", "Laenge": "10000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "300", "LagereinheitBez": "lfm", "Stellplatz": "PL-05-06-03"}
+{"index": {"_id": "17692"}}
+{"Bezeichnung1": "Fichte KVH Nsi", "Bezeichnung2": "FH-Holz", "Laenge": "5000", "Breite": "60", "Hoehe": "100", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "745", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "17710"}}
+{"Bezeichnung1": "Fugenf\u00fcller", "Bezeichnung2": "1GB=25kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "127", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-04-01"}
+{"index": {"_id": "17727"}}
+{"Bezeichnung1": "Quarzolith Trockenbeton B225 Sack 40kg", "Bezeichnung2": "K\u00f6rnung 0 - 4 mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-06-01"}
+{"index": {"_id": "17727"}}
+{"Bezeichnung1": "Quarzolith Trockenbeton B225 Sack 40kg", "Bezeichnung2": "K\u00f6rnung 0 - 4 mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "17727"}}
+{"Bezeichnung1": "Quarzolith Trockenbeton B225 Sack 40kg", "Bezeichnung2": "K\u00f6rnung 0 - 4 mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "305", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-06-01"}
+{"index": {"_id": "17727"}}
+{"Bezeichnung1": "Quarzolith Trockenbeton B225 Sack 40kg", "Bezeichnung2": "K\u00f6rnung 0 - 4 mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "305", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "17842"}}
+{"Bezeichnung1": "Lochband 14mm", "Bezeichnung2": "1 Rolle - 10 lfm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "17842"}}
+{"Bezeichnung1": "Lochband 14mm", "Bezeichnung2": "1 Rolle - 10 lfm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "18509"}}
+{"Bezeichnung1": "Schneehaken Anthrazit", "Bezeichnung2": "f\u00fcr Erlus Karat Dachziegel; D-34 Lang", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1094", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-02"}
+{"index": {"_id": "18510"}}
+{"Bezeichnung1": "Schneehaken Kupferbraun", "Bezeichnung2": "f\u00fcr Erlus Karat Dachziegel; D-34 Lang", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "400", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-07-03"}
+{"index": {"_id": "18511"}}
+{"Bezeichnung1": "Schneehaken Ziegelrot", "Bezeichnung2": "f\u00fcr Erlus Karat Dachziegel; D-34 Lang", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "672", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-02"}
+{"index": {"_id": "18521"}}
+{"Bezeichnung1": "Sto-Prefa Coll", "Bezeichnung2": "1 GB = 20 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "36", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-03-01"}
+{"index": {"_id": "18522"}}
+{"Bezeichnung1": "Sto-Prefa Armat", "Bezeichnung2": "1 GB = 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "28.576", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-03-01"}
+{"index": {"_id": "18522"}}
+{"Bezeichnung1": "Sto-Prefa Armat", "Bezeichnung2": "1 GB = 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "29", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-03-01"}
+{"index": {"_id": "18524"}}
+{"Bezeichnung1": "Sto-Gewebewinkel standard 11x22 cm", "Bezeichnung2": "1 Karton = 50 Stk", "Laenge": "2500", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "-324", "LagereinheitBez": "Stk", "Stellplatz": "PL-01-08-03"}
+{"index": {"_id": "18524"}}
+{"Bezeichnung1": "Sto-Gewebewinkel standard 11x22 cm", "Bezeichnung2": "1 Karton = 50 Stk", "Laenge": "2500", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "232", "LagereinheitBez": "Stk", "Stellplatz": "PL-01-08-03"}
+{"index": {"_id": "18527"}}
+{"Bezeichnung1": "Sto-Color In wei\u00df", "Bezeichnung2": "1 GB = 15 Lt", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "19", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-03-01"}
+{"index": {"_id": "18542"}}
+{"Bezeichnung1": "Airstop Dichtmasse 600 ml", "Bezeichnung2": "SPRINT ( Schlauch )", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "413", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-02"}
+{"index": {"_id": "18558"}}
+{"Bezeichnung1": "Fichte KVH Nsi", "Bezeichnung2": "FH-Holz", "Laenge": "5000", "Breite": "60", "Hoehe": "90", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "736.928", "LagereinheitBez": "lfm", "Stellplatz": "000.000.000"}
+{"index": {"_id": "18567"}}
+{"Bezeichnung1": "OMEGA Dampfbremse \"PLUS\"1.50m", "Bezeichnung2": "50 lfm/Rolle 1 Pal= 1500 m\u00b2; Butylklebestreifen", "Laenge": "50000", "Breite": "1500", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "m\u00b2", "Stellplatz": "PL-02-04-01"}
+{"index": {"_id": "18943"}}
+{"Bezeichnung1": "Bugkappen hellgrau", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "800", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-03"}
+{"index": {"_id": "19100"}}
+{"Bezeichnung1": "SPIT-N\u00e4gel SC9-50 Magaziniert", "Bezeichnung2": "f\u00fcr P 370 C 600; 1Pak=100Stk", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17150", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-04-04"}
+{"index": {"_id": "19100"}}
+{"Bezeichnung1": "SPIT-N\u00e4gel SC9-50 Magaziniert", "Bezeichnung2": "f\u00fcr P 370 C 600; 1Pak=100Stk", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17150", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "19101"}}
+{"Bezeichnung1": "SPIT-Patronen 6.3/10 ROT", "Bezeichnung2": "f\u00fcr Bolzenschubger\u00e4t P 370; Karton - 100 Stk", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17300", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-04-04"}
+{"index": {"_id": "19116"}}
+{"Bezeichnung1": "Zinkfarbe-Spray 400ml", "Bezeichnung2": "Prefa-anthrazit", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "75", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-07-03"}
+{"index": {"_id": "19341"}}
+{"Bezeichnung1": "Holzbauscheibe 8mm NIRO", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "333", "LagereinheitBez": "Stk", "Stellplatz": "KL-03-04-03"}
+{"index": {"_id": "19580"}}
+{"Bezeichnung1": "Schneehaken Anthrazit", "Bezeichnung2": "f\u00fcr Forma Dachziegel; D-56 Lang; D-400/E6", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2214", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-06-01"}
+{"index": {"_id": "19651"}}
+{"Bezeichnung1": "R\u00fccksp\u00fclfilter mit Druckminderer 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "6", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "19828"}}
+{"Bezeichnung1": "Sto-Fix Spirale ID 60", "Bezeichnung2": "1 GB = 25 Stk", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "659", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-07-02"}
+{"index": {"_id": "19946"}}
+{"Bezeichnung1": "Rigidur Kleber  310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "19946"}}
+{"Bezeichnung1": "Rigidur Kleber  310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-02"}
+{"index": {"_id": "19946"}}
+{"Bezeichnung1": "Rigidur Kleber  310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "200", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "19946"}}
+{"Bezeichnung1": "Rigidur Kleber  310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "200", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-02"}
+{"index": {"_id": "19979"}}
+{"Bezeichnung1": "GKP-Palette f\u00fcr Rigipsplatten", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "-31", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "19979"}}
+{"Bezeichnung1": "GKP-Palette f\u00fcr Rigipsplatten", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "-31", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "180-030"}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": null}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "PL-05-06-02"}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "lfm", "Stellplatz": "180-030"}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "lfm", "Stellplatz": null}
+{"index": {"_id": "21080"}}
+{"Bezeichnung1": "Fugendichtband Illac 10/2mm", "Bezeichnung2": "1 Rolle=25m", "Laenge": "25000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "lfm", "Stellplatz": "PL-05-06-02"}
+{"index": {"_id": "21094"}}
+{"Bezeichnung1": "Ansetzbinder / Klebegips", "Bezeichnung2": "1 Sack=25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "72", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-04-01"}
+{"index": {"_id": "21094"}}
+{"Bezeichnung1": "Ansetzbinder / Klebegips", "Bezeichnung2": "1 Sack=25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "72", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "21111"}}
+{"Bezeichnung1": "Sto-Schraubd\u00fcbel H 60", "Bezeichnung2": null, "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "200", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "21111"}}
+{"Bezeichnung1": "Sto-Schraubd\u00fcbel H 60", "Bezeichnung2": null, "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "200", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-07-02"}
+{"index": {"_id": "21111"}}
+{"Bezeichnung1": "Sto-Schraubd\u00fcbel H 60", "Bezeichnung2": null, "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "600", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "21111"}}
+{"Bezeichnung1": "Sto-Schraubd\u00fcbel H 60", "Bezeichnung2": null, "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "600", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-07-02"}
+{"index": {"_id": "22073"}}
+{"Bezeichnung1": "Sockeld\u00e4mmplatte PS 30", "Bezeichnung2": null, "Laenge": "1000", "Breite": "500", "Hoehe": "30", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "201.0008", "LagereinheitBez": "Stk", "Stellplatz": "PL-01-06-02"}
+{"index": {"_id": "22076"}}
+{"Bezeichnung1": "Sockeld\u00e4mmplatte PS 30", "Bezeichnung2": null, "Laenge": "1000", "Breite": "500", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "138", "LagereinheitBez": "Stk", "Stellplatz": "PL-01-07-02"}
+{"index": {"_id": "22078"}}
+{"Bezeichnung1": "Sockeld\u00e4mmplatte PS 30", "Bezeichnung2": null, "Laenge": "1000", "Breite": "500", "Hoehe": "80", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22108"}}
+{"Bezeichnung1": "Sto-Gewebewinkel standard 11x13 cm", "Bezeichnung2": "1 Karton = 50 Stk", "Laenge": "2500", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "-3", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22111"}}
+{"Bezeichnung1": "Sto-Schraubd\u00fcbel H 60", "Bezeichnung2": null, "Laenge": "160", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "116", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22131"}}
+{"Bezeichnung1": "Sto-Sockelleiste universal 82 mm", "Bezeichnung2": null, "Laenge": "2000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22133"}}
+{"Bezeichnung1": "Sto-Sockelleiste universal 102 mm", "Bezeichnung2": null, "Laenge": "2000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22134"}}
+{"Bezeichnung1": "Sto-Sockelleiste universal 122 mm", "Bezeichnung2": null, "Laenge": "2000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "73", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22143"}}
+{"Bezeichnung1": "Sto-Levell Uni", "Bezeichnung2": "1 Sack = 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "90", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22143"}}
+{"Bezeichnung1": "Sto-Levell Uni", "Bezeichnung2": "1 Sack = 25 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "90", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22144"}}
+{"Bezeichnung1": "Sto-Flexyl", "Bezeichnung2": "1 GB = 18 kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": "PL-02-01-01"}
+{"index": {"_id": "22271"}}
+{"Bezeichnung1": "Waschmaschinen Sifon", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "22326"}}
+{"Bezeichnung1": "Alu First- u. Gratklammer f\u00fcr Erlus First Nr.15/17", "Bezeichnung2": "Anthrazit Nr. 35", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "8041", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-01-01"}
+{"index": {"_id": "22514"}}
+{"Bezeichnung1": "Bugkappen dunkelgrau", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "961", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-03"}
+{"index": {"_id": "22515"}}
+{"Bezeichnung1": "Bugkappen schwarz", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1256", "LagereinheitBez": "Stk", "Stellplatz": "KL-10-02-03"}
+{"index": {"_id": "22526"}}
+{"Bezeichnung1": "Holzbohrschraube SNK 5x60/40 TX25 Niro A2", "Bezeichnung2": null, "Laenge": "60", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "Stk", "Stellplatz": "KL-07-02-06"}
+{"index": {"_id": "22548"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "2", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "28", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22548"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "2", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "28", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22548"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "2", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7115", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22548"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "2", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7115", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22549"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22549"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22549"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3874", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22549"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3874", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22550"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "10", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22550"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "10", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22550"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "10", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1750", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22550"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "10", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1750", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-01"}
+{"index": {"_id": "22551"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "15", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22551"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "15", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-04-01"}
+{"index": {"_id": "22551"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "15", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2613", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "22551"}}
+{"Bezeichnung1": "HDPE Unterlegsplatte Schwarz", "Bezeichnung2": null, "Laenge": "200", "Breite": "80", "Hoehe": "15", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2613", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-04-01"}
+{"index": {"_id": "150037"}}
+{"Bezeichnung1": "Holzbauschraube WT-T 8.2x275 DUROCOAT", "Bezeichnung2": "50Stk./Pck.", "Laenge": "275", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "473", "LagereinheitBez": "Stk", "Stellplatz": "KL-08-03-01"}
+{"index": {"_id": "150038"}}
+{"Bezeichnung1": "Holzbauschraube WT-T 8.2x300 DUROCOAT", "Bezeichnung2": "50Stk./Pck.", "Laenge": "300", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "308", "LagereinheitBez": "Stk", "Stellplatz": "KL-08-03-01"}
+{"index": {"_id": "150039"}}
+{"Bezeichnung1": "Holzbauschraube WT-T 8.2x330 DUROCOAT", "Bezeichnung2": "50Stk./Pck.", "Laenge": "330", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "749", "LagereinheitBez": "Stk", "Stellplatz": "KL-08-03-01"}
+{"index": {"_id": "150045"}}
+{"Bezeichnung1": "Abdeckplane 10 x 12 m", "Bezeichnung2": "ca. 150 g/m\u00b2", "Laenge": "12000", "Breite": "10000", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "78", "LagereinheitBez": "Stk", "Stellplatz": "PL-03-06-01"}
+{"index": {"_id": "150060"}}
+{"Bezeichnung1": "Tec7 Dicht- und Montagekleber", "Bezeichnung2": "transparent 310ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "571", "LagereinheitBez": "Stk", "Stellplatz": "180-020"}
+{"index": {"_id": "150060"}}
+{"Bezeichnung1": "Tec7 Dicht- und Montagekleber", "Bezeichnung2": "transparent 310ml", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "571", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-04-02"}
+{"index": {"_id": "160085"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x250 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "49", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160086"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "9", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "160086"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "9", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "160086"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "64", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "160086"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "64", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "160087"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x1000 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "45", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-01"}
+{"index": {"_id": "160088"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x1500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "73", "LagereinheitBez": "Stk", "Stellplatz": "LL-02"}
+{"index": {"_id": "160089"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d50x2000 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "75", "LagereinheitBez": "Stk", "Stellplatz": "LL-02"}
+{"index": {"_id": "160090"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d75x250 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "48", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160091"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d75x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "160092"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d75x1000 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-01"}
+{"index": {"_id": "160093"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d75x1500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "29", "LagereinheitBez": "Stk", "Stellplatz": "LL-02"}
+{"index": {"_id": "160094"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d110x250 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "40", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160095"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d110x500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "41", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160096"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d110x1000 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "36", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-01"}
+{"index": {"_id": "160097"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d110x1500 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "36", "LagereinheitBez": "Stk", "Stellplatz": "LL-02"}
+{"index": {"_id": "160098"}}
+{"Bezeichnung1": "Geberit Rohr PP-MD d110x2000 1 Muffe", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "38", "LagereinheitBez": "Stk", "Stellplatz": "LL-02"}
+{"index": {"_id": "160099"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 15G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "91", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160100"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 30G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "40", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160101"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 45G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "133", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160102"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 67.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "76", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160103"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 15G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "66", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160104"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 30G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "19", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160105"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 45G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "60", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160106"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 67.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "39", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160107"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 87.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160108"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 15G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "48", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160109"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 30G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "45", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160110"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 45G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "42", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160111"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 67.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "44", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160112"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 87.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "29", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160113"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 45G d50/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "46", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160114"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 87.5G d50/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160115"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 45G d75/75", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160116"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 87.5G d75/75", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160117"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 45G d110/110", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "9", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160118"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 87.5G d110/110", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "6", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160119"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 87.5G d110/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "40", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160120"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 45G d110/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "19", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160121"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 87.5G d110/75", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "13", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160122"}}
+{"Bezeichnung1": "Geberit Abzweig PP-MD 45G d110/75", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160123"}}
+{"Bezeichnung1": "Geberit \u00dcberschiebemuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "12", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160124"}}
+{"Bezeichnung1": "Geberit \u00dcberschiebemuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160125"}}
+{"Bezeichnung1": "Geberit \u00dcberschiebemuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "1", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160126"}}
+{"Bezeichnung1": "Geberit Langmuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160127"}}
+{"Bezeichnung1": "Geberit Langmuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160128"}}
+{"Bezeichnung1": "Geberit Langmuffe PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "4", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-03"}
+{"index": {"_id": "160129"}}
+{"Bezeichnung1": "Geberit Reinigungsst\u00fcck PP-MD 90G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "15", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160130"}}
+{"Bezeichnung1": "Geberit Reinigungsst\u00fcck PP-MD 90G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160131"}}
+{"Bezeichnung1": "Geberit Reinigungsst\u00fcck PP-MD 90g", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "18", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160134"}}
+{"Bezeichnung1": "Geberit Reduktion PP-MD d110/75", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "10", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160137"}}
+{"Bezeichnung1": "Geberit Reduktion PP-MD d110/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "19", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160138"}}
+{"Bezeichnung1": "Geberit Reduktion PP-MD d75/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160139"}}
+{"Bezeichnung1": "Geberit Reduktion PP-MD d160/110", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160142"}}
+{"Bezeichnung1": "Geberit Muffenstopfen PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "47", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160143"}}
+{"Bezeichnung1": "Geberit Muffenstopfen PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160145"}}
+{"Bezeichnung1": "Geberit Muffenstopfen PP-MD", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160150"}}
+{"Bezeichnung1": "Geberit AnBogen PP-MD Siphon d50/46 lang", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "45", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160151"}}
+{"Bezeichnung1": "Geberit Gummi-Steckdichtung", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160153"}}
+{"Bezeichnung1": "Geberit Gummi-Steckdichtung", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160154"}}
+{"Bezeichnung1": "Geberit Gummi-Lippendichtung 32mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160155"}}
+{"Bezeichnung1": "Geberit AnStutzen PP-MD Siphon d50/58", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "160157"}}
+{"Bezeichnung1": "Geberit Rohrschelle d50 M8/10", "Bezeichnung2": "ged\u00e4mmt", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "101", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160158"}}
+{"Bezeichnung1": "Geberit Rohrschelle d75 M8/10", "Bezeichnung2": "ged\u00e4mmt", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "41", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160159"}}
+{"Bezeichnung1": "Geberit Rohrschelle d110 M8/10", "Bezeichnung2": "ged\u00e4mmt", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "109", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160161"}}
+{"Bezeichnung1": "Geberit Universal Schwimmerventil Unifill", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "20", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160163"}}
+{"Bezeichnung1": "Mepla Armaturenanschluss-Set 16-1/2 153mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160165"}}
+{"Bezeichnung1": "Mepla Metallverbundrohr 20mm", "Bezeichnung2": null, "Laenge": "5000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "180", "LagereinheitBez": "lfm", "Stellplatz": "LL-02"}
+{"index": {"_id": "160167"}}
+{"Bezeichnung1": "Mepla Metallverbundrohr 26mm", "Bezeichnung2": null, "Laenge": "5000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "280", "LagereinheitBez": "lfm", "Stellplatz": "LL-02"}
+{"index": {"_id": "160168"}}
+{"Bezeichnung1": "Mepla Metallverbundrohr 32mm", "Bezeichnung2": null, "Laenge": "5000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "340", "LagereinheitBez": "lfm", "Stellplatz": "LL-02"}
+{"index": {"_id": "160172"}}
+{"Bezeichnung1": "Mepla Kunststoff Kupplung 32", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "32", "Lagerort": null, "Lagerstand": "106", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160181"}}
+{"Bezeichnung1": "Mepla Kunststoff T-St\u00fcck 32", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "32", "Lagerort": null, "Lagerstand": "77", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160188"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 20mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "62", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160189"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 20mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "27", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160190"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 26mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "77", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160191"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 26mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160192"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 32mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "40", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160193"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 20mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160194"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 20mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "30", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160195"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 26mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "44", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160196"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 26mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "34", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160197"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 32mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "27", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "160198"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 20mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160199"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 26mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "28", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160200"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 26mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "33", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160201"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 32mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "48", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160203"}}
+{"Bezeichnung1": "Mepla Fix Anschluss gerade", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "16", "Lagerort": null, "Lagerstand": "37", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160204"}}
+{"Bezeichnung1": "Mepla Siphonbogenschelle 50/56", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "4", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160208"}}
+{"Bezeichnung1": "Mepla Schr\u00e4gsitz-Absperrventil", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "20", "Lagerort": null, "Lagerstand": "12", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160209"}}
+{"Bezeichnung1": "Geberit Entleerungsventil G1/4 f\u00fcr Mepla", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "30", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "160212"}}
+{"Bezeichnung1": "Geberit Bogen PP-MD 87.5G", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "58", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "160733"}}
+{"Bezeichnung1": "Airstop Falten-Rohrmanschette FRGD 125", "Bezeichnung2": "von 100-130mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Stk", "Stellplatz": "230-030"}
+{"index": {"_id": "160733"}}
+{"Bezeichnung1": "Airstop Falten-Rohrmanschette FRGD 125", "Bezeichnung2": "von 100-130mm", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Stk", "Stellplatz": "PL-04-08-02"}
+{"index": {"_id": "161371"}}
+{"Bezeichnung1": "Rohrfedermanometer 63mm  1/4\"unter 0-1C", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161372"}}
+{"Bezeichnung1": "Reduktion 1/2x1/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "4", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161388"}}
+{"Bezeichnung1": "Geberit PP-MD Muffendichtung", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "75", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "161389"}}
+{"Bezeichnung1": "Geberit PP-MD Muffendichtung", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "50", "Lagerort": null, "Lagerstand": "17", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "161390"}}
+{"Bezeichnung1": "Geberit PP-MD Muffendichtung", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "110", "Lagerort": null, "Lagerstand": "14", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "161457"}}
+{"Bezeichnung1": "Mepla \u00dcbergang auf Mapress 20 x 18mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "KL-11-02-03"}
+{"index": {"_id": "161461"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit AG 16mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "161462"}}
+{"Bezeichnung1": "Mepla \u00dcbergang mit IG 16mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-02"}
+{"index": {"_id": "161463"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 16mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161464"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit AG 20mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "20", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161475"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 16mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161476"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 20mm x 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "21", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161477"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 20mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "15", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161478"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 26mm x 3/4\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "19", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161479"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 26mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161480"}}
+{"Bezeichnung1": "Mepla \u00dcbergangswinkel mit IG 32mm x 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "20", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161484"}}
+{"Bezeichnung1": "Mepla \u00dcbergangsverschraubung 26mm x 3/4\" AG", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "15", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161485"}}
+{"Bezeichnung1": "Mepla \u00dcbergangsverschraubung 32mm x 1\" AG", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "14", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161486"}}
+{"Bezeichnung1": "Mepla \u00dcbergangsverschraubung 26mm x 3/4\" IG", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "17", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161487"}}
+{"Bezeichnung1": "Mepla \u00dcbergangsverschraubung 32mm x 1\" IG", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "26", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161488"}}
+{"Bezeichnung1": "Mepla Abdichtscheibe Armaturenanschluss 1/2", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "59", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161489"}}
+{"Bezeichnung1": "Z\u00e4hlerersatzst\u00fcck 5/4\" aus Kunststoff f\u00fcr 3/7 m3", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "2", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161490"}}
+{"Bezeichnung1": "Winkelanschlussverschraubung 90\u00b0 32x1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "12", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161494"}}
+{"Bezeichnung1": "Mepla Metallverbundrohr 16mm", "Bezeichnung2": null, "Laenge": "5000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "LL-02"}
+{"index": {"_id": "161499"}}
+{"Bezeichnung1": "Mepla Endadapter Sockelleiste 16", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "16", "Lagerort": null, "Lagerstand": "11", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161500"}}
+{"Bezeichnung1": "Mepla Endadapter Sockelleiste 20", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "20", "Lagerort": null, "Lagerstand": "35", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161501"}}
+{"Bezeichnung1": "Mepla Endadapter Sockelleiste 26", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "26", "Lagerort": null, "Lagerstand": "70", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161503"}}
+{"Bezeichnung1": "Mepla Schr\u00e4gsitz-Absperrventil", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "16", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161504"}}
+{"Bezeichnung1": "Mepla Schr\u00e4gsitz-Absperrventil", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "26", "Lagerort": null, "Lagerstand": "11", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161505"}}
+{"Bezeichnung1": "Mepla Schr\u00e4gsitz-Absperrventil", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "32", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "161506"}}
+{"Bezeichnung1": "Mepla Rohrbride DN22", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "299", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161507"}}
+{"Bezeichnung1": "Mepla Rohrbride DN28", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "418", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161508"}}
+{"Bezeichnung1": "BIS Einschlagd\u00fcbel", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1112", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161509"}}
+{"Bezeichnung1": "Bismat Flash 2004 Rohrschelle 3/8\" 15-18mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "67", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161510"}}
+{"Bezeichnung1": "Bismat Flash 2004 Rohrschelle 1/2\" 20-23mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "115", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161511"}}
+{"Bezeichnung1": "Bismat Flash 2004 Rohrschelle 3/4\" 25-28mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "113", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161512"}}
+{"Bezeichnung1": "Bismat Flash 2004 Rohrschelle 1\" 32-35mm", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "116", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161514"}}
+{"Bezeichnung1": "Bismat Stockschrauben M8x50", "Bezeichnung2": null, "Laenge": "50", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "229", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161515"}}
+{"Bezeichnung1": "Kemper Frostsichere Aussenarmatur 1/2\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "11", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-02"}
+{"index": {"_id": "161516"}}
+{"Bezeichnung1": "SaniMeister Gewindedichtschnur 160m", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161517"}}
+{"Bezeichnung1": "Fermit Sanit\u00e4rkitt Dose 500 gr", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161518"}}
+{"Bezeichnung1": "Sanit\u00e4rsilikon wei\u00df 310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "40", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161519"}}
+{"Bezeichnung1": "Sanit\u00e4rsilikon transp 310ml", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "55", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161530"}}
+{"Bezeichnung1": "Baustopfen 3/4\"", "Bezeichnung2": "blau", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "85", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161531"}}
+{"Bezeichnung1": "Baustopfen f\u00fcr Abflu\u00dfrohre", "Bezeichnung2": "DN 32/40/50", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "80", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "161532"}}
+{"Bezeichnung1": "Wasserz\u00e4hlergarnitur 1\"", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "5", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-03"}
+{"index": {"_id": "161545"}}
+{"Bezeichnung1": "NOVOtan Abdeckband 20 cm", "Bezeichnung2": "20 lfm / Rolle", "Laenge": "20000", "Breite": "200", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "100", "LagereinheitBez": "lfm", "Stellplatz": "PL-03-03-02"}
+{"index": {"_id": "161667"}}
+{"Bezeichnung1": "HL 410 Aufputz-WM Sifon wei\u00df", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-06-02"}
+{"index": {"_id": "161668"}}
+{"Bezeichnung1": "Geberit Reduktion PP-MD d50/40", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "21", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "161669"}}
+{"Bezeichnung1": "PK \u00dcbergangsrohr d110/50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "33", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "162164"}}
+{"Bezeichnung1": "Pfl\u00f6cke f\u00fcr BBT mit Spitz", "Bezeichnung2": "Aussteckmaterial", "Laenge": "1250", "Breite": "30", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1288", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "162212"}}
+{"Bezeichnung1": "Airfit Abwasser-Innen-Reduzierst\u00fcck aus PP 110x50", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "26", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-03"}
+{"index": {"_id": "163218"}}
+{"Bezeichnung1": "SG Nahtpaste", "Bezeichnung2": "310ml Kartusche", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "57", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-03"}
+{"index": {"_id": "163221"}}
+{"Bezeichnung1": "Wandanschlussprofil FP 60", "Bezeichnung2": null, "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "Stk", "Stellplatz": "LL-01-04"}
+{"index": {"_id": "163248"}}
+{"Bezeichnung1": "Duo Grip Abschlussprofil 2100", "Bezeichnung2": "silber Deckprofil", "Laenge": "2700", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "14", "LagereinheitBez": "Stk", "Stellplatz": "LL-01-05"}
+{"index": {"_id": "163249"}}
+{"Bezeichnung1": "Duo Grip \u00dcbergangsprofil 2210", "Bezeichnung2": "silber Deckprofil", "Laenge": "2700", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "26", "LagereinheitBez": "Stk", "Stellplatz": "LL-01-05"}
+{"index": {"_id": "163250"}}
+{"Bezeichnung1": "Duo Grip Grundprofil 4100; 6-10 mm", "Bezeichnung2": null, "Laenge": "2700", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "32", "LagereinheitBez": "Stk", "Stellplatz": "LL-01-06"}
+{"index": {"_id": "163251"}}
+{"Bezeichnung1": "Duo Grip Grundprofil 4200; 10-15 mm", "Bezeichnung2": null, "Laenge": "2700", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1", "LagereinheitBez": "Stk", "Stellplatz": "LL-01-06"}
+{"index": {"_id": "163284"}}
+{"Bezeichnung1": "EPS WDVS 032 Styroporst\u00f6psel", "Bezeichnung2": "d=68mm", "Laenge": "1000", "Breite": "0", "Hoehe": "0", "Durchmesser": "68", "Lagerort": null, "Lagerstand": "201", "LagereinheitBez": "Stk", "Stellplatz": "5.3"}
+{"index": {"_id": "163284"}}
+{"Bezeichnung1": "EPS WDVS 032 Styroporst\u00f6psel", "Bezeichnung2": "d=68mm", "Laenge": "1000", "Breite": "0", "Hoehe": "0", "Durchmesser": "68", "Lagerort": null, "Lagerstand": "201", "LagereinheitBez": "Stk", "Stellplatz": "5.3"}
+{"index": {"_id": "163284"}}
+{"Bezeichnung1": "EPS WDVS 032 Styroporst\u00f6psel", "Bezeichnung2": "d=68mm", "Laenge": "1000", "Breite": "0", "Hoehe": "0", "Durchmesser": "68", "Lagerort": null, "Lagerstand": "201", "LagereinheitBez": "Stk", "Stellplatz": "PL-06-06-03"}
+{"index": {"_id": "163316"}}
+{"Bezeichnung1": "PVC Glasklarschlauch 12x2 mm", "Bezeichnung2": "Klinger-Gebetsroither 6691202 Behka-lit", "Laenge": "50000", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "lfm", "Stellplatz": "PL-10-03-02"}
+{"index": {"_id": "163330"}}
+{"Bezeichnung1": "Frostschutz ungiftig", "Bezeichnung2": "1Gb=25kg", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "50", "LagereinheitBez": "kg", "Stellplatz": "PL-10-03-02"}
+{"index": {"_id": "163837"}}
+{"Bezeichnung1": "Baustopfen 1/2\"", "Bezeichnung2": "blau", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "117", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-07-01"}
+{"index": {"_id": "163858"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163858"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163858"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163858"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "8", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163859"}}
+{"Bezeichnung1": "Al - Sockelknie DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "10", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-01-05"}
+{"index": {"_id": "163860"}}
+{"Bezeichnung1": "Al - Rohrbogen DN 80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "15", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-01-04"}
+{"index": {"_id": "163862"}}
+{"Bezeichnung1": "Al - Rohreinm\u00fcndung 100/80", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-02-01"}
+{"index": {"_id": "163863"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163863"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163863"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163863"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "23", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163864"}}
+{"Bezeichnung1": "Al - Sockelknie DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "22", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-01-05"}
+{"index": {"_id": "163865"}}
+{"Bezeichnung1": "Al - Rohrbogen DN 100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "27", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-01-04"}
+{"index": {"_id": "163868"}}
+{"Bezeichnung1": "Al - Rohreinm\u00fcndung 100/100", "Bezeichnung2": "Farbe: anthrazit", "Laenge": "100", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "3", "LagereinheitBez": "Stk", "Stellplatz": "KL-13-01-01"}
+{"index": {"_id": "163895"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163895"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163895"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163895"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 80", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "80", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163900"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163900"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "163900"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "163900"}}
+{"Bezeichnung1": "Al - Ablaufrohr DN 100", "Bezeichnung2": "Farbe: braun", "Laenge": "3000", "Breite": "0", "Hoehe": "0", "Durchmesser": "100", "Lagerort": null, "Lagerstand": "7", "LagereinheitBez": "Stk", "Stellplatz": "LL-03"}
+{"index": {"_id": "164014"}}
+{"Bezeichnung1": "Mepla Fix Anschluss gerade", "Bezeichnung2": null, "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "20", "Lagerort": null, "Lagerstand": "29", "LagereinheitBez": "Stk", "Stellplatz": "PL-10-08-01"}
+{"index": {"_id": "164088"}}
+{"Bezeichnung1": "Zuschnitt Betoplanplatte", "Bezeichnung2": "Streifen", "Laenge": "2500", "Breite": "158", "Hoehe": "8", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164089"}}
+{"Bezeichnung1": "Zuschnitt Betoplanplatte", "Bezeichnung2": "Streifen", "Laenge": "2500", "Breite": "25", "Hoehe": "8", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "221", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164108"}}
+{"Bezeichnung1": "Sto-Pistolenschaum SE", "Bezeichnung2": "Fckw frei", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "64", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164110"}}
+{"Bezeichnung1": "ISOWINDOW Weichzellschaum 750 ml", "Bezeichnung2": "1 Ktn = 12 Dosen", "Laenge": "0", "Breite": "0", "Hoehe": "0", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "187", "LagereinheitBez": "Stk", "Stellplatz": "PL-05-03-01"}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1166", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1166", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "164390"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2600", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "1166", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164391"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2800", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164391"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2800", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "0", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "164391"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2800", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164391"}}
+{"Bezeichnung1": "GKF-Platte HRK 12.5 mm", "Bezeichnung2": "Gipskarton-Feuerschutzplatte", "Laenge": "2800", "Breite": "1250", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "700", "LagereinheitBez": "Stk", "Stellplatz": "000.000.000"}
+{"index": {"_id": "164489"}}
+{"Bezeichnung1": "Fichte KVH NSi gehobelt", "Bezeichnung2": "FH-Holz-gh", "Laenge": "5000", "Breite": "50", "Hoehe": "120", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "54", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164511"}}
+{"Bezeichnung1": "GUTEX Thermoinstal", "Bezeichnung2": null, "Laenge": "2600", "Breite": "600", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "856", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164511"}}
+{"Bezeichnung1": "GUTEX Thermoinstal", "Bezeichnung2": null, "Laenge": "2600", "Breite": "600", "Hoehe": "50", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "856", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164512"}}
+{"Bezeichnung1": "Rigidur H Gipsfaserplatte", "Bezeichnung2": null, "Laenge": "2610", "Breite": "1249", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "147", "LagereinheitBez": "Stk", "Stellplatz": null}
+{"index": {"_id": "164512"}}
+{"Bezeichnung1": "Rigidur H Gipsfaserplatte", "Bezeichnung2": null, "Laenge": "2610", "Breite": "1249", "Hoehe": "12.5", "Durchmesser": "0", "Lagerort": null, "Lagerstand": "147", "LagereinheitBez": "Stk", "Stellplatz": null}
