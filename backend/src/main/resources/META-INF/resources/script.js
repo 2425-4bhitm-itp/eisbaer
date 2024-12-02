@@ -26,29 +26,29 @@ function getArticlePosition() {
 }
 
 async function getArticlePositionWithOpenSearch() {
-
     const query = input.value;
 
-    // Create the JSON request body
     const requestBody = {
         query: {
-            match: {
-                Bezeichnung1: {
-                    query: query,
-                    fuzziness: 'AUTO',
-                    operator: 'and',
-                    prefix_length: 1
-                }
+            multi_match: {
+                query: query, // Suchbegriff
+                fields: ["Bezeichnung1", "Bezeichnung2", "Stellplatz"], // Felder, die durchsucht werden
+                fuzziness: 'AUTO', // Automatische Toleranz für Tippfehler
+                operator: 'and', // Begriffe müssen alle vorkommen
+                prefix_length: 1 // Mindestanzahl an präzisen Anfangsbuchstaben
             }
         }
     };
 
-
     try {
-        // Encode the username and password in Base64 for basic authentication
+        // Basis-URL für den Index (anpassen, falls notwendig)
+        const urlOpenSearch = 'http://localhost:9200/articles/_search';
+
+
+        // Encode Benutzername und Passwort in Base64 für Basic-Auth
         const authHeader = 'Basic ' + btoa(`${username}:${password}`);
 
-        // Send the POST request using fetch with the Authorization header
+        // POST-Anfrage senden
         const response = await fetch(urlOpenSearch, {
             method: 'POST',
             headers: {
@@ -59,18 +59,23 @@ async function getArticlePositionWithOpenSearch() {
         });
 
         if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
+            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
         }
 
+        // Antwortdaten verarbeiten
         const data = await response.json();
-        console.log('Search Results:', data.hits.hits);
-        return data.hits.hits; // Return or process the hits as needed
+        console.log('Suchergebnisse:', data.hits.hits);
+
+        // Treffer zurückgeben
+        showArticlePosition(data.hits.hits);
 
     } catch (error) {
-        console.error('Error fetching search results:', error);
+        console.error('Fehler beim Abrufen der Suchergebnisse:', error);
     }
 }
 
+
+// function only works with opensearch response. To use getArticlePosition() remove _source in position notation
 function showArticlePosition(position) {
 
     document.getElementById("queryOutput").innerHTML = "";
@@ -94,10 +99,10 @@ function showArticlePosition(position) {
         let tdMiddle = document.createElement("td");
 
         rank.innerHTML = ("" + counter + ". ");
-        tdName.innerHTML = position[i].bezeichnung1;
+        tdName.innerHTML = position[i]._source.Bezeichnung1;
         tdName.classList.add("outputName");
         tdMiddle.innerHTML = " ----- ";
-        tdPosition.innerHTML = position[i].stellplatz;
+        tdPosition.innerHTML = position[i]._source.Stellplatz;
         tdPosition.classList.add("outputPlace");
 
         tr.appendChild(rank);
