@@ -11,11 +11,11 @@ services:
       - POSTGRES_USER=demo
       - POSTGRES_DB=demo
   opensearch:
-    image: opensearch
+    image: opensearchproject/opensearch:latest
     healthcheck:
       test: curl --fail http://localhost:9200/_cluster/health
-    build:
-      context: .
+    #build:
+    #  context: .
     ports:
       - 9200:9200
       - 9600:9600
