@@ -27,6 +27,7 @@ services:
       - discovery.type=single-node
       - OPENSEARCH_SECURITY_DISABLED=true
       - OPENSEARCH_INITIAL_ADMIN_PASSWORD=Maniac4Something%VeryLong
+      - DISABLE_SECURITY_PLUGIN=true
       # CORS-Konfiguration
       - http.cors.enabled=true
       - http.cors.allow-origin=*
