@@ -8,7 +8,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     recognition = new SpeechRecognition();
 
-    recognition.lang = 'en-US'; // Set language
+    recognition.lang = 'de-DE'; // Set language
     recognition.interimResults = true;
 
     recognition.onresult = (event) => {
