@@ -130,6 +130,7 @@ function showArticlePosition(position) {
     output.appendChild(table);
 }
 
+// Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
 function debounce(func, timeout = DEBOUNCE_TIMEOUT){
     let timer;
     return (...args) => {
