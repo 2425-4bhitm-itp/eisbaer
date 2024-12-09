@@ -1,29 +1,14 @@
 const url = "http://localhost:8080/Articles/getArticle/"
 const urlOpenSearch = "http://localhost:9200/items/_search"
 
+const DEBOUNCE_TIMEOUT = 700;
+
 let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
 
 //only for testing
 const username = 'admin';
 const password = 'Str0ngP@ssw0rd!';
-
-function getArticlePosition() {
-    let id = input.value;
-    console.log(id)
-    fetch(url + id, {
-        method: 'GET',
-        headers: {
-            'Accept': 'application/json',
-        },
-    })
-        .then(response => response.json())
-        .then((response) => {
-            showArticlePosition(response);
-            console.log(response);
-        })
-        .catch(err => console.error(err));
-}
 
 async function getArticlePositionWithOpenSearch() {
     const query = input.value;
@@ -144,3 +129,13 @@ function showArticlePosition(position) {
 
     output.appendChild(table);
 }
+
+function debounce(func, timeout = DEBOUNCE_TIMEOUT){
+    let timer;
+    return (...args) => {
+        clearTimeout(timer);
+        timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+}
+
+const processChange = debounce(() => getArticlePositionWithOpenSearch());
