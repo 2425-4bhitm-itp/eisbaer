@@ -30,15 +30,42 @@ async function getArticlePositionWithOpenSearch() {
 
     const requestBody = {
         query: {
-            multi_match: {
-                query: query, // Suchbegriff
-                fields: ["Bezeichnung1", "Bezeichnung2", "Stellplatz"], // Felder, die durchsucht werden
-                fuzziness: 'AUTO', // Automatische Toleranz für Tippfehler
-                operator: 'and', // Begriffe müssen alle vorkommen
-                prefix_length: 1 // Mindestanzahl an präzisen Anfangsbuchstaben
+            bool: {
+                must: [
+                    {
+                        multi_match: {
+                            query: query, // The search term entered by the user
+                            fields: ["Bezeichnung1", "Bezeichnung2", "Stellplatz"], // Fields to be searched
+                            fuzziness: "AUTO", // Automatic tolerance for typos (string 'AUTO')
+                            operator: 'and', // All terms must match
+                            prefix_length: 1 // Minimum number of precise starting letters
+                        }
+                    }
+                ],
+                should: [
+                    {
+                        wildcard: {
+                            "Bezeichnung1": {
+                                "value": `*${query}*`, // Wildcard search for the dynamic query
+                                "case_insensitive": true
+                            }
+                        }
+                    },
+                    {
+                        match: {
+                            "Bezeichnung1": {
+                                "query": query, // Exact match search for the dynamic query
+                                "fuzziness": "AUTO", // Fuzziness for typo tolerance (string 'AUTO')
+                                "prefix_length": 1
+                            }
+                        }
+                    }
+                ],
+                minimum_should_match: 1 // At least one of the should conditions should match
             }
         }
     };
+
 
     try {
         // Basis-URL für den Index (anpassen, falls notwendig)
