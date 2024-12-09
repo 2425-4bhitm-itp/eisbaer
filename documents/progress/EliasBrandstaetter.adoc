@@ -5,19 +5,4 @@
 toc::[]
 
 == 2024-09-12
-* Write
-* your
-* progress
-* here
-
-== 2024-09-12
-* Write
-* your
-* progress
-* here
-
-== 2024-09-12
-* Write
-* your
-* progress
-* here
+* added 2d polar bear avatar (link:./../../backend/src/main/resources/META-INF/resources/2d/avatar.ai[avatar.ai]) +
