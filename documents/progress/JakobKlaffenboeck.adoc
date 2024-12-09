@@ -1,0 +1,75 @@
+:toc:
+
+= Jakob Klaffenboeck - Progess
+
+== 9-12-2024 Progress
+
+=== Speech to Text implementation Research
+
+=== HTML - simple buttons idea
+
+[source, html]
+----
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech-to-Text Example</title>
+</head>
+<body>
+    <h1>Speech-to-Text Example</h1>
+    <button id="start">Start Recording</button>
+    <button id="stop">Stop Recording</button>
+    <p id="output">Transcribed Text: <span></span></p>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+----
+
+=== Java Script potential solution
+
+- Using web speech API
+
+[source, sql]
+----
+const startButton = document.getElementById('start');
+const stopButton = document.getElementById('stop');
+const output = document.getElementById('output').querySelector('span');
+
+let recognition;
+
+if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+
+    recognition.lang = 'en-US'; // Set language
+    recognition.interimResults = true;
+
+    recognition.onresult = (event) => {
+        const transcript = Array.from(event.results)
+            .map(result => result[0])
+            .map(result => result.transcript)
+            .join('');
+        output.textContent = transcript;
+    };
+
+    recognition.onerror = (event) => {
+        console.error('Speech Recognition Error:', event.error);
+    };
+} else {
+    alert('Your browser does not support Speech Recognition.');
+}
+
+startButton.addEventListener('click', () => {
+    if (recognition) recognition.start();
+});
+
+stopButton.addEventListener('click', () => {
+    if (recognition) recognition.stop();
+});
+
+----
