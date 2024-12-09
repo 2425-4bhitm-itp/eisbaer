@@ -33,6 +33,9 @@
 === Java Script potential solution
 
 - Using web speech API
+- Demonstration of Web Speech Recognition API vs Speechly:
+- link: https://www.youtube.com/watch?v=1hcdCrFl-MQ
+
 
 [source, sql]
 ----
