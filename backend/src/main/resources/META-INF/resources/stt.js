@@ -1,5 +1,4 @@
 const startButton = document.getElementById('start');
-const stopButton = document.getElementById('stop');
 const speechOutput = document.getElementById('userInput')
 
 let recognition;
@@ -30,8 +29,4 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
 startButton.addEventListener('click', () => {
     console.log('Start listening...');
     if (recognition) recognition.start();
-});
-
-stopButton.addEventListener('click', () => {
-    if (recognition) recognition.stop();
 });
