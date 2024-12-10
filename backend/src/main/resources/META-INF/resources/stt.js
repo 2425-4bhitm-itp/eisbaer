@@ -1,6 +1,6 @@
 const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
-const output = document.getElementById('userInput').querySelector('span');
+const speechOutput = document.getElementById('userInput')
 
 let recognition;
 
@@ -16,7 +16,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             .map(result => result[0])
             .map(result => result.transcript)
             .join('');
-        output.textContent = transcript;
+        speechOutput.value = transcript;
     };
 
     recognition.onerror = (event) => {
@@ -27,6 +27,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
 }
 
 startButton.addEventListener('click', () => {
+    console.log('Start listening...');
     if (recognition) recognition.start();
 });
 

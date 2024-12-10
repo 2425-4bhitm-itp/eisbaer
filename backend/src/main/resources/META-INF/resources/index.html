@@ -14,6 +14,7 @@
   <title>EISBÄR</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
+  <script src="stt.js" defer></script>
   <script type="module" src="3dModel.js"></script>
 
 </head>
@@ -43,7 +44,7 @@
       </div>
 
       <div id="inputButtons">
-        <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." onkeyup="processChange()">
+        <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." onchange="processChange()">
         <!--<input type="submit" id="submitButton" name="submit" value="Suchen" onclick="getArticlePositionWithOpenSearch()">-->
         <button id="start">Start</button>
         <button id="stop">Stop</button>
