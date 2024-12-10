@@ -1,6 +1,6 @@
 const startButton = document.getElementById('start');
 const stopButton = document.getElementById('stop');
-const output = document.getElementById('output').querySelector('span');
+const output = document.getElementById('userInput').querySelector('span');
 
 let recognition;
 
