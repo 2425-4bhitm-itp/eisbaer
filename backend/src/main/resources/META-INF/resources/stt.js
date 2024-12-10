@@ -17,6 +17,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             .map(result => result.transcript)
             .join('');
         speechOutput.value = transcript;
+        processChange();
     };
 
     recognition.onerror = (event) => {
