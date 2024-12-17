@@ -1,3 +1,5 @@
+let checkIfFirstTime = true;
+
 const beginningText = document
     .getElementsByClassName("transcriptText")[0]
     .innerHTML;
@@ -18,7 +20,7 @@ function speak(textToBeSpoken) {
     utterance.lang = "de-DE";
 
     // Sprechgeschwindigkeit (1.0 ist Standard)
-    utterance.rate = 0.5;
+    utterance.rate = 0.9;
 
     utterance.pitch = 0.5;
 
@@ -31,5 +33,8 @@ function stopSpeech() {
 }
 
 document.body.addEventListener("click", function() {
-    speak(beginningText);
+    if(checkIfFirstTime) {
+        speak(beginningText);
+        checkIfFirstTime = false;
+    }
 });
