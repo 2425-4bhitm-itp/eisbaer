@@ -30,4 +30,6 @@ function stopSpeech() {
     window.speechSynthesis.cancel();
 }
 
-speak(beginningText);
+document.body.addEventListener("click", function() {
+    speak(beginningText);
+});
