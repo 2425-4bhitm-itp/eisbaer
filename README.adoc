@@ -80,8 +80,8 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 
 === Start Postgres and OpenSearch
 1. Open the console in your IDE
-2. type command 'cd backend/src/main/docker' to move to folder 'docker'
-3. type command 'docker-compose up' or 'docker compose up' depending on your version of docker compose
+2. type command 'cd docker-compose' to move to folder 'docker-compose'
+3. type command 'docker compose up' to start the docker container which contains Postgres and OpenSearch
 
 === Start Quarkus
 1. Open the console in your IDE
@@ -89,6 +89,11 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 3. Type command 'mvn clean quarkus:dev'
 
 === View the frontend of the project
-1. Open your preferred Browser
+1. Open your preferred Browser (works best with Google Chrome)
 2. type 'http://localhost:8080/' and press enter
+
+== Shutdown Guide
+1. Open the terminal where you started quarkus and press 'q'
+2. Open a new terminal and move to the docker-compose folder with the command 'cd docker-compose'
+3. Shut down the docker container with 'docker compose down'
 
