@@ -93,7 +93,13 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 2. type 'http://localhost:8080/' and press enter
 
 == Shutdown Guide
-1. Open the terminal where you started quarkus and press 'q'
-2. Open a new terminal and move to the docker-compose folder with the command 'cd docker-compose'
+
+=== Shutdown Quarkus
+1. Open the terminal where you started quarkus
+2. Press 'q' to shutdown quarkus
+
+=== Shutdown Postgres and OpenSearch
+1. Open a new terminal 
+2. Move to the docker-compose folder with the command 'cd docker-compose'
 3. Shut down the docker container with 'docker compose down'
 
