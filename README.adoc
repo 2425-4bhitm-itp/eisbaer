@@ -72,34 +72,34 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 2. Select 'SSH'
 3. Copy the path
 4. Open the command line and move to your preferred folder
-5. Type the command 'git clone <path>'
+5. Type the command `git clone <path>`
 
 === Open the project
-1. On the command line move to the folder 'eisbaer' with the command 'cd eisbaer'
-2. open the project with your preferred IDE (With command: 'idea .' or 'code .')
+1. On the command line move to the folder 'eisbaer' with the command `cd eisbaer`
+2. open the project with your preferred IDE (With command: `idea .` or `code .`)
 
 === Start Postgres and OpenSearch
 1. Open the console in your IDE
-2. type command 'cd docker-compose' to move to folder 'docker-compose'
-3. type command 'docker compose up' to start the docker container which contains Postgres and OpenSearch
+2. type command `cd docker-compose` to move to folder 'docker-compose'
+3. type command `docker compose up` to start the docker container which contains Postgres and OpenSearch
 
 === Start Quarkus
 1. Open the console in your IDE
-2. move to the backend folder with 'cd backend'
-3. Type command 'mvn clean quarkus:dev'
+2. move to the backend folder with `cd backend`
+3. Type command `mvn clean quarkus:dev`
 
 === View the frontend of the project
 1. Open your preferred Browser (works best with Google Chrome)
-2. type 'http://localhost:8080/' and press enter
+2. type `http://localhost:8080/` and press enter
 
 == Shutdown Guide
 
 === Shutdown Quarkus
 1. Open the terminal where you started quarkus
-2. Press 'q' to shutdown quarkus
+2. Press `q` to shutdown quarkus
 
 === Shutdown Postgres and OpenSearch
 1. Open a new terminal 
-2. Move to the docker-compose folder with the command 'cd docker-compose'
-3. Shut down the docker container with 'docker compose down'
+2. Move to the docker-compose folder with the command `cd docker-compose`
+3. Shut down the docker container with `docker compose down`
 
