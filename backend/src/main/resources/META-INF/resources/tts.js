@@ -6,25 +6,33 @@ const beginningText = document
 
 console.log("textToBeSpoken: " + beginningText);
 
+//Log all available voices
+const voices = window.speechSynthesis.getVoices();
+console.log(voices);
+
 function speak(textToBeSpoken) {
 
+    // Check if the browser supports the SpeechSynthesis API
     if (!window.speechSynthesis) {
         alert("Text-to-Speech wird von deinem Browser nicht unterstützt.");
         return;
     }
 
-    // Neue SpeechSynthesisUtterance erstellen
+    // Create a new instance of SpeechSynthesisUtterance
     const utterance = new SpeechSynthesisUtterance(textToBeSpoken);
 
-    // Stimme und Sprache festlegen (z. B. Deutsch)
+    // Set language to German
     utterance.lang = "de-DE";
 
-    // Sprechgeschwindigkeit (1.0 ist Standard)
+    // Speaking speed and pitch (standard: 1)
     utterance.rate = 0.9;
 
     utterance.pitch = 0.5;
 
-    // Text sprechen
+    // Set the voice
+    utterance.voice = voices[0];
+
+    // speak the text
     window.speechSynthesis.speak(utterance);
 }
 
