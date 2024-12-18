@@ -10,10 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #F0F0F0;
+    overflow-x: hidden;
 }
 
 /* CONTAINERS */
-
 #content {
     display: flex;
 
@@ -50,9 +51,13 @@ body {
 
 #inputButtons {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     width: 45vw;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    bottom: -11vh;
 }
 
 /* PROPERTIES */
@@ -63,7 +68,7 @@ h1 {
 }
 
 input {
-    margin: 0.5em;
+    margin: 1.5em;
 }
 
 #userInput {
@@ -73,6 +78,20 @@ input {
 
 #submitButton {
     padding: 0.5em;
+}
+
+#start {
+    background-color: #007AFF;
+    border-radius: 100%;
+    border-color: rgba(0, 255, 255, 0);
+    width: 10vh;
+    height: 10vh;
+    /*align-self: center;*/
+}
+
+#start-image {
+    width: 5vh;
+    height: 5vh;
 }
 
 #queryOutput {
@@ -91,15 +110,16 @@ input {
 }
 
 .transcriptName {
-    margin-left: 0.5vw;
+    margin-left: 2.5vw;
     font-size: 90%;
     font-style: italic;
 }
 
 .transcriptText {
-    background-color: #dedede;
+    background-color: #D9D9D9;
     padding: 1vw;
     margin-bottom: 1em;
     border-radius: 0.5em;
-
+    margin-left: 2vw;
+    width: fit-content;
 }
