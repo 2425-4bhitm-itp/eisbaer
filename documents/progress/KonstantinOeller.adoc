@@ -1,0 +1,9 @@
+:toc: macro
+
+= Progress Konstantin Oeller
+
+toc::[]
+
+== 2024-10-12
+* added JS text to speech (AI Text to speech Libraries need
+to be paid. Google api has 1 Mio free Characters per month)
