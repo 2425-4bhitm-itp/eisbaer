@@ -13,7 +13,7 @@ function speak() {
     utterance.lang = "de-DE";
 
     // Sprechgeschwindigkeit (1.0 ist Standard)
-    utterance.rate = 0.5;
+    utterance.rate = 0.7;
 
     utterance.pitch = 0.5;
 
@@ -25,3 +25,5 @@ function speak() {
 function stopSpeech() {
     window.speechSynthesis.cancel();
 }
+
+speak();
