@@ -122,6 +122,9 @@ function showArticlePosition(position) {
         tr.appendChild(tdMiddle);
         tr.appendChild(tdPosition);
 
+        speak(tdName.innerHTML);
+        speak("Position: " + tdPosition.innerHTML);
+
         table.appendChild(tr);
 
         counter++;
