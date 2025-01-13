@@ -11,3 +11,5 @@ But we are looking for a German male voice. Also, it sounds very robotic and not
 
 We are now trying with 'ResponiveVoice' which is a text-to-speech library that can be used
 to create speech-enabled web applications.
+
+https://responsivevoice.org/api/
