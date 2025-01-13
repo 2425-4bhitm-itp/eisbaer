@@ -76,3 +76,24 @@ stopButton.addEventListener('click', () => {
 });
 
 ----
+
+
+== 13-1-2025 Progress
+
+=== Recognising when mic is recording
+
+[source, javascript]
+----
+    recognition.onstart = () => {
+        console.log('Speech recognition started');
+        // Perform an action when recording starts
+        document.body.style.backgroundColor = 'lightblue'; // Example action
+    };
+
+    recognition.onend = () => {
+        console.log('Speech recognition ended');
+        // Perform an action when recording ends
+        document.body.style.backgroundColor = ''; // Example action
+    };
+
+----
