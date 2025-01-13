@@ -4,4 +4,10 @@
 
 toc::[]
 
-== 2024-09-12
+== 2025-13-01
+=== Trying to change the voice of the polar bear
+With Google Chromes standard voice API it only provides a German female voice or an English male voice.
+But we are looking for a German male voice. Also, it sounds very robotic and not natural.
+
+We are now trying with 'ResponiveVoice' which is a text-to-speech library that can be used
+to create speech-enabled web applications.
