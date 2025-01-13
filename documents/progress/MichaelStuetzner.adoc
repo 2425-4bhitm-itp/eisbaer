@@ -13,3 +13,7 @@ We are now trying with 'ResponiveVoice' which is a text-to-speech library that c
 to create speech-enabled web applications.
 
 https://responsivevoice.org/api/
+
+Implement this script to the project to use the API:
+
+* <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_KEY"></script>
