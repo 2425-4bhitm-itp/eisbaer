@@ -95,7 +95,12 @@ input {
 }
 
 #queryOutput {
-    margin-left: 5%;
+    width: 80%;
+    background-color: #D9D9D9;
+    padding: 1vw;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    margin-left: 2vw;
 }
 
 .outputName {
@@ -122,4 +127,8 @@ input {
     border-radius: 0.5em;
     margin-left: 2vw;
     width: fit-content;
+}
+
+.hidden {
+    display:none;
 }
