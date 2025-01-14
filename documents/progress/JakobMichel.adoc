@@ -1,0 +1,9 @@
+## Research about LLM
+
+standart opensearch ansatz:
+
+- https://opensearch.org/docs/latest/search-plugins/conversational-search/
+
+Anderer Ansatz:
+
+- https://www.alibabacloud.com/help/en/open-search/vector-search-edition/integrate-opensearch-with-an-llm-for-intelligent-operation-and-maintenance
