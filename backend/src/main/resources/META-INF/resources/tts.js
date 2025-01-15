@@ -30,7 +30,9 @@ function processQueue() {
 
     // Hole den nächsten Text aus der Warteschlange
     const nextText = textQueue.shift();
-    if (!nextText) return; // Keine Texte mehr in der Warteschlange
+    if (!nextText) {
+        return;
+    } // Keine Texte mehr in der Warteschlange
 
     isSpeaking = true;
     responsiveVoice.speak(nextText, voice, {
