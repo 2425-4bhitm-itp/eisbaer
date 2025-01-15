@@ -89,7 +89,6 @@ async function getArticlePositionWithOpenSearch() {
 
 // function only works with opensearch response. To use getArticlePosition() remove _source in position notation
 function showArticlePosition(position) {
-
     document.getElementById("queryOutput").innerHTML = "";
 
     let table = document.createElement("table");
@@ -131,6 +130,8 @@ function showArticlePosition(position) {
     }
 
     output.appendChild(table);
+    queryOutput.classList.remove("hidden");
+    animateChat(position.length);
 }
 
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
@@ -140,6 +141,17 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
         clearTimeout(timer);
         timer = setTimeout(() => { func.apply(this, args); }, timeout);
     };
+}
+
+function animateChat(positionLength) {
+    const queryOutput = document.getElementById("queryOutput");
+
+    if (positionLength === 0) {
+        queryOutput.classList.add("hidden");
+    }
+
+
+
 }
 
 const processChange = debounce(() => getArticlePositionWithOpenSearch());

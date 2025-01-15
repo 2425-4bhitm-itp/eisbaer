@@ -97,3 +97,81 @@ stopButton.addEventListener('click', () => {
     };
 
 ----
+
+== 15-01-2025 Progress
+
+=== Chat History
+
+[source, javascript]
+----
+
+function animateChat(positionLength) {
+    const queryOutput = document.getElementById("queryOutput");
+    const chatHistory = document.getElementById("chatHistory");
+    const userInput = document.getElementById("userInput");
+
+    if (positionLength === 0) {
+        queryOutput.classList.add("hidden");
+        return;
+    }
+
+    // Create a new chat entry
+    const chatEntry = document.createElement("div");
+    chatEntry.classList.add("chatEntry");
+
+    // Add user query
+    const userQuery = document.createElement("p");
+    userQuery.classList.add("userQuery");
+    userQuery.textContent = userInput.value;
+    chatEntry.appendChild(userQuery);
+
+    // Add search results
+    const resultsContainer = document.createElement("div");
+    resultsContainer.classList.add("resultsContainer");
+    resultsContainer.innerHTML = queryOutput.innerHTML;
+    chatEntry.appendChild(resultsContainer);
+
+    // Append the chat entry to the chat history
+    chatHistory.appendChild(chatEntry);
+
+    // Clear the input field
+    userInput.value = "";
+
+    queryOutput.classList.add("hidden");
+}
+
+
+----
+
+[source, html]
+----
+<div id="chatHistory"></div>
+----
+
+[source, css]
+----
+#chatHistory {
+    width: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    margin-bottom: 1em;
+}
+
+.chatEntry {
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-radius: 0.5em;
+}
+
+.userQuery {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.resultsContainer {
+    background-color: #D9D9D9;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+----
