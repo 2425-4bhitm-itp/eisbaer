@@ -104,3 +104,5 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 ** Used for creating an AI-talking-video out of an image
 * **Seamless Loop Video Maker** (https://tech-lagoon.com/moviechef/en/movie-seamless-loop.html)
 ** Used for creating a loop out of the talking-video
+* **Unscreen** (https://www.unscreen.com/)
+** Used for removing background of a video
