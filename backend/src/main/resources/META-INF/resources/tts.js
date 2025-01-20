@@ -35,10 +35,15 @@ function processQueue() {
     } // Keine Texte mehr in der Warteschlange
 
     isSpeaking = true;
+    changeToSpeakAvatar();
+    console.log("Sprechen beginnt");
+
     responsiveVoice.speak(nextText, voice, {
         onend: () => {
             // Markiere, dass das Sprechen beendet wurde
             isSpeaking = false;
+            changeToDefaultAvatar();
+            console.log("Sprechen beendet");
             // Verarbeite den nächsten Text
             processQueue();
         }
@@ -51,3 +56,15 @@ document.body.addEventListener("click", function() {
          checkIfFirstTime = false;
      }
 });
+
+const img = document.getElementById("2dAvatar");
+
+function changeToSpeakAvatar() {
+    console.log("changeToSpeakAvatar");
+    img.src = "./video/seamless-loop-talking-unscreen.gif";
+}
+
+function changeToDefaultAvatar() {
+    console.log("changeToDefaultAvatar");
+    img.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+}
