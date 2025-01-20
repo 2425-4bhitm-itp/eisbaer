@@ -145,12 +145,36 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
 
 function animateChat(positionLength) {
     const queryOutput = document.getElementById("queryOutput");
+    const chatHistory = document.getElementById("chatHistory");
+    const userInput = document.getElementById("userInput");
 
     if (positionLength === 0) {
         queryOutput.classList.add("hidden");
+        return;
     }
 
+    const chatEntry1 = document.createElement("div");
+    chatEntry1.classList.add("chatUserEntry");
 
+    const userQuery = document.createElement("div");
+    userQuery.classList.add("userQuery");
+    userQuery.textContent = userInput.value;
+    chatEntry1.appendChild(userQuery);
+
+    const chatEntry2 = document.createElement("div");
+    chatEntry2.classList.add("chatEntry");
+
+    const resultsContainer = document.createElement("div");
+    resultsContainer.classList.add("resultsContainer");
+    resultsContainer.innerHTML = queryOutput.innerHTML;
+    chatEntry2.appendChild(resultsContainer);
+
+    chatHistory.appendChild(chatEntry1);
+    chatHistory.appendChild(chatEntry2);
+    userInput.value = "";
+    queryOutput.classList.add("hidden");
+
+    chatEntry2.scrollIntoView({ behavior: "smooth" });
 
 }
 

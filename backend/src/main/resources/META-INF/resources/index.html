@@ -30,7 +30,7 @@
 <!--  </div>-->
 
   <div style="width: 50vw; height: 100vh; background-color:white; display: flex; justify-content: center; align-items: center">
-    <img src="./video/seamless-loop-talking-unscreen.gif" alt="EISBÄR" width="60%">
+    <img src="./video/seamless-loop-talking-unscreen.gif" alt="EISBÄR" width="60%" id="2dAvatar">
   </div>
 
 
@@ -39,21 +39,19 @@
   <div id="outputContainer">
 
     <div id="transcriptContainer">
-      <!-- Transcript is generated here -->
-      <div id="0transcript" class="transcriptEntry">
-        <p class="transcriptName">Eisbär:</p>
-        <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
+      <div id="chatHistory">
+        <div id="0transcript" class="transcriptEntry">
+          <p class="transcriptName">Eisbär:</p>
+          <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
+        </div>
       </div>
 
+      <div id="queryOutput" class="hidden"></div>
 
 
     </div>
 
     <div id="queryInputContainer">
-      <div id="queryOutput" class="hidden">
-        <!-- Query results are generated here -->
-      </div>
-
       <div id="inputButtons">
         <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." onkeyup="processChange()">
         <button id="start"><img id="start-image" src="img/microphone_white.png"></button>
