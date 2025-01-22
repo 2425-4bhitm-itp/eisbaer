@@ -95,9 +95,9 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 === Shutdown Postgres and OpenSearch
 1. In the same terminal run down.sh with `./down.sh`
 
-== Avatar
+== Technologies
 
-=== Technologies
+=== Avatar
 * **ChatGPT** (https://chatgpt.com/)
 ** Used for creating an image of an polar bear
 * **Vidnnoz** (https://www.vidnoz.com/)
@@ -106,3 +106,7 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 ** Used for creating a loop out of the talking-video
 * **Unscreen** (https://www.unscreen.com/)
 ** Used for removing background of a video
+
+=== Evaluation
+
+==== OpenSearch vs ElasticSearch
