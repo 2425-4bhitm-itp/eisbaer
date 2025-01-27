@@ -107,6 +107,35 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 * **Unscreen** (https://www.unscreen.com/)
 ** Used for removing background of a video
 
-=== Evaluation
+=== Technologie-Evaluierung: OpenSearch vs Elasticsearch
 
-==== OpenSearch vs ElasticSearch
+==== Einführung
+Für das Eisbär-Projekt, das eine interaktive Produktsuche ermöglicht, ist die Wahl der geeigneten Such- und Analyseplattform entscheidend. Diese Evaluierung vergleicht die beiden Plattformen OpenSearch und Elasticsearch in den Bereichen Lizenzierung, Funktionen, Cloud-Integration, Leistung und Sicherheit.
+
+==== Lizenzierung und Community
+*Elasticsearch*: Wechselte von der Apache 2.0-Lizenz zu restriktiveren Lizenzen wie der Server Side Public License (SSPL) und der Elastic License, was insbesondere bei der Nutzung in Cloud-Umgebungen Einschränkungen verursacht.
+
+*OpenSearch*: Vollständig Open-Source unter der Apache 2.0-Lizenz. Dies ermöglicht eine freie Nutzung, Anpassung und Verbreitung ohne Vendor-Lock-in. OpenSearch wird von einer aktiven Open-Source-Community vorangetrieben.
+
+==== Funktionen und Plugins
+*Elasticsearch*: Bietet ein ausgereiftes Ökosystem mit Tools wie Kibana und Plugins für maschinelles Lernen und Anomalieerkennung. Einige dieser Funktionen sind jedoch proprietär und erfordern kostenpflichtige Lizenzen.
+
+*OpenSearch*: Verfügt über OpenSearch Dashboards als Alternative zu Kibana sowie Open-Source-Plugins für Sicherheit, Observability und Benachrichtigungen. Die Funktionen decken die meisten Anwendungsfälle ab, jedoch ohne proprietäre Features wie Elasticsearchs maschinelles Lernen.
+
+==== Cloud-Integrationen
+*Elasticsearch*: Elastic Cloud bietet eine umfassende Unterstützung für AWS, Azure und Google Cloud und ermöglicht eine nahtlose Integration mit dem Elastic-Ökosystem.
+
+*OpenSearch*: Optimiert für den Amazon OpenSearch Service und tief in AWS-Dienste wie Lambda und S3 integriert. Die Plattform ist einfach in selbstgehosteten oder alternativen Cloud-Umgebungen bereitzustellen.
+
+==== Leistung und Skalierbarkeit
+*Elasticsearch*: Hohe Leistung und Skalierbarkeit bei groß angelegten Datenverarbeitungen, unterstützt durch fortschrittliche Optimierungen und proprietäre Funktionen.
+
+*OpenSearch*: Vergleichbare Leistung und Skalierbarkeit, die durch eine aktive Community kontinuierlich verbessert wird. OpenSearch erfordert jedoch möglicherweise zusätzliche Feinabstimmungen bei komplexen Szenarien.
+
+==== Sicherheit
+*Elasticsearch*: Sicherheitsfunktionen wie rollenbasierte Zugriffskontrolle (RBAC) und Audit-Protokollierung sind Teil der Premium-Angebote.
+
+*OpenSearch*: Integrierte Sicherheits-Plugins stehen kostenfrei zur Verfügung, einschließlich RBAC, Verschlüsselung und Audit-Logging. Diese Funktionen sind vollständig Open-Source.
+
+==== Fazit
+Für das Eisbär-Projekt stellt OpenSearch die bessere Wahl dar. Die Plattform bietet eine offene, lizenzkostenfreie Lösung, die durch die Apache 2.0-Lizenz Flexibilität und langfristige Planungssicherheit gewährleistet. Mit starken AWS-Integrationen, umfassenden Sicherheitsfunktionen und einer aktiven Community erfüllt OpenSearch die Anforderungen des Projekts optimal. Elasticsearch bietet zwar zusätzliche Funktionen, doch die Lizenzkosten und potenziellen Einschränkungen durch proprietäre Lizenzen machen es weniger attraktiv. OpenSearch ist daher die wirtschaftlichere und zukunftssichere Option.
