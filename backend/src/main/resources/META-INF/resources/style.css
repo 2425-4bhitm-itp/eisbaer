@@ -196,4 +196,13 @@ input {
         width: 100vw;
         height: 50vh
     }
+
+    #outputContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 100vw;
+        height: 50vh;
+    }
 }
