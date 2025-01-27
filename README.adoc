@@ -139,3 +139,18 @@ Für das Eisbär-Projekt, das eine interaktive Produktsuche ermöglicht, ist die
 
 ==== Fazit
 Für das Eisbär-Projekt stellt OpenSearch die bessere Wahl dar. Die Plattform bietet eine offene, lizenzkostenfreie Lösung, die durch die Apache 2.0-Lizenz Flexibilität und langfristige Planungssicherheit gewährleistet. Mit starken AWS-Integrationen, umfassenden Sicherheitsfunktionen und einer aktiven Community erfüllt OpenSearch die Anforderungen des Projekts optimal. Elasticsearch bietet zwar zusätzliche Funktionen, doch die Lizenzkosten und potenziellen Einschränkungen durch proprietäre Lizenzen machen es weniger attraktiv. OpenSearch ist daher die wirtschaftlichere und zukunftssichere Option.
+
+
+== ChatGPT 3.5 Turbo vs Mistral
+
+=== Entscheidungshilfe
+
+[cols="1,1,1", options="header"]
+|===
+| Kriterium        | GPT-3.5 Turbo                 | Mistral
+| Einfachheit      | Hoch                          | Mittel
+| Kosten           | Bezahlt pro Nutzung           | Kostenlos, eigene Ressourcen
+| Anpassbarkeit    | Gering                        | Hoch
+| Skalierbarkeit   | Sehr hoch                     | Mittel
+| Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich
+|===
