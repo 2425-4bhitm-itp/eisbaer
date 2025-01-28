@@ -142,6 +142,9 @@ Für das Eisbär-Projekt stellt OpenSearch die bessere Wahl dar. Die Plattform b
 
 === ChatGPT 3.5 Turbo vs Mistral
 
+GPT 3.5 ist integriert in die OpenSearch KI Unterstützung und OpenSearch wurde ausschließlich mit OpenAI Produkten getestet
+.
+
 [cols="1,1,1", options="header"]
 |===
 | Kriterium        | GPT-3.5 Turbo                 | Mistral
