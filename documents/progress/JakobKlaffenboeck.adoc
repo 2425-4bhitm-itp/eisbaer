@@ -175,3 +175,24 @@ function animateChat(positionLength) {
     border-radius: 0.5em;
 }
 ----
+
+== 30-01-2025
+
+=== LLM evaluation
+
+- DeepSeek
+- ChatGPT
+- Mistral
+
+==== Different Models Docs:
+- https://api-docs.deepseek.com/
+- https://chatgpt.com/g/g-VTUNFyGKk-gpt-api-key-assistance
+- https://docs.aicontentlabs.com/articles/mistral-ai-api-key/
+- https://console.mistral.ai/api-keys/
+
+=== Prices
+- ChatGPT 3.5: 8k context: ~$0.0015/1k tokens (input), ~$0.002/1k tokens (output).
+- DeepSeek: Gratis bei lokalem Hosting des Service, sonst $0.014 = 1M Tokens (input),  $0.28 = 1M Tokens (output)
+* https://api-docs.deepseek.com/quick_start/pricing
+- Mistral:
+* https://mistral.ai/technology/#pricing

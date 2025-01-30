@@ -145,12 +145,12 @@ Für das Eisbär-Projekt stellt OpenSearch die bessere Wahl dar. Die Plattform b
 GPT 3.5 ist integriert in die OpenSearch KI Unterstützung und OpenSearch wurde ausschließlich mit OpenAI Produkten getestet
 .
 
-[cols="1,1,1", options="header"]
+[cols="1,1,1,1", options="header"]
 |===
-| Kriterium        | GPT-3.5 Turbo                 | Mistral
-| Einfachheit      | Hoch                          | Mittel
-| Kosten           | Bezahlt pro Nutzung           | Kostenlos, eigene Ressourcen
-| Anpassbarkeit    | Gering                        | Hoch
-| Skalierbarkeit   | Sehr hoch                     | Mittel
-| Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich
+| Kriterium        | GPT-3.5 Turbo                 | Mistral                    | DeepSeek
+| Einfachheit      | Hoch                          | Mittel                     | Mittel
+| Kosten           | Bezahlt pro Nutzung           | eigene Ressourcen          |
+| Anpassbarkeit    | Gering                        | Hoch                       |
+| Skalierbarkeit   | Sehr hoch                     | Mittel                     |
+| Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich  |
 |===
