@@ -1,6 +1,7 @@
     #!/bin/bash
 
-    source .env
+     # Load environment variables
+     source .env
 
     pushd ./backend/src/main/opensearch
 
@@ -29,7 +30,7 @@
         "temperature": 0
       },
       "credential": {
-        "openAI_key": "$API_KEY"
+        "openAI_key": "'"$OPENAI_API_KEY"'"
       },
       "actions": [
         {
