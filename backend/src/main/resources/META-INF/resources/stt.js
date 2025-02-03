@@ -32,10 +32,16 @@ startButton.addEventListener('click', () => {
 });
 
 function writeText(text) {
+
+    if (text === '' || text == null) {
+        return;
+    }
+
     let chat = document.getElementById("chatHistory");
 
     let box = document.createElement("div");
     box.classList.add("transcriptEntry");
+    box.classList.add("boxRight")
 
     let name = document.createElement("p");
     name.classList.add("transcriptName");

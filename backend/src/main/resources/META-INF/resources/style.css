@@ -2,6 +2,8 @@
 
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Verdana', sans-serif;
 }
 
@@ -39,7 +41,6 @@ body {
 
 #transcriptContainer {
     height: fit-content;
-    /*height: fit-content;*/
     margin-top: 5vh;
     overflow: auto;
 
@@ -53,7 +54,6 @@ body {
     position: relative;
     bottom: 1em;
     margin-top: 2.5em;
-
 }
 
 #queryOutput {
@@ -119,13 +119,13 @@ input {
 
 /* Chat History */
 
-.transcriptEntry:nth-child(odd) {
+.boxLeft {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
-.transcriptEntry:nth-child(even) {
+.boxRight {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap-reverse;
@@ -214,8 +214,17 @@ input {
         height: 50vh;
     }
 
+    #transcriptContainer {
+        width: fit-content;
+        margin-bottom: 5vh;
+        overflow: auto;
+
+        position: relative;
+        bottom: 1em;
+    }
+
     #chatHistory {
-        width: 100%;
+        width: 100vw;
         height: 100%;
         margin-bottom: 1em;
         display: flex;
@@ -230,3 +239,23 @@ input {
 
 
 }
+
+/*#outputContainer {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around;*/
+
+/*    width: 50vw;*/
+/*    height: 100vh;*/
+/*    !* padding: 2.5em; *!*/
+/*}*/
+
+
+
+
+/*#queryInputContainer {*/
+/*    position: relative;*/
+/*    bottom: 1em;*/
+/*    margin-top: 2.5em;*/
+
+/*}*/

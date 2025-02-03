@@ -199,6 +199,7 @@ function showArticlePositionLLM(position) {
 
     let box = document.createElement("div");
     box.classList.add("transcriptEntry");
+    box.classList.add("boxLeft")
 
     let name = document.createElement("p");
     name.classList.add("transcriptName");
