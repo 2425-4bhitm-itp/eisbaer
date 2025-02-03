@@ -83,8 +83,8 @@
             \"description\": \"Pipeline Using OpenAI Connector\",
             \"model_id\": \"$MODEL_ID\",
             \"context_field_list\": [\"text\"],
-            \"system_prompt\": \"You are a helpful assistant\",
-            \"user_instructions\": \"Generate a concise and informative answer in less than 100 words for the given question\"
+            \"system_prompt\": \"You are a helpful assistent\",
+            \"user_instructions\": \"Generate a concise and informative answer in less than 100 words for the given question in german\"
           }
         }
       ]
