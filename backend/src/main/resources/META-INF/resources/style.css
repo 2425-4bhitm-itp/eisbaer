@@ -38,17 +38,22 @@ body {
 }
 
 #transcriptContainer {
-    width: 100%;
-    height: 70%;
+    height: fit-content;
+    /*height: fit-content;*/
     margin-top: 5vh;
     overflow: auto;
+
+
+    position: relative;
+    top: 1em;
 }
 
 
 #queryInputContainer {
-    width: 100%;
-    height: 30%;
-    margin-bottom: 5vh;
+    position: relative;
+    bottom: 1em;
+    margin-top: 2.5em;
+
 }
 
 #queryOutput {
@@ -63,7 +68,6 @@ body {
     align-items: center;
     justify-self: center;
     position: relative;
-    bottom: -11vh;
 }
 
 /* PROPERTIES */
@@ -82,22 +86,18 @@ input {
     height: 2.5em;
 }
 
-#submitButton {
-    padding: 0.5em;
-}
-
 #start {
     background-color: #007AFF;
     border-radius: 100%;
     border-color: rgba(0, 255, 255, 0);
-    width: 10vh;
-    height: 10vh;
+    width: 5em;
+    height: 5em;
     /*align-self: center;*/
 }
 
 #start-image {
-    width: 5vh;
-    height: 5vh;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 #queryOutput {
@@ -128,23 +128,23 @@ input {
 .transcriptEntry:nth-child(even) {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-/*  TODO: fix flex-start and flex-end  */
+    flex-wrap: wrap-reverse;
 }
 
 .transcriptName {
-    margin-left: 2.5em;
+    margin: 0 2.5em;
     font-size: 90%;
     font-style: italic;
+    width: fit-content;
 }
 
 .transcriptText {
     background-color: #D9D9D9;
     padding: 1em;
-    margin-bottom: 1em;
     border-radius: 0.5em;
-    margin-left: 2em;
+    margin: 0 2em 1em 2em;
     width: fit-content;
+    max-width: 60%;
 }
 
 .hidden {
@@ -153,6 +153,7 @@ input {
 
 #chatHistory {
     width: 100%;
+    height: 100%;
     margin-bottom: 1em;
     display: flex;
     flex-direction: column;
@@ -207,10 +208,25 @@ input {
 
     #outputContainer {
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        flex-direction: column-reverse;
 
         width: 100vw;
         height: 50vh;
     }
+
+    #chatHistory {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1em;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #queryInputContainer {
+        width: 100%;
+        height: 30%;
+        margin-bottom: 5vh;
+    }
+
+
 }
