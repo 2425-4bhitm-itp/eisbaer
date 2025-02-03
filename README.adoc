@@ -149,8 +149,14 @@ GPT 3.5 ist integriert in die OpenSearch KI Unterstützung und OpenSearch wurde 
 |===
 | Kriterium        | GPT-3.5 Turbo                 | Mistral                    | DeepSeek
 | Einfachheit      | Hoch                          | Mittel                     | Mittel
-| Kosten           | Bezahlt pro Nutzung           | eigene Ressourcen          |
-| Anpassbarkeit    | Gering                        | Hoch                       |
-| Skalierbarkeit   | Sehr hoch                     | Mittel                     |
-| Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich  |
+| Kosten           | Bezahlt pro Nutzung           | eigene Ressourcen          | eigene Ressourcen, oder kostenpflichtig API
+| Anpassbarkeit    | Gering                        | Hoch                       | Mittel
+| Skalierbarkeit   | Sehr hoch                     | Mittel                     | Hoch
+| Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich  | Schlecht
 |===
+
+Anmerkungen:
+
+- DeepSeek ist chinesisch zensiert und gibt unzureichende Informationen
+über die chinesische Regierung und Ereignisse in der chinesische Geschichte
+- Da DeepSeek eine chinesische Firma ist, ist die Sicherheit der Daten nicht gewährleistet
