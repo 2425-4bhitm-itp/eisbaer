@@ -56,4 +56,6 @@ function writeText(text) {
     box.appendChild(textField);
 
     chat.appendChild(box);
+
+    scrollToBottom();
 }
