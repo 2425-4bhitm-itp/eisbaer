@@ -149,7 +149,7 @@ GPT 3.5 ist integriert in die OpenSearch KI Unterstützung und OpenSearch wurde 
 |===
 | Kriterium        | GPT-3.5 Turbo                 | Mistral                    | DeepSeek
 | Einfachheit      | Hoch                          | Mittel                     | Mittel
-| Kosten           | Bezahlt pro Nutzung           | eigene Ressourcen          | eigene Ressourcen, oder kostenpflichtig API
+| Kosten           | Bezahlt pro Nutzung           | eigene Ressourcen, oder kostenpflichtig API          | eigene Ressourcen, oder kostenpflichtig API
 | Anpassbarkeit    | Gering                        | Hoch                       | Mittel
 | Skalierbarkeit   | Sehr hoch                     | Mittel                     | Hoch
 | Datenschutz      | Cloud-basiert                 | Vollständig lokal möglich  | Schlecht
