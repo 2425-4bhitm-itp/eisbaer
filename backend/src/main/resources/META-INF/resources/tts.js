@@ -66,5 +66,5 @@ function changeToSpeakAvatar() {
 
 function changeToDefaultAvatar() {
     console.log("changeToDefaultAvatar");
-    img.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    img.src = "./video/polar-bear-no-background-png.png";
 }
