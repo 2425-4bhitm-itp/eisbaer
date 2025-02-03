@@ -183,15 +183,36 @@ function showArticlePosition(position) {
 
     output.appendChild(table);
 }
+/*
+
+<div id="0transcript" class="transcriptEntry">
+          <p class="transcriptName">Eisbär:</p>
+          <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
+        </div>
+
+ */
+
 
 function showArticlePositionLLM(position) {
 
-    document.getElementById("queryOutput").innerHTML = "";
+    let chat = document.getElementById("chatHistory");
 
-    let res = document.createElement("p");
-    res.innerHTML = position;
+    let box = document.createElement("div");
+    box.classList.add("transcriptEntry");
 
-    output.appendChild(res);
+    let name = document.createElement("p");
+    name.classList.add("transcriptName");
+
+    let text = document.createElement("p");
+    text.classList.add("transcriptText");
+
+    name.innerHTML = "Eisbär:";
+    text.innerHTML = position;
+
+    box.appendChild(name);
+    box.appendChild(text);
+
+    chat.appendChild(box);
     speak(position);
 }
 
@@ -204,4 +225,7 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
     };
 }
 
-const processChange = debounce(() => getArticlePositionWithLLM(input.value));
+const processChange = debounce(() => {
+    getArticlePositionWithLLM(input.value);
+    writeText(input.value);
+});
