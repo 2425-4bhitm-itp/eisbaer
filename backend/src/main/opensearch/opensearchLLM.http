@@ -1,0 +1,131 @@
+GET http://localhost:9200/_cat/plugins?v
+
+
+### SETUP THE PLUGIN
+
+PUT http://localhost:9200/_cluster/settings
+Content-Type: application/json
+
+{
+  "persistent": {
+    "plugins.ml_commons.memory_feature_enabled": true,
+    "plugins.ml_commons.rag_pipeline_feature_enabled": true
+  }
+}
+
+### CREATE A CONNECTOR FOR OPENAI CHAT
+
+POST http://localhost:9200/_plugins/_ml/connectors/_create
+Content-Type: application/json
+
+{
+  "name": "OpenAI Chat Connector",
+  "description": "The connector to public OpenAI model service for GPT 3.5",
+  "version": 2,
+  "protocol": "http",
+  "parameters": {
+    "endpoint": "api.openai.com",
+    "model": "gpt-3.5-turbo",
+    "temperature": 0
+  },
+  "actions": [
+    {
+      "action_type": "predict",
+      "method": "POST",
+      "url": "https://${parameters.endpoint}/v1/chat/completions",
+      "headers": {
+        "Authorization": "Bearer ${credential.openAI_key}"
+      },
+      "request_body": "{ \"model\": \"${parameters.model}\", \"messages\": ${parameters.messages}, \"temperature\": ${parameters.temperature} }"
+    }
+  ]
+}
+
+### REGISTER THE MODEL
+POST http://localhost:9200/_plugins/_ml/models/_register
+Content-Type: application/json
+
+{
+  "name": "openAI-gpt-3.5-turbo",
+  "function_name": "remote",
+  "description": "Eisbaer OpenAI GPT 3.5 Turbo Model",
+  "connector_id": "UMv8jJQBnq2xu3Bn901B"
+}
+
+### VERIFY
+GET http://localhost:9200/_plugins/_ml/tasks/LOvcZpQBgRw8SwQa6yHS
+
+### DEPLOY THE MODEL
+POST http://localhost:9200/_plugins/_ml/models/U8v9jJQBnq2xu3BnNk3R/_deploy
+
+### CREATE A SEARCH PIPELINE
+
+PUT http://localhost:9200/_search/pipeline/rag_pipeline
+Content-Type: application/json
+
+{
+  "response_processors": [
+    {
+      "retrieval_augmented_generation": {
+        "tag": "openai_pipeline_eisbaer",
+        "description": "Pipeline Using OpenAI Connector",
+        "model_id": "U8v9jJQBnq2xu3BnNk3R",
+        "context_field_list": ["text"],
+        "system_prompt": "You are a helpful assistant",
+        "user_instructions": "Generate a concise and informative answer in less than 100 words for the given question"
+      }
+    }
+  ]
+}
+
+### INGEST RAG DATA INTO THE INDEX
+PUT http://localhost:9200/eisbaer_rag_data
+Content-Type: Application/json
+
+{
+  "settings": {
+    "index.search.default_pipeline" : "rag_pipeline"
+  },
+  "mappings": {
+    "properties": {
+      "text": {
+        "type": "text"
+      }
+    }
+  }
+}
+
+### UPLOAD DATA
+POST http://localhost:9200/eisbaer_rag_data/_bulk
+Content-Type: application/json
+
+< bulk_data_llm
+
+### CREATE CONVERSATION MEMORY
+POST http://localhost:9200/_plugins/_ml/memory/
+Content-Type: Application/json
+
+{
+  "name": "Conversation about Articles"
+}
+
+### SEND QUESTION
+POST http://localhost:9200/eisbaer_rag_data/_search
+Content-Type: Application/json
+
+{
+  "query": {
+    "match": {
+      "text": "Wo ist die Gestellschraube mit der Größe 10x70?"
+    }
+  },
+  "ext": {
+    "generative_qa_parameters": {
+      "llm_model": "gpt-3.5-turbo",
+      "llm_question": "Wo ist die Gestellschraube mit der Größe 10x70?",
+      "context_size": 200,
+      "message_size": 100,
+      "timeout": 15
+    }
+  }
+}

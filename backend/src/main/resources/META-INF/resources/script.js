@@ -86,9 +86,61 @@ async function getArticlePositionWithOpenSearch() {
     }
 }
 
+async function getArticlePositionWithLLM() {
+    const query = input.value;
+
+    const requestBody = {
+        query: {
+            match: {
+                text: query
+            }
+        },
+        ext: {
+            generative_qa_parameters: {
+                llm_model: "gpt-3.5-turbo",
+                llm_question: query,
+                context_size: 200,
+                message_size: 100,
+                timeout: 15
+            }
+        }
+    };
+
+    try {
+        const urlOpenSearch = "http://localhost:9200/eisbaer_rag_data/_search";
+
+        const response = await fetch(urlOpenSearch, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Suchergebnisse:", data.hits.hits);
+
+        // Extrahiere die Antwort aus den erweiterten Suchergebnissen
+        const answer = data.ext?.retrieval_augmented_generation?.answer || "Keine Antwort gefunden.";
+        console.log("Antwort:", answer);
+
+        // Verarbeite die Antwort (z. B. anzeigen)
+        showArticlePositionLLM(answer);
+
+    } catch (error) {
+        console.error("Fehler beim Abrufen der Suchergebnisse:", error);
+    }
+}
+
+
 
 // function only works with opensearch response. To use getArticlePosition() remove _source in position notation
 function showArticlePosition(position) {
+
     document.getElementById("queryOutput").innerHTML = "";
 
     let table = document.createElement("table");
@@ -130,8 +182,17 @@ function showArticlePosition(position) {
     }
 
     output.appendChild(table);
-    queryOutput.classList.remove("hidden");
-    animateChat(position.length);
+}
+
+function showArticlePositionLLM(position) {
+
+    document.getElementById("queryOutput").innerHTML = "";
+
+    let res = document.createElement("p");
+    res.innerHTML = position;
+
+    output.appendChild(res);
+    speak(position);
 }
 
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
@@ -143,39 +204,4 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
     };
 }
 
-function animateChat(positionLength) {
-    const queryOutput = document.getElementById("queryOutput");
-    const chatHistory = document.getElementById("chatHistory");
-    const userInput = document.getElementById("userInput");
-
-    if (positionLength === 0) {
-        queryOutput.classList.add("hidden");
-        return;
-    }
-
-    const chatEntry1 = document.createElement("div");
-    chatEntry1.classList.add("chatUserEntry");
-
-    const userQuery = document.createElement("div");
-    userQuery.classList.add("userQuery");
-    userQuery.textContent = userInput.value;
-    chatEntry1.appendChild(userQuery);
-
-    const chatEntry2 = document.createElement("div");
-    chatEntry2.classList.add("chatEntry");
-
-    const resultsContainer = document.createElement("div");
-    resultsContainer.classList.add("resultsContainer");
-    resultsContainer.innerHTML = queryOutput.innerHTML;
-    chatEntry2.appendChild(resultsContainer);
-
-    chatHistory.appendChild(chatEntry1);
-    chatHistory.appendChild(chatEntry2);
-    userInput.value = "";
-    queryOutput.classList.add("hidden");
-
-    chatEntry2.scrollIntoView({ behavior: "smooth" });
-
-}
-
-const processChange = debounce(() => getArticlePositionWithOpenSearch());
+const processChange = debounce(() => getArticlePositionWithLLM(input.value));
