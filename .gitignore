@@ -33,3 +33,6 @@ settings.json
 
 #kp
 /backend/impexplorer.iml
+
+#api key
+*.env
