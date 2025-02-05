@@ -18,6 +18,26 @@ end
 @enduml
 ----
 
+**Pros:**
+
+- no made up answers, only uses context
+
+- no need for OpenAI
+
+- free
+
+- fast
+
+**Cons:**
+
+- hard to implement
+
+- time-consuming
+
+- no conversation
+
+- difficult to extract important data from the user input
+
 ## 2. OpenSearch Conversational Search
 
 [plantuml, svg]
@@ -32,6 +52,24 @@ start
 end
 @enduml
 ----
+
+**Pros:**
+
+- easy to implement
+
+- built-in OpenSearch feature
+
+- conversation possible
+
+- conversation memory
+
+**Cons:**
+
+- made up answers
+
+- paid
+
+- hard to configure the LLM
 
 ## 3. LLM without OpenSearch
 
@@ -49,6 +87,24 @@ start
 end
 @enduml
 ----
+
+**Pros:**
+
+- easy to configure the LLM
+
+- flexible prompt generation
+
+- conversation possible
+
+- no need for OpenSearch
+
+**Cons:**
+
+- maybe made up answers
+
+- paid
+
+- need to have the entire DB as context
 
 ## 4. LLM for input/output with OpenSearch
 
@@ -73,3 +129,19 @@ start
 end
 @enduml
 ----
+
+**Pros:**
+
+- no made up answers, only uses context
+
+- accurate results
+
+- human-readable responses
+
+**Cons:**
+
+- a lot of back and forth
+
+- 2 AI calls per request
+
+- paid
