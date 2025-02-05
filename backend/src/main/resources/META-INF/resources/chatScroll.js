@@ -1,9 +1,6 @@
 // Get a reference to the div you want to auto-scroll.
 var transcriptContainer = document.querySelector('#transcriptContainer');
 
-var windowHeight = window.innerHeight;
-var windowWidth = window.innerWidth;
-
 // First, define a helper function.
 function animateScroll(duration) {
 
@@ -11,11 +8,6 @@ function animateScroll(duration) {
     var end = transcriptContainer.scrollHeight - transcriptContainer.clientHeight;
     var change = end - start;
     var increment = 20;
-
-    //if window is in portrait mode, div will scroll to top
-    // if (windowHeight >= windowWidth) { todo: implement reverse scroll
-    //     change = start - end;
-    // }
 
     function easeInOut(currentTime, start, change, duration) {
         // by Robert Penner
