@@ -216,7 +216,7 @@ function showArticlePositionLLM(position) {
     chat.appendChild(box);
     speak(position);
 
-    scrollToBottom();
+    chatScroll();
 }
 
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/

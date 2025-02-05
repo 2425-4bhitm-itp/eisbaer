@@ -67,6 +67,10 @@ if there is no issue for the commit (f.e. A small commit for updating the README
 
 == Startup Guide
 
+=== Installations
+==== Install jq
+Use command `sudo apt install jq` to download the JSON-processing tool (used for OpenSearch and GPT3.5)
+
 === Copy the Git repo on your device
 1. Click on the green 'Code <>' button
 2. Select 'SSH'

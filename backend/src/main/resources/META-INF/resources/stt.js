@@ -57,5 +57,5 @@ function writeText(text) {
 
     chat.appendChild(box);
 
-    scrollToBottom();
+    chatScroll();
 }
