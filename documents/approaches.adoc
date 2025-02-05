@@ -1,0 +1,75 @@
+# Different Approaches to getting results from a input String
+
+## 1. Using OpenSearch without LLM
+
+[plantuml, svg]
+----
+@startuml
+start
+:**User Input**:
+"Wo sind die Gestellschrauben?";
+:Sent to own backend;
+:Backend extracts importatant data from the user input;
+:Backend constructs an OpenSearch query;
+:Backend sends the query to OpenSearch;
+:Backend phrases the results in human-readable form;
+:Backend sends the results to the frontend;
+end
+@enduml
+----
+
+## 2. OpenSearch Conversational Search
+
+[plantuml, svg]
+----
+@startuml
+start
+:**User Input**:
+"Wo sind die Gestellschrauben?";
+:Sent to OpenSearch;
+:OpenSearch uses an LLM (gpt3.5-turbo) to generate a response;
+:Response sent back to the frontend;
+end
+@enduml
+----
+
+## 3. LLM without OpenSearch
+
+[plantuml, svg]
+----
+@startuml
+start
+:**User Input**:
+"Wo sind die Gestellschrauben?";
+:Sent to own backend;
+:Backend constructs an AI prompt;
+:Sent to OpenAI with entire DB as context;
+:OpenAI uses an LLM (gpt3.5-turbo) to generate a response;
+:Response sent back to the frontend;
+end
+@enduml
+----
+
+## 4. LLM for input/output with OpenSearch
+
+[plantuml,svg]
+----
+@startuml
+start
+:**User Input**:
+"Wo sind die Gestellschrauben?";
+:Sent to own backend;
+:Backend constructs an AI prompt;
+:Sent to OpenAI;
+:OpenAI uses an LLM (gpt3.5-turbo) to extract important data;
+:Response sent back to the backend;
+:Backend constructs an OpenSearch query;
+:Backend sends the query to OpenSearch;
+:OpenSearch returns the results;
+:Backend sends the results to OpenAI;
+:OpenAI uses an LLM (gpt3.5-turbo) to phrase the results in human-readable form;
+:Response sent back to the backend;
+:Backend sends the results to the frontend;
+end
+@enduml
+----
