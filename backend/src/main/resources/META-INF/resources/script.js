@@ -231,4 +231,5 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
 const processChange = debounce(() => {
     getArticlePositionWithLLM(input.value);
     writeText(input.value);
+    input.value = "";
 });
