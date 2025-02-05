@@ -1,7 +1,7 @@
 const url = "http://localhost:8080/Articles/getArticle/"
 const urlOpenSearch = "http://localhost:9200/items/_search"
 
-const DEBOUNCE_TIMEOUT = 700;
+const DEBOUNCE_TIMEOUT = 1500;
 
 let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
