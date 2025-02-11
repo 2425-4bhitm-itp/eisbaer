@@ -114,3 +114,5 @@
     curl -X POST "http://localhost:9200/eisbaer_rag_data/_bulk" -H "Content-Type: application/json" --data-binary @bulk_data_llm
 
     echo "All requests executed."
+
+    popd || exit
