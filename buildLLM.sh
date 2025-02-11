@@ -1,7 +1,7 @@
-    #!/bin/bash
+#!/bin/bash
 
-     # Load environment variables
-     source .env
+    # Load environment variables
+    source .env
 
     pushd ./backend/src/main/opensearch
 
