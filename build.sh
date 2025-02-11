@@ -56,6 +56,7 @@ echo 'bulk data inserted'
 echo 'searching data for GET...'
 curl -X GET "http://localhost:9200/articles/_search?pretty=true&q=*"
 popd
+. ./buildLLM.sh
 pushd ./backend
 mvn clean quarkus:dev
 popd
