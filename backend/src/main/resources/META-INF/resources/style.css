@@ -92,17 +92,9 @@ h1 {
 }
 
 #start {
-    background-color: #007AFF;
-    border-radius: 100%;
-    border-color: rgba(0, 0, 0, 0);
+    border: none;
     width: 5em;
     height: 5em;
-    /*align-self: center;*/
-}
-
-#start-image {
-    width: 2.5em;
-    height: 2.5em;
 }
 
 #queryOutput {
