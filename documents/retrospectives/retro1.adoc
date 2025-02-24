@@ -13,4 +13,6 @@
 
 == Continue
 
-- gute Kommunikation und Arbeitsteilung
+- gute Kommunikation bezüglich Arbeitsteilung
+- verschiedene Arbeitsprozesse auf verschiedene Branches aufteilen
+
