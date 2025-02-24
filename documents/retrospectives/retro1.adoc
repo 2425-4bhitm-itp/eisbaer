@@ -1,0 +1,16 @@
+= Sprint Retrospective 1
+
+24-02-2025
+
+== Start
+
+- mehr Zeit zum Verbessern/Optimieren von Code aufwenden
+
+== Stop
+
+- Unstrukturierten Code schreiben der nicht zu Stiel des Codes im File passt
+- Unnötige Kommentare im Code
+
+== Continue
+
+- gute Kommunikation und Arbeitsteilung
