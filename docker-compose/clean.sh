@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/.env bash
 # reset your docker to a clean state
 
 docker container prune --force
