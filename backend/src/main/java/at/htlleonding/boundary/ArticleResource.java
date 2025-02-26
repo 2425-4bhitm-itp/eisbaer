@@ -1,6 +1,6 @@
-package at.htlleonding;
+package at.htlleonding.boundary;
 
-import at.htlleonding.model.Artikel;
+import at.htlleonding.entity.Artikel;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
@@ -10,7 +10,6 @@ import jakarta.ws.rs.core.Response;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 @Path("/Articles")
