@@ -4,6 +4,16 @@ import at.htlleonding.entity.Artikel;
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 import jakarta.enterprise.context.ApplicationScoped;
 
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.TokenStream;
+import org.apache.lucene.analysis.de.GermanAnalyzer;
+import org.apache.lucene.analysis.tokenattributes.CharTermAttribute;
+
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.List;
+
 import java.util.List;
 
 @ApplicationScoped
@@ -23,5 +33,21 @@ public class ArtikelRepository implements PanacheRepository<Artikel>{
                         "LagereinheitBez LIKE ?1 OR " +
                         "Stellplatz LIKE ?1",
                 likePattern).list();
+    }
+
+    public static List<String> extractTokens(String text) {
+        List<String> tokens = new ArrayList<>();
+        try (Analyzer analyzer = new GermanAnalyzer()) {
+            TokenStream tokenStream = analyzer.tokenStream(null, new StringReader(text));
+            tokenStream.reset();
+            while (tokenStream.incrementToken()) {
+                String token = tokenStream.getAttribute(CharTermAttribute.class).toString();
+                tokens.add(token);
+            }
+            tokenStream.end();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return tokens;
     }
 }
