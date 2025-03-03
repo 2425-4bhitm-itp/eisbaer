@@ -72,6 +72,11 @@
             <groupId>io.quarkus</groupId>
             <artifactId>quarkus-jdbc-postgresql</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.quarkiverse.lucene</groupId>
+            <artifactId>quarkus-lucene</artifactId>
+            <version>2.3.0</version>
+        </dependency>
     </dependencies>
 
     <build>
