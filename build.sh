@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+echo 'downing containers...'
+. ./down.sh
+echo 'successfully downed containers!'
 set -e
 pushd ./docker-compose
 . ./start.sh
