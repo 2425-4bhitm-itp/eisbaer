@@ -19,7 +19,7 @@ import java.util.List;
 @ApplicationScoped
 public class ArtikelRepository implements PanacheRepository<Artikel>{
 
-    public List<Artikel> search(String searchTerm) {
+    public List<Artikel> findByKeyword(String searchTerm) {
         String likePattern = "%" + searchTerm + "%";
         return find("CONCAT(FKArtikelid, '') LIKE ?1 OR " +
                         "Bezeichnung1 LIKE ?1 OR " +
@@ -27,11 +27,7 @@ public class ArtikelRepository implements PanacheRepository<Artikel>{
                         "CONCAT(Laenge, '') LIKE ?1 OR " +
                         "CONCAT(Breite, '') LIKE ?1 OR " +
                         "CONCAT(Hoehe, '') LIKE ?1 OR " +
-                        "CONCAT(Durchmesser, '') LIKE ?1 OR " +
-                        "Lagerort LIKE ?1 OR " +
-                        "CONCAT(Lagerstand, '') LIKE ?1 OR " +
-                        "LagereinheitBez LIKE ?1 OR " +
-                        "Stellplatz LIKE ?1",
+                        "CONCAT(Durchmesser, '') LIKE ?1",
                 likePattern).list();
     }
 
@@ -49,5 +45,14 @@ public class ArtikelRepository implements PanacheRepository<Artikel>{
             e.printStackTrace();
         }
         return tokens;
+    }
+
+    public List<Artikel> search(String searchString) {
+        List<String> tokens = extractTokens(searchString);
+        List<Artikel> artikelList = new ArrayList<>();
+        for(String token : tokens) {
+            artikelList.addAll(findByKeyword(token));
+        }
+        return artikelList
     }
 }

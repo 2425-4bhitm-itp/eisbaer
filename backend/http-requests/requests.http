@@ -1,1 +1,8 @@
-GET http://localhost:8080/Articles/getArticle/Gestellschraube
+GET http://localhost:8080/Articles/getArticle/Schrauben
+
+###
+
+POST http://localhost:8080/Articles/getArticle
+Content-Type: text/plain
+
+Wo finde ich einen Geberit Bogen
