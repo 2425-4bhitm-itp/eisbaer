@@ -110,6 +110,16 @@ h1 {
     font-weight: bold;
 }
 
+/* Checkbox */
+#switchToAIWrapper {
+    position: absolute;
+    left: 2vw;
+    top: 1.5vw;
+    margin: 1em;
+    scale: 1.5;
+}
+
+
 /* Chat History */
 
 .boxLeft {
@@ -239,5 +249,4 @@ h1 {
     #userInput {
         width: 100%;
     }
-
 }
