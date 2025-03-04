@@ -53,6 +53,6 @@ public class ArtikelRepository implements PanacheRepository<Artikel>{
         for(String token : tokens) {
             artikelList.addAll(findByKeyword(token));
         }
-        return artikelList
+        return artikelList;
     }
 }
