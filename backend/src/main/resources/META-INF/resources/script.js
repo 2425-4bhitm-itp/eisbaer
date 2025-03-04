@@ -5,6 +5,7 @@ const DEBOUNCE_TIMEOUT = 1500;
 
 let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
+let checkBoxForAI = document.getElementById("switchToAI");
 
 //only for testing
 const username = 'admin';
@@ -219,6 +220,10 @@ function showArticlePositionLLM(position) {
     chatScroll();
 }
 
+function getArticlePositionWithBackend(position) {
+
+}
+
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
 function debounce(func, timeout = DEBOUNCE_TIMEOUT){
     let timer;
@@ -229,7 +234,11 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
 }
 
 const processChange = debounce(() => {
-    getArticlePositionWithLLM(input.value);
+    if(checkBoxForAI.checked) {
+        getArticlePositionWithLLM(input.value);
+    } else {
+        getArticlePositionWithBackend(input.value);
+    }
     writeText(input.value);
     input.value = "";
 });
