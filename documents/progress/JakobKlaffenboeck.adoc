@@ -196,3 +196,7 @@ function animateChat(positionLength) {
 * https://api-docs.deepseek.com/quick_start/pricing
 - Mistral:
 * https://mistral.ai/technology/#pricing
+
+== Prompt Engineering
+
+- 4. Clarification and Transparency: If the document provides information that might be different or context-specific (e.g., boiling point of water in a specific location), include this context in your response to ensure accuracy.
