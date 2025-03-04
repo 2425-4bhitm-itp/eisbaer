@@ -17,7 +17,7 @@ public class ArticleResource {
     @Inject
     ArtikelRepository artikelRepository;
 
-    private static int MAXIMUM_ARTIKEL_RETURN_COUNT = 50;
+    private static int MAXIMUM_ARTIKEL_RETURN_COUNT = 5;
 
     @POST
     @Path("/getArticle")

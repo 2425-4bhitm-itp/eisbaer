@@ -220,8 +220,53 @@ function showArticlePositionLLM(position) {
     chatScroll();
 }
 
-function getArticlePositionWithBackend(position) {
+async function getArticlePositionWithBackend() {
+    const query = input.value;
 
+    try {
+        const response = await fetch("http://localhost:8080/Articles/getArticle", {
+            method: "POST",
+            headers: {
+                "Content-Type": "text/plain"
+            },
+            body: query
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP-Fehler! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log("Suchergebnisse:", data);
+
+        showArticlePositionBackend(data);
+    } catch (error) {
+        console.error("Fehler beim Abrufen der Suchergebnisse:", error);
+    }
+}
+
+function showArticlePositionBackend(position) {
+    let chat = document.getElementById("chatHistory");
+
+    let box = document.createElement("div");
+    box.classList.add("transcriptEntry");
+    box.classList.add("boxLeft");
+
+    let name = document.createElement("p");
+    name.classList.add("transcriptName");
+
+    let text = document.createElement("p");
+    text.classList.add("transcriptText");
+
+    name.innerHTML = "Eisbär:";
+    text.innerHTML = position.map(article => `${article.bezeichnung1} - Stellplatz: ${article.stellplatz}`).join("<br>");
+
+    box.appendChild(name);
+    box.appendChild(text);
+
+    chat.appendChild(box);
+    speak(text.innerHTML);
+    chatScroll();
 }
 
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
