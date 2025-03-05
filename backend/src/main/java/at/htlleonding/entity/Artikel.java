@@ -82,4 +82,12 @@ public class Artikel {
     public Artikel() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Artikel{" +
+                "Bezeichnung1='" + Bezeichnung1 + '\'' +
+                ", FKArtikelid=" + FKArtikelid +
+                '}';
+    }
 }
