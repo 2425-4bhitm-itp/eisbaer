@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=oZmnbAtI"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "jsm/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+      }
+    }
+  </script> <!-- three/addons/ -->
+
+  <meta charset="UTF-8">
+  <title>EISBÄR</title>
+  <link rel="stylesheet" href="style.css">
+<!--  <script type="module" src="3dModel.js"></script>-->
+
+</head>
+<body>
+<div id="switchToAIWrapper">
+  <input type="checkbox" id="switchToAI" name="switchToAI">
+  <label for="switchToAI">AI</label>
+</div>
+<!-- <h1>Eisbär</h1> -->
+
+<div id="content">
+  <!-- Left/top canvas with avatar -->
+<!--  <div id="avatarContainer" style="width: 50vw; height: 100vh;">-->
+<!--    &lt;!&ndash; Polar Bear 3D Avatar is loaded here &ndash;&gt;-->
+<!--  </div>-->
+
+  <div id="avatarContainer" style="background-color:white; display: flex; justify-content: center; align-items: center">
+    <img src="src/video/seamless-loop-talking-unscreen.gif" alt="EISBÄR" width="60%" id="2dAvatar">
+  </div>
+
+
+
+  <!-- Right/bottom canvas with transcript -->
+  <div id="outputContainer">
+
+    <div id="transcriptContainer">
+      <div id="chatHistory">
+        <div id="0transcript" class="transcriptEntry, boxLeft">
+          <p class="transcriptName">Eisbär:</p>
+          <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div id="queryInputContainer">
+      <div id="inputButtons">
+        <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." onkeyup="processChange()">
+        <button id="start"><img src="img/microphone_icon.svg"></button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

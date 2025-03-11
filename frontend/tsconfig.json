@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "ES2022",
+    "target": "ES2022",
+    "moduleResolution": "bundler",
+    "allowJs": true,
+    "sourceMap": true,
+    "paths": {
+      "lib/*": ["src/lib/*"],
+      "features/*": ["src/features/*"],
+      "components/*": ["src/components/*"]
+    }
+  },
+  "include": ["./src"]
+}
