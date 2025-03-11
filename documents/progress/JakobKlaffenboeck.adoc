@@ -200,3 +200,12 @@ function animateChat(positionLength) {
 == Prompt Engineering
 
 - 4. Clarification and Transparency: If the document provides information that might be different or context-specific (e.g., boiling point of water in a specific location), include this context in your response to ensure accuracy.
+
+
+== TS Umstieg
+
+Im build.sh
+
+1. frontend builden
+2. target in das Meta Inf kopieren
+3. quarkus starten
