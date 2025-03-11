@@ -1,0 +1,3 @@
+at/htlleonding/entity/Artikel.class
+at/htlleonding/control/ArtikelRepository.class
+at/htlleonding/boundary/ArticleResource.class
