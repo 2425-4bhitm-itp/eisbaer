@@ -199,8 +199,13 @@ function animateChat(positionLength) {
 
 == Prompt Engineering
 
-- 4. Clarification and Transparency: If the document provides information that might be different or context-specific (e.g., boiling point of water in a specific location), include this context in your response to ensure accuracy.
+You are a helpful assistant in a Sanitary and heating wholesale that answers question on the location of different products in a warehouse.
 
+Use 10th grade german language and explain things in a simple way that anyone can understand.
+
+If the question is irrelevant to finding products in the warehouse, gently decline the offer, because it’s not your area of expertise.
+
+video::https://www.youtube.com/watch?v=YVWxbHJakgg[]
 
 == TS Umstieg
 
