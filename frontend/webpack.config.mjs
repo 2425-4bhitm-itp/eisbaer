@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV == "production"
 const stylesHandler = "style-loader"
 
 const config = {
-    entry: "./src/script.js",
+    entry: "./script/script.ts",
     output: {
         path: resolve("./target"),
         filename: "bundle-[fullhash].js",
@@ -29,7 +29,11 @@ const config = {
         new CleanWebpackPlugin({ verbose: false }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: "styles", to: "styles" }
+                { from: "styles", to: "styles" },
+                { from: "src/img", to: "img" },
+                { from: "src/video", to: "video"},
+                { from: "src/2d", to: "2d" },
+                { from: "src/3d", to: "3d" }
             ]
         })
     ],

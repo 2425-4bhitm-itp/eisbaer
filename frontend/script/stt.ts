@@ -1,11 +1,18 @@
+import "./chatScroll"
+import {processChange} from "./script";
+
+export interface IWindow extends Window {
+    webkitSpeechRecognition: any;
+}
+
 const startButton = document.getElementById('start');
-const speechOutput = document.getElementById('userInput')
+const speechOutput = <HTMLInputElement> document.getElementById('userInput')
 
 let recognition;
 
 if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    recognition = new SpeechRecognition();
+    const { webkitSpeechRecognition }: IWindow = <IWindow>window
+    const recognition = new webkitSpeechRecognition();
 
     recognition.lang = 'de-DE'; // Set language
     recognition.interimResults = true;
@@ -31,7 +38,7 @@ startButton.addEventListener('click', () => {
     if (recognition) recognition.start();
 });
 
-function writeText(text) {
+export function writeText(text) {
 
     if (text === '' || text == null) {
         return;
