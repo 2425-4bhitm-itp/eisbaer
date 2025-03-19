@@ -1,16 +1,11 @@
-import "./chatScroll"
-import "./tts"
-import {writeText} from "./stt";
-
-
 const url = "http://localhost:8080/Articles/getArticle/"
 const urlOpenSearch = "http://localhost:9200/items/_search"
 
 const DEBOUNCE_TIMEOUT = 1500;
 
-let input = <HTMLInputElement> document.getElementById("userInput");
+let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
-let checkBoxForAI = <HTMLInputElement> document.getElementById("switchToAI");
+let checkBoxForAI = document.getElementById("switchToAI");
 
 //only for testing
 const username = 'admin';
@@ -283,11 +278,11 @@ function debounce(func, timeout = DEBOUNCE_TIMEOUT){
     };
 }
 
-export const processChange = debounce(() => {
+const processChange = debounce(() => {
     if(checkBoxForAI.checked) {
-        getArticlePositionWithLLM();
+        getArticlePositionWithLLM(input.value);
     } else {
-        getArticlePositionWithBackend();
+        getArticlePositionWithBackend(input.value);
     }
     writeText(input.value);
     input.value = "";
