@@ -2,14 +2,14 @@
 var transcriptContainer = document.querySelector('#transcriptContainer');
 
 // First, define a helper function.
-function animateScroll(duration) {
+function animateScroll(duration: number) {
 
     var start = transcriptContainer.scrollTop;
     var end = transcriptContainer.scrollHeight - transcriptContainer.clientHeight;
     var change = end - start;
     var increment = 20;
 
-    function easeInOut(currentTime, start, change, duration) {
+    function easeInOut(currentTime: number, start: number, change: number, duration: number) {
         // by Robert Penner
         currentTime /= duration / 2;
         if (currentTime < 1) {
@@ -18,7 +18,7 @@ function animateScroll(duration) {
         currentTime -= 1;
         return -change / 2 * (currentTime * (currentTime - 2) - 1) + start;
     }
-    function animate(elapsedTime) {
+    function animate(elapsedTime: number) {
         elapsedTime += increment;
         var position = easeInOut(elapsedTime, start, change, duration);
         transcriptContainer.scrollTop = position;
@@ -35,3 +35,5 @@ function chatScroll() {
     var duration = 300 // Or however many milliseconds you want to scroll to last
     animateScroll(duration);
 }
+
+export { chatScroll }

@@ -8,11 +8,11 @@
     "moduleResolution": "bundler",
     "allowJs": true,
     "sourceMap": true,
-    "paths": {
-      "lib/*": ["src/lib/*"],
-      "features/*": ["src/features/*"],
-      "components/*": ["src/components/*"]
-    }
+//    "paths": {
+//      "lib/*": ["src/lib/*"],
+//      "features/*": ["src/features/*"],
+//      "components/*": ["src/components/*"]
+//    }
   },
   "include": ["./src"]
 }

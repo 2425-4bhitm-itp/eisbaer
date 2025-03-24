@@ -1,7 +1,15 @@
-const startButton = document.getElementById('start');
-const speechOutput = document.getElementById('userInput')
+import { processChange} from "./script";
+import { chatScroll } from "./chatScroll";
 
-let recognition;
+const startButton = document.getElementById('start') as HTMLButtonElement
+const speechOutput = document.getElementById('userInput') as HTMLInputElement
+
+interface IWindow extends Window {
+    SpeechRecognition: typeof SpeechRecognition;
+    webkitSpeechRecognition: typeof SpeechRecognition;
+}
+
+let recognition: SpeechRecognition | null = null;
 
 if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -10,14 +18,15 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
     recognition.lang = 'de-DE'; // Set language
     recognition.interimResults = true;
 
-    recognition.onresult = (event) => {
-        const transcript = Array.from(event.results)
-            .map(result => result[0])
-            .map(result => result.transcript)
+    recognition.onresult = (event: SpeechRecognitionEvent) => {
+        const transcript: string = Array.from(event.results)
+            .map((result) => (result as SpeechRecognitionResult)[0])
+            .map((result) => (result as SpeechRecognitionAlternative).transcript)
             .join('');
         speechOutput.value = transcript;
         processChange();
     };
+
 
     recognition.onerror = (event) => {
         console.error('Speech Recognition Error:', event.error);
@@ -31,7 +40,7 @@ startButton.addEventListener('click', () => {
     if (recognition) recognition.start();
 });
 
-function writeText(text) {
+export function writeText(text: string) {
 
     if (text === '' || text == null) {
         return;

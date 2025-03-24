@@ -7,7 +7,7 @@ const isProduction = process.env.NODE_ENV == "production"
 const stylesHandler = "style-loader"
 
 const config = {
-    entry: "./scripts/script.ts",
+    entry: "./src/index.ts",
     output: {
         path: resolve("./target"),
         filename: "bundle-[fullhash].js",
@@ -22,20 +22,14 @@ const config = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "index.html",
+            template: "./src/index.html",
             scriptLoading: "module",
             hash: true
         }),
         new CleanWebpackPlugin({ verbose: false }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: "styles", to: "styles" },
-                { from: "2d", to: "2d" },
-                { from: "3d", to: "3d"},
-                { from: "img", to: "img"},
-                { from: "video", to: "video"},
-                { from: "scripts", to: "scripts"}
-
+                { from: "public", to: "public" }
             ]
         })
     ],
@@ -61,14 +55,14 @@ const config = {
             }
         ],
     },
-    resolve: {
-        extensions: [".ts", ".js", ".html"],
-        alias: {
-            lib: resolve("./src/lib"),
-            features: resolve("./src/features"),
-            components: resolve("./src/components")
-        }
-    }
+    // resolve: {
+    //     extensions: [".ts", ".js", ".html"],
+    //     alias: {
+    //         lib: resolve("./src/lib"),
+    //         features: resolve("./src/features"),
+    //         components: resolve("./src/components")
+    //     }
+    // }
 }
 
 export default () => {

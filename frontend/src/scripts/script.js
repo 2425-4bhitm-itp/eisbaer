@@ -1,23 +1,24 @@
 import "./chatScroll";
 import "./stt";
-import "./tts"
-
-const url = "http://localhost:8080/Articles/getArticle/"
-const urlOpenSearch = "http://localhost:9200/items/_search"
-
+import "./tts";
+import { writeText } from "./stt";
+import { chatScroll } from "./chatScroll";
+const url = "http://localhost:8080/Articles/getArticle/";
+const urlOpenSearch = "http://localhost:9200/items/_search";
 const DEBOUNCE_TIMEOUT = 1500;
-
-let input = <HTMLInputElement> document.getElementById("userInput");
+let input = document.getElementById("userInput");
 let output = document.getElementById("queryOutput");
-let checkBoxForAI = <HTMLInputElement> document.getElementById("switchToAI");
-
+let checkBoxForAI = document.getElementById("switchToAI");
+document.addEventListener("DOMContentLoaded", () => {
+    input.addEventListener("keyup", () => {
+        processChange();
+    });
+});
 //only for testing
 const username = 'admin';
 const password = 'Str0ngP@ssw0rd!';
-
 async function getArticlePositionWithOpenSearch() {
     const query = input.value;
-
     const requestBody = {
         query: {
             bool: {
@@ -55,16 +56,11 @@ async function getArticlePositionWithOpenSearch() {
             }
         }
     };
-
-
     try {
         // Basis-URL für den Index (anpassen, falls notwendig)
         const urlOpenSearch = 'http://localhost:9200/articles/_search';
-
-
         // Encode Benutzername und Passwort in Base64 für Basic-Auth
         const authHeader = 'Basic ' + btoa(`${username}:${password}`);
-
         // POST-Anfrage senden
         const response = await fetch(urlOpenSearch, {
             method: 'POST',
@@ -74,26 +70,22 @@ async function getArticlePositionWithOpenSearch() {
             },
             body: JSON.stringify(requestBody)
         });
-
         if (!response.ok) {
             throw new Error(`HTTP-Fehler! Status: ${response.status}`);
         }
-
         // Antwortdaten verarbeiten
         const data = await response.json();
         console.log('Suchergebnisse:', data.hits.hits);
-
         // Treffer zurückgeben
-        showArticlePosition(data.hits.hits);
-
-    } catch (error) {
+        // showArticlePosition(data.hits.hits);
+        console.log(data.hits.hits);
+    }
+    catch (error) {
         console.error('Fehler beim Abrufen der Suchergebnisse:', error);
     }
 }
-
 async function getArticlePositionWithLLM() {
     const query = input.value;
-
     const requestBody = {
         query: {
             match: {
@@ -110,10 +102,8 @@ async function getArticlePositionWithLLM() {
             }
         }
     };
-
     try {
         const urlOpenSearch = "http://localhost:9200/eisbaer_rag_data/_search";
-
         const response = await fetch(urlOpenSearch, {
             method: "POST",
             headers: {
@@ -121,71 +111,48 @@ async function getArticlePositionWithLLM() {
             },
             body: JSON.stringify(requestBody)
         });
-
         if (!response.ok) {
             throw new Error(`HTTP-Fehler! Status: ${response.status}`);
         }
-
         const data = await response.json();
         console.log("Suchergebnisse:", data.hits.hits);
-
         // Extrahiere die Antwort aus den erweiterten Suchergebnissen
         const answer = data.ext?.retrieval_augmented_generation?.answer || "Keine Antwort gefunden.";
         console.log("Antwort:", answer);
-
         // Verarbeite die Antwort (z. B. anzeigen)
         showArticlePositionLLM(answer);
-
-    } catch (error) {
+    }
+    catch (error) {
         console.error("Fehler beim Abrufen der Suchergebnisse:", error);
     }
 }
-
-
-
 // function only works with opensearch response. To use getArticlePosition() remove _source in position notation
 function showArticlePosition(position) {
-
     document.getElementById("queryOutput").innerHTML = "";
-
     let table = document.createElement("table");
     table.classList.add("outputTable");
-
-    let length = position.length;
-
-    if (length > 5) {
-        length = 5;
-    }
-
     let counter = 1;
-
-    for (let i = 0; i < length; i++) {
+    for (let i = 0; i < Math.min(position.length, 5); i++) {
         let rank = document.createElement("td");
         let tr = document.createElement("tr");
         let tdName = document.createElement("td");
         let tdPosition = document.createElement("td");
         let tdMiddle = document.createElement("td");
-
         rank.innerHTML = ("" + counter + ". ");
         tdName.innerHTML = position[i]._source.Bezeichnung1;
         tdName.classList.add("outputName");
         tdMiddle.innerHTML = " ----- ";
         tdPosition.innerHTML = position[i]._source.Stellplatz;
         tdPosition.classList.add("outputPlace");
-
         tr.appendChild(rank);
         tr.appendChild(tdName);
         tr.appendChild(tdMiddle);
         tr.appendChild(tdPosition);
-
         speak(tdName.innerHTML);
         speak("Position: " + tdPosition.innerHTML);
-
         table.appendChild(tr);
-
         counter++;
     }
-
     output.appendChild(table);
 }
 /*
@@ -196,37 +163,25 @@ function showArticlePosition(position) {
         </div>
 
  */
-
-
 function showArticlePositionLLM(position) {
-
     let chat = document.getElementById("chatHistory");
-
     let box = document.createElement("div");
     box.classList.add("transcriptEntry");
-    box.classList.add("boxLeft")
-
+    box.classList.add("boxLeft");
     let name = document.createElement("p");
     name.classList.add("transcriptName");
-
     let text = document.createElement("p");
     text.classList.add("transcriptText");
-
     name.innerHTML = "Eisbär:";
     text.innerHTML = position;
-
     box.appendChild(name);
     box.appendChild(text);
-
     chat.appendChild(box);
     speak(position);
-
     chatScroll();
 }
-
 async function getArticlePositionWithBackend() {
     const query = input.value;
-
     try {
         const response = await fetch("http://localhost:8080/Articles/getArticle", {
             method: "POST",
@@ -235,59 +190,53 @@ async function getArticlePositionWithBackend() {
             },
             body: query
         });
-
         if (!response.ok) {
             throw new Error(`HTTP-Fehler! Status: ${response.status}`);
         }
-
         const data = await response.json();
         console.log("Suchergebnisse:", data);
-
         showArticlePositionBackend(data);
-    } catch (error) {
+    }
+    catch (error) {
         console.error("Fehler beim Abrufen der Suchergebnisse:", error);
     }
 }
-
 function showArticlePositionBackend(position) {
     let chat = document.getElementById("chatHistory");
-
     let box = document.createElement("div");
     box.classList.add("transcriptEntry");
     box.classList.add("boxLeft");
-
     let name = document.createElement("p");
     name.classList.add("transcriptName");
-
     let text = document.createElement("p");
     text.classList.add("transcriptText");
-
     name.innerHTML = "Eisbär:";
     text.innerHTML = position.map(article => `${article.bezeichnung1} - Stellplatz: ${article.stellplatz}`).join("<br>");
-
     box.appendChild(name);
     box.appendChild(text);
-
     chat.appendChild(box);
     speak(text.innerHTML);
     chatScroll();
 }
-
 // Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
-function debounce(func, timeout = DEBOUNCE_TIMEOUT){
+function debounce(func, timeout = DEBOUNCE_TIMEOUT) {
     let timer;
     return (...args) => {
         clearTimeout(timer);
-        timer = setTimeout(() => { func.apply(this, args); }, timeout);
+        timer = setTimeout(() => {
+            func.apply(this, args);
+        }, timeout);
     };
 }
-
 const processChange = debounce(() => {
-    if(checkBoxForAI.checked) {
+    if (checkBoxForAI.checked) {
         getArticlePositionWithLLM();
-    } else {
+    }
+    else {
         getArticlePositionWithBackend();
     }
     writeText(input.value);
     input.value = "";
 });
+export { processChange };
+//# sourceMappingURL=script.js.map

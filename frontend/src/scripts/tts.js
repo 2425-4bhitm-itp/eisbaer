@@ -1,43 +1,32 @@
 let checkIfFirstTime = true;
-
 const beginningText = document
-     .getElementsByClassName("transcriptText")[0]
-     .innerHTML;
-
+    .getElementsByClassName("transcriptText")[0]
+    .innerHTML;
 console.log("textToBeSpoken: " + beginningText);
-
-//Log all available voices
 var voicelist = responsiveVoice.getVoices();
 console.log(voicelist);
-
-//Set voice
 let voice = "Deutsch Male";
 responsiveVoice.setDefaultVoice(voice);
-
 // initialize text queue to ensure texts beeing spoken in right order
-let textQueue = []
+let textQueue = [];
 let isSpeaking = false;
-
 function speak(text) {
     // Füge den Text zur Warteschlange hinzu
     textQueue.push(text);
     processQueue();
 }
-
 function processQueue() {
     // Wenn bereits gesprochen wird, warte
-    if (isSpeaking) return;
-
+    if (isSpeaking)
+        return;
     // Hole den nächsten Text aus der Warteschlange
     const nextText = textQueue.shift();
     if (!nextText) {
         return;
     } // Keine Texte mehr in der Warteschlange
-
     isSpeaking = true;
     changeToSpeakAvatar();
     console.log("Sprechen beginnt");
-
     responsiveVoice.speak(nextText, voice, {
         onend: () => {
             // Markiere, dass das Sprechen beendet wurde
@@ -49,22 +38,19 @@ function processQueue() {
         }
     });
 }
-
-document.body.addEventListener("click", function() {
-     if(checkIfFirstTime) {
-         speak(beginningText);
-         checkIfFirstTime = false;
-     }
+document.body.addEventListener("click", function () {
+    if (checkIfFirstTime) {
+        speak(beginningText);
+        checkIfFirstTime = false;
+    }
 });
-
 const img = document.getElementById("2dAvatar");
-
 function changeToSpeakAvatar() {
     console.log("changeToSpeakAvatar");
     img.src = "./video/seamless-loop-talking-unscreen.gif";
 }
-
 function changeToDefaultAvatar() {
     console.log("changeToDefaultAvatar");
     img.src = "./video/polar-bear-no-background-png.png";
 }
+//# sourceMappingURL=tts.js.map
