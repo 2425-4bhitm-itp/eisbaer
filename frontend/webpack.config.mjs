@@ -18,7 +18,21 @@ const config = {
         open: true,
         host: "localhost",
         port: 4200,
-        historyApiFallback: true
+        historyApiFallback: true,
+        proxy: [
+            {
+                context: ['/search'],
+                target: 'http://localhost:9200',
+                changeOrigin: true,
+                pathRewrite: { '^/search': '' }
+            },
+            {
+                context: ['/api'],
+                target: 'http://localhost:8080',
+                changeOrigin: true,
+                ws: true
+            },
+        ],
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -55,14 +69,12 @@ const config = {
             }
         ],
     },
-    // resolve: {
-    //     extensions: [".ts", ".js", ".html"],
-    //     alias: {
-    //         lib: resolve("./src/lib"),
-    //         features: resolve("./src/features"),
-    //         components: resolve("./src/components")
-    //     }
-    // }
+    resolve: {
+        extensions: [".ts", ".js", ".html"],
+        alias: {
+            scripts: resolve("./src/scripts"),
+        }
+    }
 }
 
 export default () => {

@@ -1,11 +1,11 @@
-import "./chatScroll"
-import "./stt"
-import "./tts"
+// import "./chatScroll"
+// import "./stt"
+// import "./tts"
 import { writeText } from "./stt"
 import { chatScroll } from "./chatScroll";
 
-const url = "http://localhost:8080/Articles/getArticle/"
-const urlOpenSearch = "http://localhost:9200/items/_search"
+const url = "./api/Articles/getArticle/"
+const urlOpenSearch = "./search/items/_search"
 
 const DEBOUNCE_TIMEOUT = 1500;
 
@@ -67,7 +67,7 @@ async function getArticlePositionWithOpenSearch() {
 
     try {
         // Basis-URL für den Index (anpassen, falls notwendig)
-        const urlOpenSearch = 'http://localhost:9200/articles/_search';
+        const urlOpenSearch = './search/articles/_search';
 
 
         // Encode Benutzername und Passwort in Base64 für Basic-Auth
@@ -121,7 +121,7 @@ async function getArticlePositionWithLLM() {
     };
 
     try {
-        const urlOpenSearch = "http://localhost:9200/eisbaer_rag_data/_search";
+        const urlOpenSearch = "./search/eisbaer_rag_data/_search";
 
         const response = await fetch(urlOpenSearch, {
             method: "POST",
@@ -230,7 +230,7 @@ async function getArticlePositionWithBackend() {
     const query = input.value;
 
     try {
-        const response = await fetch("http://localhost:8080/Articles/getArticle", {
+        const response = await fetch("./api/Articles/getArticle", {
             method: "POST",
             headers: {
                 "Content-Type": "text/plain"
