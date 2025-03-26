@@ -147,6 +147,7 @@ async function getArticlePositionWithLLM() {
 
     } catch (error) {
         console.error("Fehler beim Abrufen der Suchergebnisse:", error);
+        throw error
     }
 }
 
