@@ -67,3 +67,5 @@ function changeToDefaultAvatar() {
     console.log("changeToDefaultAvatar");
     img.src = "./video/polar-bear-no-background-png.png";
 }
+
+export { speak }

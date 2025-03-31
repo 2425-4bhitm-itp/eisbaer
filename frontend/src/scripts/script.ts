@@ -2,10 +2,11 @@
 // import "./stt"
 // import "./tts"
 import { writeText } from "./stt"
-import { chatScroll } from "./chatScroll";
+import { chatScroll } from "./chatScroll"
+import { speak } from "./tts"
 
 const url = "./api/Articles/getArticle/"
-const urlOpenSearch = "./search/items/_search"
+const urlOpenSearch = "./search/eisbaer_rag_data/_search";
 
 const DEBOUNCE_TIMEOUT = 1500;
 
@@ -14,7 +15,7 @@ let output = document.getElementById("queryOutput");
 let checkBoxForAI = <HTMLInputElement>document.getElementById("switchToAI");
 
 document.addEventListener("DOMContentLoaded", () => {
-    input.addEventListener("keyup", () => {
+    input.addEventListener("input", () => {
         processChange();
     });
 });
