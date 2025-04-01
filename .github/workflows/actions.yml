@@ -20,4 +20,4 @@
          run: |
            pwd
            ls -l
-           ll ./target
+           ls -l ./target
