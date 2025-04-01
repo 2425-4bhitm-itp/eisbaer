@@ -20,14 +20,14 @@ public class ArtikelRepository implements PanacheRepository<Artikel>{
     public static List<String> negativeKeywords = List.of("nicht", "keine", "keinem", "keinen", "keiner", "keines", "kein", "ohne");
 
     public List<Artikel> findByKeyword(String searchTerm) {
-        String likePattern = "%" + searchTerm + "%";
-        return find("CONCAT(FKArtikelid, '') LIKE ?1 OR " +
-                        "Bezeichnung1 LIKE ?1 OR " +
-                        "Bezeichnung2 LIKE ?1 OR " +
-                        "CONCAT(Laenge, '') LIKE ?1 OR " +
-                        "CONCAT(Breite, '') LIKE ?1 OR " +
-                        "CONCAT(Hoehe, '') LIKE ?1 OR " +
-                        "CONCAT(Durchmesser, '') LIKE ?1",
+        String likePattern = "%" + searchTerm.toLowerCase() + "%";
+        return find("LOWER(CAST(FKArtikelid AS string)) LIKE ?1 OR " +
+                        "LOWER(Bezeichnung1) LIKE ?1 OR " +
+                        "LOWER(Bezeichnung2) LIKE ?1 OR " +
+                        "LOWER(CAST(Laenge AS string)) LIKE ?1 OR " +
+                        "LOWER(CAST(Breite AS string)) LIKE ?1 OR " +
+                        "LOWER(CAST(Hoehe AS string)) LIKE ?1 OR " +
+                        "LOWER(CAST(Durchmesser AS string)) LIKE ?1",
                 likePattern).list();
     }
 
