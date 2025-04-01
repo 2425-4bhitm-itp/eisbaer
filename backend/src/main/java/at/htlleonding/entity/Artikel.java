@@ -65,7 +65,7 @@ public class Artikel {
         return Stellplatz;
     }
 
-    public Artikel(long FKArtikelid, String Bezeichnung1, String Bezeichnung2, double Laenge, double Breite, double Hoehe, double Druchmesser, String Lagerort, String Lagerstand, String LagereinheitBez, String Stellplatz) {
+    public Artikel(String Bezeichnung1, String Bezeichnung2, double Laenge, double Breite, double Hoehe, double Druchmesser, String Lagerort, String Lagerstand, String LagereinheitBez, String Stellplatz) {
         this.FKArtikelid = FKArtikelid;
         this.Bezeichnung1 = Bezeichnung1;
         this.Bezeichnung2 = Bezeichnung2;
