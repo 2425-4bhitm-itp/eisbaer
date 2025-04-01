@@ -16,6 +16,7 @@
          working-directory: backend
          run: mvn -B package
        - name: list files
+         working-directory: backend
          run: |
            pwd
            ls -l
