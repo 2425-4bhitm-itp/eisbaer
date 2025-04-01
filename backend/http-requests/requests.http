@@ -6,3 +6,21 @@ POST http://localhost:8080/Articles/getArticle
 Content-Type: text/plain
 
 Wo sind die Schrauben die keine Gestellschrauben sind
+
+###
+
+POST http://localhost:8080/Articles/addArticle
+Content-Type: application/json
+
+{
+  "breite": 10.5,
+  "durchmesser": 5.2,
+  "hoehe": 15.0,
+  "laenge": 20.0,
+  "bezeichnung1": "Testartikel",
+  "bezeichnung2": "Testbeschreibung",
+  "lagereinheitBez": "Stück",
+  "lagerort": "Lager A",
+  "lagerstand": "10",
+  "stellplatz": "Regal 5"
+}
