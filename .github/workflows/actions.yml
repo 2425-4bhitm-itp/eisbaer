@@ -15,6 +15,9 @@
        - name: Build with Maven
          working-directory: backend
          run: mvn -B package
+       - name: Run backend tests
+         working-directory: backend
+         run: mvn -B test
 #       - name: list files
 #         working-directory: backend
 #         run: |
