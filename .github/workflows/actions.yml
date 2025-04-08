@@ -15,15 +15,9 @@
        - name: Build with Maven
          working-directory: backend
          run: mvn -B package
-       - name: Run backend tests
-         working-directory: backend
-         run: mvn -B test
-#       - name: list files
+#       - name: Run backend tests
 #         working-directory: backend
-#         run: |
-#           pwd
-#           ls -l
-#           ls -l ./target
+#         run: mvn -B test
 
 
 # BUILD DOCKER IMAGE ACTIONS
