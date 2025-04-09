@@ -4,6 +4,8 @@
 import { writeText } from "./stt"
 import { chatScroll } from "./chatScroll"
 import { speak } from "./tts"
+import {ChatHistory} from "../components/transcript/chat-history/chat-history";
+
 
 const url = "./api/Articles/getArticle/"
 const urlOpenSearch = "./search/eisbaer_rag_data/_search";
@@ -144,7 +146,8 @@ async function getArticlePositionWithLLM() {
         console.log("Antwort:", answer);
 
         // Verarbeite die Antwort (z. B. anzeigen)
-        showArticlePositionLLM(answer);
+        const chatHistory = document.querySelector("chat-history") as ChatHistory
+        chatHistory.show(answer)
 
     } catch (error) {
         console.error("Fehler beim Abrufen der Suchergebnisse:", error);
@@ -152,81 +155,6 @@ async function getArticlePositionWithLLM() {
     }
 }
 
-
-// function only works with opensearch response. To use getArticlePosition() remove _source in position notation
-function showArticlePosition(position: any[] ) { // TODO: change any
-    document.getElementById("queryOutput").innerHTML = "";
-
-    let table = document.createElement("table");
-    table.classList.add("outputTable");
-
-    let counter = 1;
-
-    for (let i = 0; i < Math.min(position.length, 5); i++) {
-        let rank = document.createElement("td");
-        let tr = document.createElement("tr");
-        let tdName = document.createElement("td");
-        let tdPosition = document.createElement("td");
-        let tdMiddle = document.createElement("td");
-
-        rank.innerHTML = ("" + counter + ". ");
-        tdName.innerHTML = position[i]._source.Bezeichnung1;
-        tdName.classList.add("outputName");
-        tdMiddle.innerHTML = " ----- ";
-        tdPosition.innerHTML = position[i]._source.Stellplatz;
-        tdPosition.classList.add("outputPlace");
-
-        tr.appendChild(rank);
-        tr.appendChild(tdName);
-        tr.appendChild(tdMiddle);
-        tr.appendChild(tdPosition);
-
-        speak(tdName.innerHTML);
-        speak("Position: " + tdPosition.innerHTML);
-
-        table.appendChild(tr);
-
-        counter++;
-    }
-
-    output.appendChild(table);
-}
-
-/*
-
-<div id="0transcript" class="transcriptEntry">
-          <p class="transcriptName">Eisbär:</p>
-          <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
-        </div>
-
- */
-
-
-function showArticlePositionLLM(position: any) {
-
-    let chat = document.getElementById("chatHistory");
-
-    let box = document.createElement("div");
-    box.classList.add("transcriptEntry");
-    box.classList.add("boxLeft")
-
-    let name = document.createElement("p");
-    name.classList.add("transcriptName");
-
-    let text = document.createElement("p");
-    text.classList.add("transcriptText");
-
-    name.innerHTML = "Eisbär:";
-    text.innerHTML = position;
-
-    box.appendChild(name);
-    box.appendChild(text);
-
-    chat.appendChild(box);
-    speak(position);
-
-    chatScroll();
-}
 
 async function getArticlePositionWithBackend() {
     const query = input.value;

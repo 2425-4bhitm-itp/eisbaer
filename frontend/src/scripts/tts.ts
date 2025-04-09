@@ -1,9 +1,9 @@
 let checkIfFirstTime: boolean = true;
 declare const responsiveVoice: any;
 
-const beginningText: string = document
-     .getElementsByClassName("transcriptText")[0]
-     .innerHTML;
+const beginningText: string = "hello world"// document todo
+     // .getElementsByClassName("transcriptText")[0]
+     // .innerHTML;
 
 console.log("textToBeSpoken: " + beginningText);
 

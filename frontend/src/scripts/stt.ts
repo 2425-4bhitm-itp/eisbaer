@@ -1,7 +1,6 @@
 import { processChange} from "./script";
 import { chatScroll } from "./chatScroll";
 
-const startButton = document.getElementById('start') as HTMLButtonElement
 const speechOutput = document.getElementById('userInput') as HTMLInputElement
 
 interface IWindow extends Window {
@@ -34,11 +33,6 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
 } else {
     alert('Your browser does not support Speech Recognition.');
 }
-
-startButton.addEventListener('click', () => {
-    console.log('Start listening...');
-    if (recognition) recognition.start();
-});
 
 export function writeText(text: string) {
 
