@@ -1,4 +1,3 @@
-import { processChange} from "./script";
 import { chatScroll } from "./chatScroll";
 
 const speechOutput = document.getElementById('userInput') as HTMLInputElement
@@ -23,7 +22,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             .map((result) => (result as SpeechRecognitionAlternative).transcript)
             .join('');
         speechOutput.value = transcript;
-        processChange();
+        // processChange();
     };
 
 
