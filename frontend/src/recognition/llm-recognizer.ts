@@ -1,8 +1,8 @@
 import {Recognizer, SearchResult} from "./recognizer";
 
 class LlmRecognizer extends Recognizer {
-    recognize(text: String): SearchResult[] {
-        return getArticlePositionWithLLM(text);
+    async recognize(text: string): Promise<SearchResult[]> {
+        return await getArticlePositionWithLLM(text);
     }
 
 }

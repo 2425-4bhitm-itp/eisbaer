@@ -6,7 +6,7 @@ const DEBOUNCE_TIMEOUT = 1500
 const template = `<div id="queryInputContainer">
                   <div id="inputButtons">
                     <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
-                    <button id="start"><img src="img/microphone_icon.svg"></button>
+                    <button id="start" name="start"><img src="img/microphone_icon.svg"></button>
                   </div>
               </div>`
 
@@ -26,13 +26,16 @@ class QueryInput extends HTMLElement {
             this.processChange()
         });
 
-        startButton.addEventListener('click', () => {
+        startButton.addEventListener("click", () => {
             console.log('Start listening...');
             this.recognition.start();
         });
     }
 
     processChange() {
+        // const input = this.querySelector('input[name="userInput"]') as HTMLInputElement
+        // const checkBoxForAI = this.querySelector('input[name="switchToAI"]') as HTMLInputElement
+        //
         // const processChange = debounce(() => {
         //     if (checkBoxForAI.checked) {
         //         getArticlePositionWithLLM();

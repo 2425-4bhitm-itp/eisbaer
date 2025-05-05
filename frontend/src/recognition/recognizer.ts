@@ -5,7 +5,7 @@ class SearchResult {
 }
 
 abstract class Recognizer {
-    abstract recognize(text: String): SearchResult[]
+    abstract recognize(text: String): Promise<SearchResult[]>
 }
 
 
