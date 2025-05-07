@@ -54,3 +54,5 @@ async function getArticlePositionWithLLM(query: string) {
     return answer
 
 }
+
+export {getArticlePositionWithLLM}

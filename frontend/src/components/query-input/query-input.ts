@@ -1,5 +1,6 @@
 import {createSpeechRecognition} from "./create-speech-recognition";
 import {writeText} from "scripts/stt";
+import {getArticlePositionWithLLM} from "../../recognition/llm-recognizer";
 
 const DEBOUNCE_TIMEOUT = 1500
 
@@ -13,6 +14,7 @@ const template = `<div id="queryInputContainer">
 class QueryInput extends HTMLElement {
 
     recognition: SpeechRecognition;
+    debouncedProcess: () => void;
 
     connectedCallback() {
         this.recognition = createSpeechRecognition()
@@ -21,9 +23,22 @@ class QueryInput extends HTMLElement {
 
         const userInput = this.querySelector('input[name="userInput"]') as HTMLInputElement
         const startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
+        const checkBoxForAI = document.querySelector('input[name="switchToAI"]') as HTMLInputElement
+
+        this.debouncedProcess = debounce(() => {
+            if (checkBoxForAI.checked) {
+                getArticlePositionWithLLM(userInput.value);
+            } else {
+                // getArticlePositionWithBackend();
+            }
+            writeText(userInput.value);
+            userInput.value = "";
+        });
+
+        this.debouncedProcess();
 
         userInput.addEventListener("input", () => {
-            this.processChange()
+            this.debouncedProcess()
         });
 
         startButton.addEventListener("click", () => {
@@ -32,20 +47,6 @@ class QueryInput extends HTMLElement {
         });
     }
 
-    processChange() {
-        // const input = this.querySelector('input[name="userInput"]') as HTMLInputElement
-        // const checkBoxForAI = this.querySelector('input[name="switchToAI"]') as HTMLInputElement
-        //
-        // const processChange = debounce(() => {
-        //     if (checkBoxForAI.checked) {
-        //         getArticlePositionWithLLM();
-        //     } else {
-        //         getArticlePositionWithBackend();
-        //     }
-        //     writeText(input.value);
-        //     input.value = "";
-        // });
-    }
 }
 customElements.define('query-input', QueryInput)
 
