@@ -25,14 +25,17 @@ class QueryInput extends HTMLElement {
         const startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
         const checkBoxForAI = document.querySelector('input[name="switchToAI"]') as HTMLInputElement
 
-        this.debouncedProcess = debounce(() => {
+        this.debouncedProcess = debounce(async () => {
+            let result;
             if (checkBoxForAI.checked) {
-                getArticlePositionWithLLM(userInput.value);
+                result = await getArticlePositionWithLLM(userInput.value);
             } else {
                 // getArticlePositionWithBackend();
             }
+
             writeText(userInput.value);
             userInput.value = "";
+            writeText(result)
         });
 
         this.debouncedProcess();
