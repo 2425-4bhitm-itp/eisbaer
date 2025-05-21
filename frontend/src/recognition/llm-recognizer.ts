@@ -4,7 +4,6 @@ class LlmRecognizer extends Recognizer {
     async recognize(text: string): Promise<SearchResult[]> {
         return await getArticlePositionWithLLM(text);
     }
-
 }
 
 async function getArticlePositionWithLLM(query: string) {
@@ -28,6 +27,12 @@ async function getArticlePositionWithLLM(query: string) {
 
     const urlOpenSearch = "./search/eisbaer_rag_data/_search";
 
+    console.log(requestBody)
+
+    if(!query || query.trim() === "") {
+        return
+    }
+
     const response = await fetch(urlOpenSearch, {
         method: "POST",
         headers: {
@@ -36,9 +41,9 @@ async function getArticlePositionWithLLM(query: string) {
         body: JSON.stringify(requestBody)
     });
 
-    if (!response.ok) {
+    /*if (!response.ok) {
         throw new Error(`HTTP-Fehler! Status: ${response.status}`);
-    }
+    }*/
 
     const data = await response.json();
     console.log("Suchergebnisse:", data.hits.hits);
