@@ -1,4 +1,4 @@
-import { chatScroll } from "./chatScroll";
+import { chatScroll } from "../components/transcript/chat-history/chatScroll";
 
 const speechOutput = document.getElementById('userInput') as HTMLInputElement
 

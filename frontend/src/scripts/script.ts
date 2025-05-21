@@ -2,7 +2,7 @@
 // import "./stt"
 // import "./tts"
 import { writeText } from "./stt"
-import { chatScroll } from "./chatScroll"
+import { chatScroll } from "../components/transcript/chat-history/chatScroll"
 import { speak } from "./tts"
 import {ChatHistory} from "../components/transcript/chat-history/chat-history";
 

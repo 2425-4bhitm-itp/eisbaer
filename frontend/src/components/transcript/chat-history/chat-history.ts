@@ -1,5 +1,5 @@
 import {speak} from "scripts/tts";
-import {chatScroll} from "scripts/chatScroll";
+import {chatScroll} from "./chatScroll";
 
 const html = `<div id="chatHistory">
                   <div id="0transcript" class="transcriptEntry, boxLeft">
