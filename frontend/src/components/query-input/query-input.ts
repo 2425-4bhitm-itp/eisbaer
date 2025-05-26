@@ -1,6 +1,7 @@
 import {createSpeechRecognition} from "./create-speech-recognition";
-import {writeText} from "scripts/stt";
-import {getArticlePositionWithLLM} from "../../recognition/llm-recognizer";
+import {writeText} from "../text-writer/text-writer";
+import {getArticlePositionWithLLM} from "../recognition/llm-recognizer";
+import {Sender} from "../text-writer/Sender";
 
 const DEBOUNCE_TIMEOUT = 1500
 
@@ -33,9 +34,9 @@ class QueryInput extends HTMLElement {
                 // getArticlePositionWithBackend();
             }
 
-            writeText(userInput.value);
+            writeText(userInput.value, Sender.CUSTOMER);
             userInput.value = "";
-            writeText(result)
+            writeText(result, Sender.EISBAER)
         });
 
         this.debouncedProcess();

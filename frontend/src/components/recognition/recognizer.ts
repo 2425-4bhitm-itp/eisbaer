@@ -1,4 +1,4 @@
-import {ChatHistory} from "../components/transcript/chat-history/chat-history";
+import {ChatHistory} from "../transcript/chat-history/chat-history";
 
 class SearchResult {
     text: string
