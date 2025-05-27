@@ -1,13 +1,13 @@
 import {chatScroll} from "../transcript/chat-history/chatScroll";
 import {Sender} from "./sender";
 
-export function writeText(text: string, sender: Sender) {
+export function writeText(chat: HTMLElement, text: string, sender: Sender) {
 
     if (text === '' || text == null) {
         return;
     }
 
-    let chat = document.getElementById("chatHistory");
+    // let chat = document.getElementById("chatHistory");
     let name = document.createElement("p");
     let textField = document.createElement("p");
     let box = document.createElement("div");

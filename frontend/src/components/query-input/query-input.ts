@@ -34,9 +34,9 @@ class QueryInput extends HTMLElement {
                 getArticlePositionWithBackend();
             }*/
             result = await getArticlePositionWithLLM(userInput.value);
-            writeText(userInput.value, Sender.CUSTOMER);
+            writeText(this.querySelector("chat-history"), userInput.value, Sender.CUSTOMER);
             userInput.value = "";
-            writeText(result, Sender.EISBAER)
+            writeText(this.querySelector("chat-history"), result, Sender.EISBAER)
         });
 
         this.debouncedProcess();
