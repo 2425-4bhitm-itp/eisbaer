@@ -3,15 +3,6 @@
 // import "./tts"
 import { chatScroll } from "../components/transcript/chat-history/chatScroll"
 import { speak } from "./tts"
-import {ChatHistory} from "../components/transcript/chat-history/chat-history";
-
-
-const url = "./api/Articles/getArticle/"
-const urlOpenSearch = "./search/eisbaer_rag_data/_search";
-
-let input = <HTMLInputElement>document.getElementById("userInput");
-let output = document.getElementById("queryOutput");
-let checkBoxForAI = <HTMLInputElement>document.getElementById("switchToAI");
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Document loaded...")
