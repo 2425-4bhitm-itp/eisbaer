@@ -2,6 +2,7 @@ import {createSpeechRecognition} from "./create-speech-recognition";
 import {writeText} from "../text-writer/text-writer";
 import {getArticlePositionWithLLM} from "../recognition/llm-recognizer";
 import {Sender} from "../text-writer/sender";
+import {SpeechToText} from "./SpeechToText";
 
 const DEBOUNCE_TIMEOUT = 1500
 
@@ -18,7 +19,6 @@ class QueryInput extends HTMLElement {
     debouncedProcess: () => void;
 
     connectedCallback() {
-        this.recognition = createSpeechRecognition()
         console.log("connected query input.ts")
         this.innerHTML = template
 
@@ -47,7 +47,7 @@ class QueryInput extends HTMLElement {
 
         startButton.addEventListener("click", () => {
             console.log('Start listening...');
-            this.recognition.start();
+            this.speechToText.start()
         });
     }
 
