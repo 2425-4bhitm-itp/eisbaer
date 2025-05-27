@@ -14,7 +14,7 @@ const template = `<div id="queryInputContainer">
 
 class QueryInput extends HTMLElement {
 
-    recognition: SpeechRecognition;
+    speechToText = new SpeechToText()
     debouncedProcess: () => void;
 
     connectedCallback() {
