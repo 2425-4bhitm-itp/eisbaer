@@ -1,5 +1,5 @@
 import {chatScroll} from "../transcript/chat-history/chatScroll";
-import {Sender} from "./Sender";
+import {Sender} from "./sender";
 
 export function writeText(text: string, sender: Sender) {
 
