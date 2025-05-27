@@ -12,8 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
 const username = 'admin';
 const password = 'Str0ngP@ssw0rd!';
 
-
-
 function showArticlePositionBackend(position: { bezeichnung1: string, stellplatz: string }[]) {
     let chat = document.getElementById("chatHistory");
 
