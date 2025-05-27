@@ -2,7 +2,7 @@ import {createSpeechRecognition} from "./create-speech-recognition";
 import {writeText} from "../text-writer/text-writer";
 import {getArticlePositionWithLLM} from "../recognition/llm-recognizer";
 import {Sender} from "../text-writer/sender";
-import {SpeechToText} from "./SpeechToText";
+import {SpeechToText} from "./speechToText";
 
 const DEBOUNCE_TIMEOUT = 1500
 
