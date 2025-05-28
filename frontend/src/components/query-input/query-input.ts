@@ -34,9 +34,9 @@ class QueryInput extends HTMLElement {
                 getArticlePositionWithBackend();
             }*/
             result = await getArticlePositionWithLLM(userInput.value);
-            writeText(this.querySelector("chat-history"), userInput.value, Sender.CUSTOMER);
+            writeText(this.querySelector("chat-history"), userInput.value, Sender.CUSTOMER); //SEND CUSTOM EVENT INSTEAD TO INFORM OUTPUT-CONTAINER
             userInput.value = "";
-            writeText(this.querySelector("chat-history"), result, Sender.EISBAER)
+            writeText(this.querySelector("chat-history"), result, Sender.EISBAER) //SEND CUSTOM EVENT INSTEAD TO INFORM OUTPUT-CONTAINER
         });
 
         this.debouncedProcess();
@@ -64,5 +64,3 @@ function debounce(func: any, timeout = DEBOUNCE_TIMEOUT) {
         }, timeout);
     };
 }
-
-//test

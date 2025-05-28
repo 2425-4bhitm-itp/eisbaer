@@ -52,10 +52,6 @@ async function getArticlePositionWithLLM(query: string) {
     const answer = data.ext?.retrieval_augmented_generation?.answer || "Keine Antwort gefunden.";
     console.log("Antwort:", answer);
 
-    // Verarbeite die Antwort (z. B. anzeigen)
-    // const chatHistory = document.querySelector("chat-history") as ChatHistory
-    // chatHistory.show(answer)
-
     return answer
 
 }
