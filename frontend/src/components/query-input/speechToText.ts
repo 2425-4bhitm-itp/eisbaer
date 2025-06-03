@@ -1,3 +1,5 @@
+import {Sender} from "../text-writer/sender";
+
 interface IWindow extends Window {
     SpeechRecognition: typeof SpeechRecognition;
     webkitSpeechRecognition: typeof SpeechRecognition;
@@ -25,6 +27,9 @@ export class SpeechToText {
         };
     }
     write(text: string) {
+        let userInputField = document.querySelector("#userInput") as HTMLInputElement
+        userInputField.value = text;
+
         console.log(text)
     }
     start() {
