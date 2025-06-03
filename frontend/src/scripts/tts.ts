@@ -44,6 +44,7 @@ function processQueue() {
             changeToDefaultAvatar();
             console.log("Sprechen beendet");
             // Verarbeite den nächsten Text
+
             processQueue();
         }
     });

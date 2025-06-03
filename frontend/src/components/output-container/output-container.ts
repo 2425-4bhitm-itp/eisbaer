@@ -1,5 +1,6 @@
 import { writeText } from "../text-writer/text-writer";
 import { Sender } from "../text-writer/sender";
+import { speak } from "scripts/tts";
 
 class OutputContainer extends HTMLElement {
 
@@ -12,6 +13,10 @@ class OutputContainer extends HTMLElement {
 
             if (chatHistory) {
                 writeText(chatHistory, text, sender);
+
+                if(sender === Sender.EISBAER) {
+                    speak(text)
+                }
             }
         });
     }
