@@ -30,6 +30,9 @@ export class SpeechToText {
         let userInputField = document.querySelector("#userInput") as HTMLInputElement
         userInputField.value = text;
 
+        const inputEvent = new Event("input", { bubbles: true });
+        userInputField.dispatchEvent(inputEvent);
+
         console.log(text)
     }
     start() {
