@@ -34,9 +34,21 @@ class QueryInput extends HTMLElement {
                 getArticlePositionWithBackend();
             }*/
             result = await getArticlePositionWithLLM(userInput.value);
-            writeText(this.querySelector("chat-history"), userInput.value, Sender.CUSTOMER); //SEND CUSTOM EVENT INSTEAD TO INFORM OUTPUT-CONTAINER
+
+            this.dispatchEvent(new CustomEvent("message", {
+                detail: { text: userInput.value, sender: Sender.CUSTOMER },
+                bubbles: true,
+                composed: true
+            }));
+
             userInput.value = "";
-            writeText(this.querySelector("chat-history"), result, Sender.EISBAER) //SEND CUSTOM EVENT INSTEAD TO INFORM OUTPUT-CONTAINER
+
+            this.dispatchEvent(new CustomEvent("message", {
+                detail: { text: result, sender: Sender.EISBAER },
+                bubbles: true,
+                composed: true
+            }));
+
         });
 
         this.debouncedProcess();
@@ -49,6 +61,7 @@ class QueryInput extends HTMLElement {
             console.log('Start listening...');
             this.speechToText.start()
         });
+
     }
 
 }

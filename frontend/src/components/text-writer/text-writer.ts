@@ -3,11 +3,12 @@ import {Sender} from "./sender";
 
 export function writeText(chat: HTMLElement, text: string, sender: Sender) {
 
+    console.log("WRITE TEXT CALLED");
+
     if (text === '' || text == null) {
         return;
     }
 
-    // let chat = document.getElementById("chatHistory");
     let name = document.createElement("p");
     let textField = document.createElement("p");
     let box = document.createElement("div");

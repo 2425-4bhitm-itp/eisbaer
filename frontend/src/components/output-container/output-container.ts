@@ -1,12 +1,25 @@
-const div: HTMLElement = document.querySelector("chat-history")!;
+import { writeText } from "../text-writer/text-writer";
+import { Sender } from "../text-writer/sender";
 
-const c_event = new CustomEvent("build", { detail: 3 });
+class OutputContainer extends HTMLElement {
 
-div.addEventListener("build",(e:CustomEventInit<number>) => {
-    // `detail` is properly typed as `number` here!
-    console.log(e.detail);
-});
+    connectedCallback() {
+        console.log("connected output-container");
 
-div.dispatchEvent(c_event);
+        this.addEventListener("message", (event: Event) => {
+            const customEvent = event as CustomEvent;
+            const { text, sender } = customEvent.detail;
 
-// CUSTOM EVENT VERARBEITEN
+            console.log("Received message IN OUTPUT CONTAINER:", text, sender);
+
+            let chatHistory = this.querySelector("#chatHistory") as HTMLElement;
+
+            if (chatHistory) {
+                writeText(chatHistory, text, sender);
+            }
+        });
+    }
+
+}
+
+customElements.define("output-container", OutputContainer);
