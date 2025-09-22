@@ -1,72 +1,63 @@
-name: Build, Push GHCR & Expose via ngrok
+name: Build and Deploy with Ngrok
 
 on:
-  push:
-    branches: [ test-ngrok ]
-  workflow_dispatch:
+  workflow_dispatch:  # Manuelles Auslösen
 
 jobs:
-  build-and-expose:
+  build:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      packages: write   # notwendig für GHCR Push
-      id-token: write
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      # NodeJS für npm build im frontend
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      # Buildscript ausführen
-      - name: Run build.sh
-        run: |
-          chmod +x ./build.sh
-          ./build.sh
-
-      # In GHCR einloggen
-      - name: Log in to GHCR
-        uses: docker/login-action@v3
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v2
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Image taggen & pushen
-      - name: Tag & Push eisbaer-frontend image to GHCR
+      - name: Set up Docker Compose
         run: |
-          IMAGE_NAME=ghcr.io/${{ github.repository_owner }}/eisbaer-frontend:latest
-          docker tag eisbaer-frontend:latest $IMAGE_NAME
-          docker push $IMAGE_NAME
+          sudo apt-get update
+          sudo apt-get install -y docker-compose
 
-      # ngrok installieren
+      - name: Start services with Docker Compose
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Secret aus GitHub
+        run: |
+          # optional .env generieren, falls Skripte sie erwarten
+          echo "OPENAI_API_KEY=${OPENAI_API_KEY}" > .env
+          docker compose up -d --build
+
       - name: Install ngrok
         run: |
           curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
-            sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null
-          echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | \
-            sudo tee /etc/apt/sources.list.d/ngrok.list >/dev/null
-          sudo apt update && sudo apt install -y ngrok
+            sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null &&
+            echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | \
+            sudo tee /etc/apt/sources.list.d/ngrok.list &&
+            sudo apt update && sudo apt install ngrok
 
-      # ngrok starten (Port 4200)
+      - name: Auth with ngrok
+        run: ngrok config add-authtoken ${{ secrets.NGROK_AUTHTOKEN }}
+
       - name: Start ngrok tunnel
-        env:
-          NGROK_AUTHTOKEN: ${{ secrets.NGROK_AUTHTOKEN }}
-        run: |
-          ngrok config add-authtoken $NGROK_AUTHTOKEN
-          ngrok http 4200 > ngrok.log &
-          sleep 8
-          echo "Tunnel info:"
-          curl 127.0.0.1:4040/api/tunnels
+        run: nohup ngrok http 8080 > ngrok.log &
 
-      - name: Keep alive for 1 hour
-        run: sleep 3600
+      - name: Wait for services
+        run: sleep 30
+
+      - name: Run Quarkus Build LLM Script
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          chmod +x ./buildLLM.sh
+          ./buildLLM.sh
+
+      - name: Show ngrok URL
+        run: cat ngrok.log | grep -o 'https://[0-9a-z]*\.ngrok-free\.app' || true
+
+      - name: Stop Docker Compose after job
+        if: always()
+        run: docker compose down
