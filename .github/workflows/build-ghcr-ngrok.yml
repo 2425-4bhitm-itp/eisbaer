@@ -32,7 +32,7 @@ jobs:
           # Optional .env für Skripte
           echo "OPENAI_API_KEY=${OPENAI_API_KEY}" > .env
           # Compose-Datei im Unterordner angeben
-          docker compose -f docker-compose/docker-compose.yml up -d --build
+          docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yml up -d --build
 
       - name: Install ngrok
         run: |
