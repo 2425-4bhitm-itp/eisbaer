@@ -87,10 +87,10 @@ jobs:
       - name: Show ngrok URL
         run: cat ngrok.log | grep -o 'https://[0-9a-z]*\.ngrok-free\.app' || true
 
+      - name: Keep job alive for testing
+        run: sleep 600
+
       # 12. Docker Compose wieder stoppen nach Job
       - name: Stop Docker Compose after job
         if: always()
         run: docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml down
-
-      - name: Keep job alive for testing
-        run: sleep 600
