@@ -91,3 +91,6 @@ jobs:
       - name: Stop Docker Compose after job
         if: always()
         run: docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml down
+
+      - name: Keep job alive for testing
+        run: sleep 600
