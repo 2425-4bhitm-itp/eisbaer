@@ -1,6 +1,8 @@
 name: Build and Deploy with Ngrok
 
 on:
+  push:
+    branches: [test-ngrok]
   workflow_dispatch:  # Manuelles Auslösen
 
 jobs:
