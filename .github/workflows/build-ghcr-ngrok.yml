@@ -2,7 +2,7 @@ name: Build, Push GHCR & Expose via ngrok
 
 on:
   push:
-    branches: [ origin/test-ngrok ]
+    branches: [ test-ngrok ]
   workflow_dispatch:
 
 jobs:
