@@ -13,6 +13,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 1. Node installieren, um das Frontend zu bauen
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      # 2. Frontend-Assets bauen
+      - name: Build frontend assets
+        run: |
+          cd frontend
+          npm ci
+          npm run build
+
+      # 3. Log in to GitHub Container Registry
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v2
         with:
@@ -20,11 +34,13 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # 4. Docker Compose installieren
       - name: Set up Docker Compose
         run: |
           sudo apt-get update
-          sudo apt-get install -y docker-compose
+          sudo apt-get install -y docker-compose jq
 
+      # 5. Docker Compose Build + Up
       - name: Start services with Docker Compose
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Secret aus GitHub
@@ -34,6 +50,7 @@ jobs:
           # Compose-Datei im Unterordner angeben
           docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml up -d --build
 
+      # 6. ngrok installieren
       - name: Install ngrok
         run: |
           curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
@@ -42,15 +59,19 @@ jobs:
             sudo tee /etc/apt/sources.list.d/ngrok.list &&
             sudo apt update && sudo apt install ngrok
 
+      # 7. ngrok Auth
       - name: Auth with ngrok
         run: ngrok config add-authtoken ${{ secrets.NGROK_AUTHTOKEN }}
 
+      # 8. ngrok Tunnel starten (Port ggf. anpassen – bei dir 4200 fürs Frontend)
       - name: Start ngrok tunnel
-        run: nohup ngrok http 8080 > ngrok.log &
+        run: nohup ngrok http 4200 > ngrok.log &
 
+      # 9. Warten auf Services
       - name: Wait for services
         run: sleep 30
 
+      # 10. Quarkus Build LLM Script ausführen
       - name: Run Quarkus Build LLM Script
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -58,9 +79,11 @@ jobs:
           chmod +x ./buildLLM.sh
           ./buildLLM.sh
 
+      # 11. Zeige ngrok URL in Logs
       - name: Show ngrok URL
         run: cat ngrok.log | grep -o 'https://[0-9a-z]*\.ngrok-free\.app' || true
 
+      # 12. Docker Compose wieder stoppen nach Job
       - name: Stop Docker Compose after job
         if: always()
         run: docker compose down
