@@ -90,4 +90,4 @@ jobs:
       # 12. Docker Compose wieder stoppen nach Job
       - name: Stop Docker Compose after job
         if: always()
-        run: docker compose down
+        run: docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml down
