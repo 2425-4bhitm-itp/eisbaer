@@ -63,9 +63,13 @@ jobs:
       - name: Auth with ngrok
         run: ngrok config add-authtoken ${{ secrets.NGROK_AUTHTOKEN }}
 
-      # 8. ngrok Tunnel starten (Port ggf. anpassen – bei dir 4200 fürs Frontend)
-      - name: Start ngrok tunnel
-        run: nohup ngrok http 4200 > ngrok.log &
+      # 8. ngrok Tunnel starten
+      - name: Start ngrok tunnel and get URL
+        run: |
+          ngrok http 4200 --log=stdout > ngrok.log &
+          sleep 5  # kurz warten, bis ngrok startet
+          NGROK_URL=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url')
+          echo "ngrok URL: $NGROK_URL"
 
       # 9. Warten auf Services
       - name: Wait for services
