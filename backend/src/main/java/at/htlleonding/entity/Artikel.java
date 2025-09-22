@@ -90,4 +90,6 @@ public class Artikel {
                 ", FKArtikelid=" + FKArtikelid +
                 '}';
     }
+
+    //test
 }
