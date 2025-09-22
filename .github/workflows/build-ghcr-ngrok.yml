@@ -29,9 +29,10 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Secret aus GitHub
         run: |
-          # optional .env generieren, falls Skripte sie erwarten
+          # Optional .env für Skripte
           echo "OPENAI_API_KEY=${OPENAI_API_KEY}" > .env
-          docker compose up -d --build
+          # Compose-Datei im Unterordner angeben
+          docker compose -f docker-compose/docker-compose.yml up -d --build
 
       - name: Install ngrok
         run: |
