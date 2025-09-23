@@ -91,5 +91,5 @@ public class Artikel {
                 '}';
     }
 
-    //test
+    //tes
 }
