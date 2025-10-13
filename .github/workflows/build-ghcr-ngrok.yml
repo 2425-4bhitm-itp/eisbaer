@@ -1,96 +1,77 @@
-name: Build and Deploy with Ngrok
+name: Build and Push Docker Images to GHCR
 
 on:
   push:
-    branches: [test-ngrok]
-  workflow_dispatch:  # Manuelles Auslösen
+    branches: [test-ghcr]
+  workflow_dispatch:
 
 jobs:
-  build:
+  build-and-push:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      # 1. Node installieren, um das Frontend zu bauen
+      # 1️Build frontend (Node)
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
 
-      # 2. Frontend-Assets bauen
       - name: Build frontend assets
+        working-directory: frontend
         run: |
-          cd frontend
-          npm install
+          npm ci
           npm run build
 
-      # 3. Log in to GitHub Container Registry
+      # 2️Log in to GitHub Container Registry
       - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v2
+        uses: docker/login-action@v3
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # 4. Docker Compose installieren
+      # 3️Install Docker Compose
       - name: Set up Docker Compose
         run: |
           sudo apt-get update
           sudo apt-get install -y docker-compose jq
 
-      # 5. Docker Compose Build + Up
-      - name: Start services with Docker Compose
+      # 4️Build all images and push them to GHCR
+      - name: Build and push Docker images to GHCR
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}   # Secret aus GitHub
+          REGISTRY: ghcr.io
+          OWNER: ${{ github.repository_owner }}
+          REPO: ${{ github.event.repository.name }}
         run: |
-          # Optional .env für Skripte
-          echo "OPENAI_API_KEY=${OPENAI_API_KEY}" > .env
-          # Compose-Datei im Unterordner angeben
-          docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml up -d --build
+          cd docker-compose
+          docker compose build
 
-      # 6. ngrok installieren
-      - name: Install ngrok
-        run: |
-          curl -s https://ngrok-agent.s3.amazonaws.com/ngrok.asc | \
-            sudo tee /etc/apt/trusted.gpg.d/ngrok.asc >/dev/null &&
-            echo "deb https://ngrok-agent.s3.amazonaws.com buster main" | \
-            sudo tee /etc/apt/sources.list.d/ngrok.list &&
-            sudo apt update && sudo apt install ngrok
+          # Extract image names from docker-compose.yaml
+          IMAGES=$(docker compose config | grep 'image:' | awk '{print $2}')
 
-      # 7. ngrok Auth
-      - name: Auth with ngrok
-        run: ngrok config add-authtoken ${{ secrets.NGROK_AUTHTOKEN }}
+          echo "Found images:"
+          echo "$IMAGES"
 
-      # 8. ngrok Tunnel starten
-      - name: Start ngrok tunnel and get URL
-        run: |
-          ngrok http 4200 --log=stdout > ngrok.log &
-          sleep 5  # kurz warten, bis ngrok startet
-          NGROK_URL=$(curl --silent http://127.0.0.1:4040/api/tunnels | jq -r '.tunnels[0].public_url')
-          echo "ngrok URL: $NGROK_URL"
+          for IMAGE in $IMAGES; do
+            SERVICE=$(basename "$IMAGE")
+            TAG="${GITHUB_SHA::7}"   # Short commit hash as version
+            GHCR_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE}:${TAG}"
 
-      # 9. Warten auf Services
-      - name: Wait for services
-        run: sleep 30
+            echo "Tagging $IMAGE as $GHCR_IMAGE"
+            docker tag "$IMAGE" "$GHCR_IMAGE"
 
-      # 10. Quarkus Build LLM Script ausführen
-      - name: Run Quarkus Build LLM Script
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          chmod +x ./buildLLM.sh
-          ./buildLLM.sh
+            echo "Pushing $GHCR_IMAGE"
+            docker push "$GHCR_IMAGE"
 
-      # 11. Zeige ngrok URL in Logs
-      - name: Show ngrok URL
-        run: cat ngrok.log | grep -o 'https://[0-9a-z]*\.ngrok-free\.app' || true
+            # Also push 'latest' tag
+            LATEST_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE}:latest"
+            docker tag "$IMAGE" "$LATEST_IMAGE"
+            docker push "$LATEST_IMAGE"
+          done
 
-      - name: Keep job alive for testing
-        run: sleep 600
-
-      # 12. Docker Compose wieder stoppen nach Job
-      - name: Stop Docker Compose after job
-        if: always()
-        run: docker compose -f $GITHUB_WORKSPACE/docker-compose/docker-compose.yaml down
+      # (Optional) List all images pushed
+      - name: List pushed images
+        run: docker images | grep ghcr.io
