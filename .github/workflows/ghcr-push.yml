@@ -22,7 +22,7 @@ jobs:
       - name: Build frontend assets
         working-directory: frontend
         run: |
-          npm ci
+          npm install
           npm run build
 
       # 2️Log in to GitHub Container Registry
