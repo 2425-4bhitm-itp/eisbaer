@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     steps:
       - name: Checkout repository
@@ -31,7 +34,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GHCR_PUSH_TOKEN}}
+          password: ${{ secrets.GITHUB_TOKEN}}
 
       # 3️Install Docker Compose
       - name: Set up Docker Compose
