@@ -39,7 +39,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y docker-compose jq
 
-      # 4️Build all images and push them to GHCR
+      # 4️Build all images and push them to GHCR.
       - name: Build and push Docker images to GHCR
         env:
           REGISTRY: ghcr.io
@@ -59,7 +59,7 @@ jobs:
             TAG="${GITHUB_SHA::7}"   # Short commit hash as version
             SERVICE_BASENAME=$(basename "$IMAGE" | sed 's/:.*//')  # Remove existing tag (e.g. :2.18.0)
 
-            GHCR_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE_BASENAME}:${TAG}"
+            GHCR_IMAGE="${REGISTRY}/${OWNER}/${SERVICE_BASENAME}:${TAG}"
 
             echo "Tagging $IMAGE as $GHCR_IMAGE"
             docker tag "$IMAGE" "$GHCR_IMAGE"
@@ -68,7 +68,7 @@ jobs:
             docker push "$GHCR_IMAGE"
 
             # Also push 'latest' tag
-            LATEST_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE_BASENAME}:latest"
+            LATEST_IMAGE="${REGISTRY}/${OWNER}/${SERVICE_BASENAME}:latest"
             echo "Tagging $IMAGE as $LATEST_IMAGE"
             docker tag "$IMAGE" "$LATEST_IMAGE"
             docker push "$LATEST_IMAGE"
