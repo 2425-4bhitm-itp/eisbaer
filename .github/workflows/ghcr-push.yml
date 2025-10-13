@@ -56,9 +56,10 @@ jobs:
           echo "$IMAGES"
 
           for IMAGE in $IMAGES; do
-            SERVICE=$(basename "$IMAGE")
             TAG="${GITHUB_SHA::7}"   # Short commit hash as version
-            GHCR_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE}:${TAG}"
+            SERVICE_BASENAME=$(basename "$IMAGE" | sed 's/:.*//')  # Remove existing tag (e.g. :2.18.0)
+
+            GHCR_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE_BASENAME}:${TAG}"
 
             echo "Tagging $IMAGE as $GHCR_IMAGE"
             docker tag "$IMAGE" "$GHCR_IMAGE"
@@ -67,11 +68,11 @@ jobs:
             docker push "$GHCR_IMAGE"
 
             # Also push 'latest' tag
-            LATEST_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE}:latest"
+            LATEST_IMAGE="${REGISTRY}/${OWNER}/${REPO}-${SERVICE_BASENAME}:latest"
+            echo "Tagging $IMAGE as $LATEST_IMAGE"
             docker tag "$IMAGE" "$LATEST_IMAGE"
             docker push "$LATEST_IMAGE"
           done
-
       # (Optional) List all images pushed
       - name: List pushed images
         run: docker images | grep ghcr.io
