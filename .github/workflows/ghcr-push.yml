@@ -50,7 +50,7 @@ jobs:
           docker compose build
 
           # Extract image names from docker-compose.yaml
-          IMAGES=$(docker compose config | grep 'image:' | awk '{print $2}')
+          IMAGES=$(docker compose config | awk '/image:/ {print $2}' | grep -v 'opensearchproject/opensearch')
 
           echo "Found images:"
           echo "$IMAGES"
