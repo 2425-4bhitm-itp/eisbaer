@@ -222,14 +222,18 @@ h1 {
 
     #avatarContainer {
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
     }
 
     #outputContainer {
         display: flex;
 
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
+    }
+
+    .transcriptText {
+        font-size: 1rem;
     }
 
     #transcriptContainer {
@@ -255,7 +259,8 @@ h1 {
         margin-top: 1em;
     }
 
-    #userInput {
-        width: 100%;
+    #inputButtons {
+        width: 65vw;
+        flex-direction: column;
     }
 }
