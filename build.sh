@@ -7,7 +7,7 @@ pushd ./frontend
 npm install
 npm run build
 popd
-docker build -f ./frontend/Dockerfile -t eisbaer-frontend:latest .
+docker build -t eisbaer-frontend:latest ./frontend
 pushd ./docker-compose
 . ./start.sh
 popd
