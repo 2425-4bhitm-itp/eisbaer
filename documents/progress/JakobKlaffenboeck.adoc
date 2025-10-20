@@ -264,7 +264,7 @@ Important:
 
 === Verbesserungen
 - Es konnten keine großen Verbesserungen festgestellt werden. Der Eisbär
-hat Probleme damit die Richtige Position zurückzugeben, wenn der Kunde nach dem Produkt
+hat Probleme damit die richtige Position zurückzugeben, wenn der Kunde nach dem Produkt
 in Mehrzahl fragt.
 
 == 20.10.2025
@@ -273,6 +273,11 @@ in Mehrzahl fragt.
 
 - Research, Voraussetzungen für Kubernetes Deployment
 - Dokumentation Kubernetes lesen
+* link:[] https://kubernetes.io/docs/concepts/workloads/controllers/deployment/
+
+=== New Database
+
+- Datenbank mit neuen Gegenständen aus der Klasse erstellen
 
 
 
