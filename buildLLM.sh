@@ -116,7 +116,7 @@
 
     # Step 9: Upload Data
     echo "Uploading data..."
-    curl -X POST "http://localhost:9200/eisbaer_rag_data/_bulk" -H "Content-Type: application/json" --data-binary @bulk_data_llm
+    curl -X POST "http://localhost:9200/eisbaer_rag_data/_bulk" -H "Content-Type: application/json" --data-binary @new_bulk_data
 
     echo "All requests executed."
 
