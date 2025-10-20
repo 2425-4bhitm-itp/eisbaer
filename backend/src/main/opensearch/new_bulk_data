@@ -1,56 +1,36 @@
 {"index": {"_index": "klasse_inventar", "_id": "001"}}
-{"text": "Lehrerpult, Stellplatz: V10-L50"}
+{"text": "Lehrertisch, Position: V95-L100"}
 {"index": {"_index": "klasse_inventar", "_id": "002"}}
-{"text": "Tafel, Stellplatz: V0-L50"}
+{"text": "Smartboard, Position: V100-M"}
 {"index": {"_index": "klasse_inventar", "_id": "003"}}
-{"text": "Projektor, Stellplatz: V20-L55"}
+{"text": "Whiteboard links, Position: V100-L55"}
 {"index": {"_index": "klasse_inventar", "_id": "004"}}
-{"text": "Schülerpult 1, Stellplatz: V30-L10"}
+{"text": "Whiteboard rechts, Position: V100-R55"}
 {"index": {"_index": "klasse_inventar", "_id": "005"}}
-{"text": "Schülerpult 2, Stellplatz: V30-L30"}
+{"text": "Waschbecken, Position: V95-R100"}
 {"index": {"_index": "klasse_inventar", "_id": "006"}}
-{"text": "Schülerpult 3, Stellplatz: V30-L50"}
+{"text": "Tür, Position: H98-R100"}
 {"index": {"_index": "klasse_inventar", "_id": "007"}}
-{"text": "Schülerpult 4, Stellplatz: V30-L70"}
+{"text": "Garderobe 1, Position: H100-R95"}
 {"index": {"_index": "klasse_inventar", "_id": "008"}}
-{"text": "Schülerpult 5, Stellplatz: V30-L90"}
+{"text": "Garderobe 2, Position: H100-L60"}
 {"index": {"_index": "klasse_inventar", "_id": "009"}}
-{"text": "Schülerpult 6, Stellplatz: V50-L10"}
+{"text": "Stromkasten, Position: H100-L80"}
 {"index": {"_index": "klasse_inventar", "_id": "010"}}
-{"text": "Schülerpult 7, Stellplatz: V50-L30"}
+{"text": "Schülerpult 1, Position: V85-L100"}
 {"index": {"_index": "klasse_inventar", "_id": "011"}}
-{"text": "Schülerpult 8, Stellplatz: V50-L50"}
+{"text": "Schülerpult 2, Position: V85-L80"}
 {"index": {"_index": "klasse_inventar", "_id": "012"}}
-{"text": "Schülerpult 9, Stellplatz: V50-L70"}
+{"text": "Schülerpult 3, Position: V85-L60"}
 {"index": {"_index": "klasse_inventar", "_id": "013"}}
-{"text": "Schülerpult 10, Stellplatz: V50-L90"}
+{"text": "Schülerpult 4, Position: V55-L100"}
 {"index": {"_index": "klasse_inventar", "_id": "014"}}
-{"text": "Schülerpult 11, Stellplatz: H70-L20"}
+{"text": "Schülerpult 5, Position: V55-L80"}
 {"index": {"_index": "klasse_inventar", "_id": "015"}}
-{"text": "Schülerpult 12, Stellplatz: H70-L40"}
+{"text": "Schülerpult 6, Position: V55-L60"}
 {"index": {"_index": "klasse_inventar", "_id": "016"}}
-{"text": "Schülerpult 13, Stellplatz: H70-L60"}
+{"text": "Schülerpult 7, Position: V30-L100"}
 {"index": {"_index": "klasse_inventar", "_id": "017"}}
-{"text": "Schülerpult 14, Stellplatz: H70-L80"}
+{"text": "Schülerpult 8, Position: V30-L80"}
 {"index": {"_index": "klasse_inventar", "_id": "018"}}
-{"text": "Schrank 1, Stellplatz: H90-L10"}
-{"index": {"_index": "klasse_inventar", "_id": "019"}}
-{"text": "Schrank 2, Stellplatz: H90-R10"}
-{"index": {"_index": "klasse_inventar", "_id": "020"}}
-{"text": "Papierkorb, Stellplatz: V60-R90"}
-{"index": {"_index": "klasse_inventar", "_id": "021"}}
-{"text": "Fensterbank 1, Stellplatz: V40-R100"}
-{"index": {"_index": "klasse_inventar", "_id": "022"}}
-{"text": "Fensterbank 2, Stellplatz: H60-R100"}
-{"index": {"_index": "klasse_inventar", "_id": "023"}}
-{"text": "Heizkörper, Stellplatz: V90-L0"}
-{"index": {"_index": "klasse_inventar", "_id": "024"}}
-{"text": "Lehrerstuhl, Stellplatz: V15-L45"}
-{"index": {"_index": "klasse_inventar", "_id": "025"}}
-{"text": "Karteiablage, Stellplatz: H95-L50"}
-{"index": {"_index": "klasse_inventar", "_id": "026"}}
-{"text": "Pflanze, Stellplatz: H80-R20"}
-{"index": {"_index": "klasse_inventar", "_id": "027"}}
-{"text": "Kalender, Stellplatz: V5-R90"}
-{"index": {"_index": "klasse_inventar", "_id": "028"}}
-{"text": "Waschbecken, Stellplatz: H85-R95"}
+{"text": "Schülerpult 9, Position: V30-L60"}
