@@ -17,3 +17,8 @@ https://responsivevoice.org/api/
 Implement this script to the project to use the API:
 
 * <script src="https://code.responsivevoice.org/responsivevoice.js?key=YOUR_KEY"></script>
+
+== 2025-20-10
+=== Trying out new Avatar on screen
+We went to the basement and tried out our new design on the big screen that will be used to
+display our project in the future
