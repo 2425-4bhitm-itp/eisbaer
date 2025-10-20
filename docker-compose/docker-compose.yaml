@@ -1,21 +1,19 @@
 services:
-  postgres:
-    container_name: postgres
-    image: postgres:16-alpine
-    ports:
-      - 5432:5432
-    volumes:
-      - postgres:/var/lib/postgresql/data
-    environment:
-      - POSTGRES_PASSWORD=demo
-      - POSTGRES_USER=demo
-      - POSTGRES_DB=demo
+  #  postgres:
+  #    container_name: postgres
+  #    image: postgres:16-alpine
+  #    ports:
+  #      - 5432:5432
+  #    volumes:
+  #      - postgres:/var/lib/postgresql/data
+  #    environment:
+  #      - POSTGRES_PASSWORD=demo
+  #      - POSTGRES_USER=demo
+  #      - POSTGRES_DB=demo
   opensearch:
     image: opensearchproject/opensearch:2.18.0
     healthcheck:
       test: curl --fail http://localhost:9200/_cluster/health
-    build:
-      context: .
     ports:
       - 9200:9200
       - 9600:9600
@@ -34,7 +32,14 @@ services:
       - http.cors.allow-methods=OPTIONS,GET,POST
       - http.cors.allow-headers=X-Requested-With,Content-Type,Authorization
       - http.cors.allow-credentials=true
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    image: eisbaer-frontend
+    ports:
+      - "4200:80"
+    restart: unless-stopped
 
 volumes:
   postgres:
-

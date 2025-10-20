@@ -1,7 +1,5 @@
-import { processChange} from "./script";
-import { chatScroll } from "./chatScroll";
+import { chatScroll } from "../components/transcript/chat-history/chatScroll";
 
-const startButton = document.getElementById('start') as HTMLButtonElement
 const speechOutput = document.getElementById('userInput') as HTMLInputElement
 
 interface IWindow extends Window {
@@ -24,7 +22,7 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
             .map((result) => (result as SpeechRecognitionAlternative).transcript)
             .join('');
         speechOutput.value = transcript;
-        processChange();
+        // processChange();
     };
 
 
@@ -35,36 +33,3 @@ if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
     alert('Your browser does not support Speech Recognition.');
 }
 
-startButton.addEventListener('click', () => {
-    console.log('Start listening...');
-    if (recognition) recognition.start();
-});
-
-export function writeText(text: string) {
-
-    if (text === '' || text == null) {
-        return;
-    }
-
-    let chat = document.getElementById("chatHistory");
-
-    let box = document.createElement("div");
-    box.classList.add("transcriptEntry");
-    box.classList.add("boxRight")
-
-    let name = document.createElement("p");
-    name.classList.add("transcriptName");
-
-    let textField = document.createElement("p");
-    textField.classList.add("transcriptText");
-
-    name.innerHTML = "Sie:";
-    textField.innerHTML = text;
-
-    box.appendChild(name);
-    box.appendChild(textField);
-
-    chat.appendChild(box);
-
-    chatScroll();
-}

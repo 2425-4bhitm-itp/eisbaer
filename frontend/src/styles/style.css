@@ -4,7 +4,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, Arial, sans-serif;
+    /*font-family: Helvetica, Arial, sans-serif;*/
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -19,21 +23,23 @@ body {
 /* CONTAINERS */
 #content {
     display: flex;
-
+    background-color: #D9D9D9;
     width: 100vw;
     height: 100vh;
 }
 
 #avatarContainer {
     width: 50vw;
-    height: 100vh
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #outputContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     width: 50vw;
     height: 100vh;
     /* padding: 2.5em; */
@@ -58,12 +64,13 @@ body {
 
 #inputButtons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     width: 45vw;
     align-items: center;
     justify-self: center;
     position: relative;
+    background-color: #D9D9D9;
 }
 
 /* PROPERTIES */
@@ -78,9 +85,9 @@ h1 {
     height: 2.5em;
     padding: 1em;
     margin-bottom: 1.5em;
-    background-color: #D9D9D9;
+    background-color: #F0F0F0;
     border-radius: 0.5em;
-    border: 0 solid #007AFF;
+    border: 0 solid #005691;
     outline: 0;
     font-size: 1em;
     transition: 0.1s linear all;
@@ -88,13 +95,15 @@ h1 {
 
 #userInput:focus {
     padding: 0.8em;
-    border: 0.2em solid #007AFF;
+    border: 0.2em solid #005691;
 }
 
 #start {
     border: none;
     width: 5em;
     height: 5em;
+    margin: 0 0 1.5em 1em;
+    background-color: rgba(0, 0, 0, 0);
 }
 
 #queryOutput {
@@ -147,10 +156,11 @@ h1 {
     font-size: 90%;
     font-style: italic;
     width: fit-content;
+    color: #8E8D94;
 }
 
 .transcriptText {
-    background-color: #D9D9D9;
+    background-color: #F4F4F4;
     padding: 1em;
     margin: 0 2em 1em 2em;
     width: fit-content;
@@ -212,15 +222,18 @@ h1 {
 
     #avatarContainer {
         width: 100vw;
-        height: 50vh;
+        height: 40vh;
     }
 
     #outputContainer {
         display: flex;
-        flex-direction: column-reverse;
 
         width: 100vw;
-        height: 50vh;
+        height: 60vh;
+    }
+
+    .transcriptText {
+        font-size: 1rem;
     }
 
     #transcriptContainer {
@@ -246,7 +259,8 @@ h1 {
         margin-top: 1em;
     }
 
-    #userInput {
-        width: 100%;
+    #inputButtons {
+        width: 65vw;
+        flex-direction: column;
     }
 }

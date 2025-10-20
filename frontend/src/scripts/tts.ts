@@ -1,9 +1,9 @@
 let checkIfFirstTime: boolean = true;
 declare const responsiveVoice: any;
 
-const beginningText: string = document
-     .getElementsByClassName("transcriptText")[0]
-     .innerHTML;
+const beginningText: string = "Hallo, ich bin Eisbär! Wie kann ich dir helfen?"// document todo
+     // .getElementsByClassName("transcriptText")[0]
+     // .innerHTML;
 
 console.log("textToBeSpoken: " + beginningText);
 
@@ -44,6 +44,7 @@ function processQueue() {
             changeToDefaultAvatar();
             console.log("Sprechen beendet");
             // Verarbeite den nächsten Text
+
             processQueue();
         }
     });

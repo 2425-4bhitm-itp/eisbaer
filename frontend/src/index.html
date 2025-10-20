@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./public/img/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=oZmnbAtI"></script>
   <script type="importmap">
     {
@@ -17,10 +21,10 @@
 
 </head>
 <body>
-<div id="switchToAIWrapper">
-  <input type="checkbox" id="switchToAI" name="switchToAI">
+<!--<div id="switchToAIWrapper">
+  <input type="checkbox" id="switchToAI" name="switchToAI" checked="checked">
   <label for="switchToAI">AI</label>
-</div>
+</div> -->
 <!-- <h1>Eisbär</h1> -->
 
 <div id="content">
@@ -29,34 +33,22 @@
 <!--    &lt;!&ndash; Polar Bear 3D Avatar is loaded here &ndash;&gt;-->
 <!--  </div>-->
 
-  <div id="avatarContainer" style="background-color:white; display: flex; justify-content: center; align-items: center">
-    <img src="src/video/seamless-loop-talking-unscreen.gif" alt="EISBÄR" width="60%" id="2dAvatar">
+  <div id="avatarContainer">
+    <img src="./public/video/polar-bear-no-background-png.png" alt="EISBÄR" width="60%" id="2dAvatar">
   </div>
 
 
 
   <!-- Right/bottom canvas with transcript -->
-  <div id="outputContainer">
+  <output-container id="outputContainer">
 
     <div id="transcriptContainer">
-      <div id="chatHistory">
-        <div id="0transcript" class="transcriptEntry, boxLeft">
-          <p class="transcriptName">Eisbär:</p>
-          <p class="transcriptText">Hallo! Wie kann ich dir helfen?</p>
-        </div>
-      </div>
-
-
+      <chat-history></chat-history>
 
     </div>
 
-    <div id="queryInputContainer">
-      <div id="inputButtons">
-        <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
-        <button id="start"><img src="img/microphone_icon.svg"></button>
-      </div>
-    </div>
-  </div>
+    <query-input></query-input>
+  </output-container>
 </div>
 </body>
 </html>

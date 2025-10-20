@@ -3,6 +3,11 @@ echo 'downing containers...'
 . ./down.sh
 echo 'successfully downed containers!'
 set -e
+pushd ./frontend
+npm install
+npm run build
+popd
+docker build -t eisbaer-frontend:latest ./frontend
 pushd ./docker-compose
 . ./start.sh
 popd
@@ -60,6 +65,8 @@ echo 'searching data for GET...'
 curl -X GET "http://localhost:9200/articles/_search?pretty=true&q=*"
 popd
 . ./buildLLM.sh
-pushd ./backend
-mvn clean quarkus:dev
-popd
+#pushd ./backend
+#mvn clean quarkus:dev
+#popd
+
+#docker run -p 4200:80 eisbaer-frontend

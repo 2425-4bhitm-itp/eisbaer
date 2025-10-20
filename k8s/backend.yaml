@@ -1,0 +1,67 @@
+# Quarkus Application Server
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: appsrv
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: appsrv
+  template:
+    metadata:
+      labels:
+        app: appsrv
+    spec:
+      containers:
+        - name: appsrv
+          image: {{ .Values.backend.image }}
+          imagePullPolicy: {{ .Values.deployment.imagePullPolicy }}
+          ports:
+            - containerPort: 8080
+          startupProbe:
+            httpGet:
+              path: /api/q/health
+              port: 8080
+            timeoutSeconds: 5
+            initialDelaySeconds: 30
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /api/q/health
+              port: 8080
+            timeoutSeconds: 5
+            initialDelaySeconds: 30
+            periodSeconds: 120
+      # initContainers:
+      #   - name: wait
+      #     image: {{ .Values.postgres.image }}
+      #     command: ["/bin/bash", "-c", 'until pg_isready -h postgres; do;echo "waiting for database...";sleep 2;done']
+      #     env:
+      #       - name: POSTGRES_PASSWORD
+      #         valueFrom:
+      #           secretKeyRef:
+      #             name: postgres-admin
+      #             key: password
+      #       - name: POSTGRES_USERNAME
+      #         valueFrom:
+      #           secretKeyRef:
+      #             name: postgres-admin
+      #             key: username
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: appsrv
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: appsrv

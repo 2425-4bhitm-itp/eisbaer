@@ -163,4 +163,4 @@ Anmerkungen:
 
 - DeepSeek ist chinesisch zensiert und gibt unzureichende Informationen
 über die chinesische Regierung und Ereignisse in der chinesische Geschichte
-- Da DeepSeek eine chinesische Firma ist, ist die Sicherheit der Daten nicht gewährleistet
+- Da DeepSeek eine chinesische Firma ist, ist die Sicherheit der Daten nicht gewährleistet.
