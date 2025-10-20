@@ -267,6 +267,14 @@ Important:
 hat Probleme damit die Richtige Position zurückzugeben, wenn der Kunde nach dem Produkt
 in Mehrzahl fragt.
 
+== 20.10.2025
+
+=== Kubernetes Deployment
+
+- Research, Voraussetzungen für Kubernetes Deployment
+- Dokumentation Kubernetes lesen
+
+
 
 
 
