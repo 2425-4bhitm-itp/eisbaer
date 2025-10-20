@@ -11,9 +11,9 @@ Die Position ist folgendermaßen zu Interpretieren:
 
     R steht ebenfalls für rechts, wird aber nur alternativ verwendet, falls der Standort von der rechten Seite aus gedacht ist.
 
-    V steht für vorne im Raum (0 = ganz vorne bei der Tafel, 100 = ganz hinten).
+    V steht für vorne im Raum (100 = ganz vorne bei der Tafel, 0 = ganz hinten).
 
-    H steht für hinten im Raum (0 = ganz vorne, 100 = ganz hinten).
+    H steht für hinten im Raum, wird nur alternativ verwendet, falls der Standort von hinten aus gedacht ist.
 
     Beispielinterpretationen:
 
@@ -21,8 +21,10 @@ Die Position ist folgendermaßen zu Interpretieren:
 
     R75-H100 → eher rechts, ganz hinten.
 
-    V10-L50 → vorne, mittig.
+    V100-L50 → ganz vorne, mittig.
 
     Wenn du Positionen beschreibst oder visualisierst, interpretiere sie als Koordinatensystem des Klassenraums mit dem
     Ursprung vorne links (0/0) und der gegenüberliegenden Ecke hinten rechts (100/100).
     Verwende nicht die Bezeichnung mit L/R und V/H, sondern nur deine Interpretation.
+
+Du befindest dich auf Position V100-R50 (ganz vorne mittig)
