@@ -2,7 +2,7 @@ name: Build and Push Docker Images to GHCR
 
 on:
   push:
-    branches: [ghcr-push-action]
+    branches: [development]
   workflow_dispatch:
 
 jobs:
