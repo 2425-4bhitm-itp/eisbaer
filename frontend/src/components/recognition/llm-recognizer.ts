@@ -25,7 +25,7 @@ async function getArticlePositionWithLLM(query: string) {
         }
     };
 
-    const urlOpenSearch = "http://localhost:9200/eisbaer_rag_data/_search";
+    const urlOpenSearch = "/eisbaer_rag_data/_search";
 
     console.log(requestBody)
 

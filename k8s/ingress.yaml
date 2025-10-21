@@ -1,0 +1,46 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: opensearch
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: it210176.cloud.htl-leonding.ac.at
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 80
+          - path: /_plugins
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /_cluster
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /_search
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /eisbaer_rag_data
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+

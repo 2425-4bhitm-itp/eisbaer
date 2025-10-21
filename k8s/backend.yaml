@@ -2,42 +2,69 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: appsrv
+  name: opensearch
 
 spec:
-  replicas: 1
   selector:
     matchLabels:
-      app: appsrv
+      app: opensearch
   template:
     metadata:
       labels:
-        app: appsrv
+        app: opensearch
     spec:
       containers:
-        - name: appsrv
-          image: {{ .Values.backend.image }}
-          imagePullPolicy: {{ .Values.deployment.imagePullPolicy }}
+        - name: opensearch
+          image: opensearchproject/opensearch:2.18.0
           ports:
-            - containerPort: 8080
-          startupProbe:
-            httpGet:
-              path: /api/q/health
-              port: 8080
-            timeoutSeconds: 5
-            initialDelaySeconds: 30
-          readinessProbe:
-            tcpSocket:
-              port: 8080
-            initialDelaySeconds: 30
-            periodSeconds: 10
-          livenessProbe:
-            httpGet:
-              path: /api/q/health
-              port: 8080
-            timeoutSeconds: 5
-            initialDelaySeconds: 30
-            periodSeconds: 120
+            - containerPort: 9200
+            - containerPort: 9600
+          env:
+            - name: OPENSEARCH_SERVER_SSL_ENABLED
+              value: "false"
+            - name: OPENSEARCH_SSL_VERIFICATION_MODE
+              value: none
+            - name: OPENSEARCH_SERVER_SSL_CLIENTAUTHENTICATION
+              value: none
+            - name: OPENSEARCH_SECURITY_COOKIE_SECURE
+              value: "false"
+            - name: discovery.type
+              value: single-node
+            - name: OPENSEARCH_SECURITY_DISABLED
+              value: "true"
+            - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+              value: Maniac4Something%VeryLong
+            - name: DISABLE_SECURITY_PLUGIN
+              value: "true"
+            # CORS-Konfiguration
+            - name: http.cors.enabled
+              value: "true"
+            - name: http.cors.allow-origin
+              value: "*"
+            - name: http.cors.allow-methods
+              value: OPTIONS,GET,POST
+            - name: http.cors.allow-headers
+              value: X-Requested-With,Content-Type,Authorization
+            - name: http.cors.allow-credentials
+              value: "true"
+#          startupProbe:
+#            httpGet:
+#              path: /api/q/health
+#              port: 8080
+#            timeoutSeconds: 5
+#            initialDelaySeconds: 30
+#          readinessProbe:
+#            tcpSocket:
+#              port: 8080
+#            initialDelaySeconds: 30
+#            periodSeconds: 10
+#          livenessProbe:
+#            httpGet:
+#              path: /api/q/health
+#              port: 8080
+#            timeoutSeconds: 5
+#            initialDelaySeconds: 30
+#            periodSeconds: 120
       # initContainers:
       #   - name: wait
       #     image: {{ .Values.postgres.image }}
@@ -54,14 +81,37 @@ spec:
       #             name: postgres-admin
       #             key: username
 ---
+
 apiVersion: v1
 kind: Service
 metadata:
-  name: appsrv
+  name: opensearch
 spec:
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 9200
+      targetPort: 9200
       protocol: TCP
   selector:
-    app: appsrv
+    app: opensearch
+---
+
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: opensearch
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: it210176.cloud.htl-leonding.ac.at
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+
+
+
