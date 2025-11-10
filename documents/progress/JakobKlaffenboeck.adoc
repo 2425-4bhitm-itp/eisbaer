@@ -296,6 +296,20 @@ in Mehrzahl fragt.
     ws: true
 ----
 
+=== Fehler:
+
+[source, text]
+----
+llm-recognizer.ts:29  POST http://localhost:4200/eisbaer_rag_data/_search 404 (Not Found)
+getArticlePositionWithLLM @ llm-recognizer.ts:29
+(anonymous) @ query-input.ts:27
+(anonymous) @ query-input.ts:57
+setTimeout
+(anonymous) @ query-input.ts:56
+(anonymous) @ query-input.ts:42Understand this error
+VM82:1 Uncaught (in promise) SyntaxError: Unexpected token '<', "<html>
+<h"... is not valid JSON
+----
 
 
 
