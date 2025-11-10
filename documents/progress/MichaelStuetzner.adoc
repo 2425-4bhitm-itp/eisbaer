@@ -22,3 +22,9 @@ Implement this script to the project to use the API:
 === Trying out new Avatar on screen
 We went to the basement and tried out our new design on the big screen that will be used to
 display our project in the future
+
+The person responsible for the screen wasn't there!
+
+== 2025-10-11
+=== Meeting with Schubert + AV
+AV said he will talk to us on 19th November 2025.
