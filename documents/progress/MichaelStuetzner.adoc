@@ -48,3 +48,11 @@ but overall it's a pretty good try. Not perfect tho and definetly not ready to u
 * Note: Tried it with the polar bear in the bathtub picture. Camera doesn't stay static. A lot of
 movement. Polar bear just moves around almost randomly, it doesn't resemble the movement of talking.
 
+==== 3.
+* firefly.adobe.com
+* Prompt: keep the camera static, make the polar bear talk, only move the mouth and the head, move the legs and arms
+a little bit but only just so it looks alive.
+* Path: ../media/ai-videos/firefly1.mp4
+* Note: I tried a longer and more specific prompt to see if that overcomplicates it or if it adds the
+last necessary tweaks. ALso tried using Firefly, a more commonly known AI-Model. He now moves his arms and legs A LOT.
+ Also his snout is deformed in the beginning.
