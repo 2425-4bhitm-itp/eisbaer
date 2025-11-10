@@ -32,3 +32,12 @@ AV said he will talk to us on 19th November 2025.
 === Meeting with Hammer
 Focus will shift more onto the Avatar. We wrote an email to Prof. Stütz regarding his AI-Video of
 the polar bear in the bathtub talking.
+
+=== Generating new Avatar
+==== 1.
+* easemate.ai/image-to-video-generator
+* Prompt: make the polar bear talk
+* Path: ../media/ai-videos/easemate.mp4
+* Note: Background Color shifts from greyish to white and black tones. The movements in the beginning look weird,
+but overall it's a pretty good try. Not perfect tho and definetly not ready to use.
+
