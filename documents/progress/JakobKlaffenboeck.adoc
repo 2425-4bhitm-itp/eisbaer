@@ -279,7 +279,22 @@ in Mehrzahl fragt.
 
 - Datenbank mit neuen Gegenständen aus der Klasse erstellen
 
+== 10.11.2025
 
+=== Projekt fix (findet den Pfad /eisbaer_rag_data nicht)
+
+[source, javascript]
+----
+    context: ['/search', '/eisbaer_rag_data'],
+    target: 'http://localhost:9200',
+    changeOrigin: true,
+    pathRewrite: { '^/search': '' }
+
+    context: ['/api'],
+    target: 'http://localhost:8080',
+    changeOrigin: true,
+    ws: true
+----
 
 
 
