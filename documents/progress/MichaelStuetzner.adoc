@@ -41,3 +41,10 @@ the polar bear in the bathtub talking.
 * Note: Background Color shifts from greyish to white and black tones. The movements in the beginning look weird,
 but overall it's a pretty good try. Not perfect tho and definetly not ready to use.
 
+==== 2.
+* deevid.ai/image-to-video
+* Prompt: the polarbear is moving his mouth as if he was talking
+* Path: ../media/ai-videos/deevid.mp4
+* Note: Tried it with the polar bear in the bathtub picture. Camera doesn't stay static. A lot of
+movement. Polar bear just moves around almost randomly, it doesn't resemble the movement of talking.
+
