@@ -56,3 +56,10 @@ a little bit but only just so it looks alive.
 * Note: I tried a longer and more specific prompt to see if that overcomplicates it or if it adds the
 last necessary tweaks. ALso tried using Firefly, a more commonly known AI-Model. He now moves his arms and legs A LOT.
  Also his snout is deformed in the beginning.
+
+==== 4.
+* firefly.adobe.com
+* Prompt: make the polar bear talk
+* Path: ../media/ai-videos/firefly2.mp4
+* Note: Trying out a very simple prompt in Firefly. Now Water splashes out of the tub at the beginning. After he
+completely turns to the side and starts talking. Maybe try specifying that the bear shouldn't move?
