@@ -37,14 +37,16 @@ the polar bear in the bathtub talking.
 ==== 1.
 * easemate.ai/image-to-video-generator
 * Prompt: make the polar bear talk
-* Path: ../media/ai-videos/easemate.mp4
+
+video::../media/ai-videos/easemate.mp4[]
 * Note: Background Color shifts from greyish to white and black tones. The movements in the beginning look weird,
 but overall it's a pretty good try. Not perfect tho and definetly not ready to use.
 
 ==== 2.
 * deevid.ai/image-to-video
 * Prompt: the polarbear is moving his mouth as if he was talking
-* Path: ../media/ai-videos/deevid.mp4
+
+video::../media/ai-videos/deevid.mp4.mp4[]
 * Note: Tried it with the polar bear in the bathtub picture. Camera doesn't stay static. A lot of
 movement. Polar bear just moves around almost randomly, it doesn't resemble the movement of talking.
 
@@ -52,7 +54,8 @@ movement. Polar bear just moves around almost randomly, it doesn't resemble the 
 * firefly.adobe.com
 * Prompt: keep the camera static, make the polar bear talk, only move the mouth and the head, move the legs and arms
 a little bit but only just so it looks alive.
-* Path: ../media/ai-videos/firefly1.mp4
+
+video::../media/ai-videos/firefly1.mp4[]
 * Note: I tried a longer and more specific prompt to see if that overcomplicates it or if it adds the
 last necessary tweaks. ALso tried using Firefly, a more commonly known AI-Model. He now moves his arms and legs A LOT.
  Also his snout is deformed in the beginning.
@@ -60,6 +63,7 @@ last necessary tweaks. ALso tried using Firefly, a more commonly known AI-Model.
 ==== 4.
 * firefly.adobe.com
 * Prompt: make the polar bear talk
-* Path: ../media/ai-videos/firefly2.mp4
+
+video::../media/ai-videos/firefly2.mp4[]
 * Note: Trying out a very simple prompt in Firefly. Now Water splashes out of the tub at the beginning. After he
 completely turns to the side and starts talking. Maybe try specifying that the bear shouldn't move?
