@@ -91,3 +91,14 @@ Questions:
 
 * Which AI do we use?
 * What Tool do we use to make it loop?
+
+Problems:
+
+* Can't access the Firefly AI Generator with the school Account and only
+3 Free tries with private Email
+* Polar Bear always moves too much in the AI generated videos
+
+Conclusion:
+
+* Maybe try using some other Software like AfterEffects or Illustrator
+to animate the idle video "by hand" and only use AI for the talking animation.
