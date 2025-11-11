@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: ghcr.io/2425-4bhitm-itp/eisbaer-frontend:latest
+          image: ghcr.io/2425-4bhitm-itp/eisbaer-frontend:5502426
           ports:
             - containerPort: 80
 
