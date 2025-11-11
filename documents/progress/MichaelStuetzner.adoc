@@ -67,3 +67,27 @@ last necessary tweaks. ALso tried using Firefly, a more commonly known AI-Model.
 video::../media/ai-videos/firefly2.mp4[]
 * Note: Trying out a very simple prompt in Firefly. Now Water splashes out of the tub at the beginning. After he
 completely turns to the side and starts talking. Maybe try specifying that the bear shouldn't move?
+
+== 2025-11-11
+=== Creating new Avatar
+==== Cut out polar bear
+Used Photoshop to cut out the polar bear in the bathtub, so that there's no background
+
+image::../../frontend/public/img/eisbaer-frei.png[width=400]
+
+==== More Background
+I also tried doing it the other way around and use AI to create
+more background so that we could maybe use the whole picture and integrate
+the background into the UI
+
+image::../../frontend/public/img/eisbaer-scholle.jpg[width=700]
+
+==== Further Plan
+Try to create and idle video loop of the background and polar bear just slightly
+moving around to create the illusion of it being "alive" and generally
+make it feel more natural.
+
+Questions:
+
+* Which AI do we use?
+* What Tool do we use to make it loop?
