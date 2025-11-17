@@ -2,7 +2,8 @@
 
 set -e
 set -u
-HOST=https://it210176.cloud.htl-leonding.ac.at
+#HOST=https://it210176.cloud.htl-leonding.ac.at
+HOST=http://localhost:9200
 
     # Load environment variables
     source .env
@@ -84,20 +85,22 @@ HOST=https://it210176.cloud.htl-leonding.ac.at
     # Read the user instructions from file
     USER_INSTRUCTIONS=$(jq -Rs . < prompt.txt)
 
-    curl -X PUT "$HOST/_search/pipeline/rag_pipeline" -H "Content-Type: application/json" -d "{
-      \"response_processors\": [
-        {
-          \"retrieval_augmented_generation\": {
-            \"tag\": \"openai_pipeline_eisbaer\",
-            \"description\": \"Pipeline Using OpenAI Connector\",
-            \"model_id\": \"$MODEL_ID\",
-            \"context_field_list\": [\"text\"],
-            \"system_prompt\": \"You are a helpful assistant\",
-            \"user_instructions\": $USER_INSTRUCTIONS
+    curl -X PUT "$HOST/_search/pipeline/rag_pipeline" \
+      -H "Content-Type: application/json" \
+      -d "{
+        \"response_processors\": [
+          {
+            \"retrieval_augmented_generation\": {
+              \"tag\": \"openai_pipeline_eisbaer\",
+              \"description\": \"Pipeline Using OpenAI Connector\",
+              \"model_id\": \"$MODEL_ID\",
+              \"context_field_list\": [\"name\", \"position\", \"text\"],
+              \"system_prompt\": \"You are a helpful assistant\",
+              \"user_instructions\": $USER_INSTRUCTIONS
+            }
           }
-        }
-      ]
-    }"
+        ]
+      }"
 
     sleep 1
 
@@ -109,9 +112,9 @@ HOST=https://it210176.cloud.htl-leonding.ac.at
       },
       "mappings": {
         "properties": {
-          "text": {
-            "type": "text"
-          }
+          "name": { "type": "text" },
+          "position": { "type": "text" },
+          "text": { "type": "text" }
         }
       }
     }'
