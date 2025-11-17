@@ -2,8 +2,6 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: opensearch
-  annotations:
-    nginx.ingress.kubernetes.io/use-regex: "true"
 spec:
   ingressClassName: nginx
   rules:
@@ -17,8 +15,29 @@ spec:
                 name: frontend
                 port:
                   number: 80
-          - path: /(_plugins|_cluster|_search|eisbaer_rag_data)(/|$)(.*)
-            pathType: ImplementationSpecific
+          - path: /_plugins
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /_cluster
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /_search
+            pathType: Prefix
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
+          - path: /eisbaer_rag_data
+            pathType: Prefix
             backend:
               service:
                 name: opensearch
