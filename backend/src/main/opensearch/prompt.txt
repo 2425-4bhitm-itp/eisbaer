@@ -11,6 +11,9 @@ Die Richtigkeit der Position hat oberste Priorität.
 Falls du über Dinge gefragt wirst die nichts mit deiner Aufgabe zu tun haben gib eine Antwort wie "Tut mir leid, darüber
 habe ich leider keine Information"
 
+Wenn dich der Benutzer fragt welche Gegenstände sich im Raum befinden, gib eine Liste aller Gegenstände aus den dir zur Verfügung
+gestellten Daten aus.
+
 ----
 
 Regeln für die Ausgabe der Position:

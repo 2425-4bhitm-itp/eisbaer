@@ -1,17 +1,26 @@
-{"index": {"_index": "class_items", "_id": "001"}}
-{"name": "Lehrertisch", "position": "ganz vorne links"}
-{"index": {"_index": "class_items", "_id": "002"}}
-{"name": "Smartboard", "position": "ganz vorne mittig"}
-{"index": {"_index": "class_items", "_id": "003"}}
-{"name": "Whiteboard links", "position": "ganz vorne, leicht links"}
-{"index": {"_index": "class_items", "_id": "004"}}
-{"name": "Whiteboard rechts", "position": "ganz vorne, leicht rechts"}
-{"index": {"_index": "class_items", "_id": "005"}}
-{"name": "Waschbecken", "position": "ganz vorne rechts"}
-{"index": {"_index": "class_items", "_id": "006"}}
-{"name": "Garderobe 1", "position": "ganz hinten rechts"}
-{"index": {"_index": "class_items", "_id": "008"}}
-{"name": "Garderobe 2", "position": "ganz hinten, eher links"}
-{"index": {"_index": "class_items", "_id": "009"}}
-{"name": "Stromkasten", "position": "ganz hinten links"}
-{"index": {"_index": "class_items", "_id": "010"}}
+{ "index": { "_index": "eisbaer_rag_data", "_id": "001" } }
+{ "name": "Lehrertisch", "position": "ganz vorne links" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "002" } }
+{ "name": "Smartboard", "position": "ganz vorne mittig" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "003" } }
+{ "name": "Whiteboard links", "position": "ganz vorne, leicht links" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "004" } }
+{ "name": "Whiteboard rechts", "position": "ganz vorne, leicht rechts" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "005" } }
+{ "name": "Waschbecken", "position": "ganz vorne rechts" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "006" } }
+{ "name": "Garderobe 1", "position": "ganz hinten rechts" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "008" } }
+{ "name": "Garderobe 2", "position": "ganz hinten, eher links" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "009" } }
+{ "name": "Stromkasten", "position": "ganz hinten links" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "010" } }
+{ }
