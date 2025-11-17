@@ -21,7 +21,7 @@ const config = {
         historyApiFallback: true,
         proxy: [
             {
-                context: ['/search', '/eisbaer_rag_data'],
+                context: ["/eisbaer_rag_data", "/search"],
                 target: 'http://localhost:9200',
                 changeOrigin: true,
                 pathRewrite: { '^/search': '' }
