@@ -102,3 +102,45 @@ Conclusion:
 
 * Maybe try using some other Software like AfterEffects or Illustrator
 to animate the idle video "by hand" and only use AI for the talking animation.
+
+== 2025-17-11
+=== Image-to-Video Generation
+
+==== Key Principles
+- Define *exactly* what should move and what must stay still.
+- Start with constraints.
+- Use a clear structure (f.e. camera -> allowed movement -> constraints)
+- Shorter prompts often perform better.
+
+==== Example Template
+----
+Create a short video from the reference image.
+Camera remains perfectly still.
+Only the mouth animates naturally for speech.
+No body movement, no limb motion, no background changes.
+----
+
+=== General AI Reliability & Consistency
+
+==== Improve Reliability
+- Use simple, direct language.
+- Define motion style with terms like “subtle” and “steady”.
+- Provide negative instructions (“no blur", "no warping”).
+- Maintain consistent *prompt structure*.
+- Use "iterative refinement".
+
+==== Useful Phrases
+- Maintain consistent lighting.
+- Do not introduce new elements.
+- Preserve the original anatomy and proportions.
+
+=== Conclusion
+Clarity, constraints, and precise motion control improve stability and realism.
+Reference images, short prompts, and strict motion limits produce the best results.
+Also try to keep the same structure for each prompt to improve consistency.
+Negative instructions can help to avoid unwanted motions.
+Don't be afraid to be precise and over-descriptive.
+
+==== Source
+for more best-practices:
+https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api[OpenAI Best Practices for Prompt Engineering]
