@@ -24,7 +24,7 @@ body {
 #content {
     display: flex;
     /*background-color: #D9D9D9;*/
-    background-image: url("./../../public/img/eisbaer-scholle_landscape.jpg");
+    /*background-image: url("./../../public/img/eisbaer-scholle_landscape.jpg");*/
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -216,7 +216,7 @@ h1 {
     #content {
         display: flex;
         flex-direction: column;
-        background-image: url("./../../public/img/eisbaer-scholle_portrait.jpg");
+        /*background-image: url("./../../public/img/eisbaer-scholle_portrait.jpg");*/
 
         width: 100vw;
         height: 100vh;
