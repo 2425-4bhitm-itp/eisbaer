@@ -144,3 +144,25 @@ Don't be afraid to be precise and over-descriptive.
 ==== Source
 for more best-practices:
 https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineering-with-the-openai-api[OpenAI Best Practices for Prompt Engineering]
+
+
+== 2025-18-11
+=== Market research
+==== Are there any competitors doing similar projects?
+- There are many AI-chatbots, but mostly with
+    an animated avatar like we are planning to do.
+- There are some websites using animated characters for customer support,
+    but they are mostly not using AI to generate responses.
+- Most AI chatbots are text-based or use simple avatars without complex animations.
+- There are some AI-Avatars with splendid responsive animations, but they
+    are only human-like avatars.
+* https://www.soulmachines.com/meet-the-ai-avatar
+- Our combination of an AI customer support with a talking animated polar bear avatar
+    seems to be unique.
+
+==== Interesting AI Avatar Services to look at
+- https://www.mascot.bot/
+- https://www.aivatar.ai/en/product/chatbot
+- https://www.character.ai/
+- https://www.replicate.com/
+- https://www.genies.com/
