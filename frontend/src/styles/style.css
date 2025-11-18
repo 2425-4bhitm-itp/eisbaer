@@ -23,9 +23,9 @@ body {
 /* CONTAINERS */
 #content {
     display: flex;
-    /*background-color: #D9D9D9;*/
+    background-color: #D9D9D9;
     /*background-image: url("./../../public/img/eisbaer-scholle_landscape.jpg");*/
-    background-size: cover;
+    /*background-size: cover;*/
     width: 100vw;
     height: 100vh;
 }
