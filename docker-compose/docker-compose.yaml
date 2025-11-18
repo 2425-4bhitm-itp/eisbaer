@@ -32,14 +32,14 @@ services:
       - http.cors.allow-methods=OPTIONS,GET,POST
       - http.cors.allow-headers=X-Requested-With,Content-Type,Authorization
       - http.cors.allow-credentials=true
-#  frontend:
-#    build:
-#      context: ../frontend
-#      dockerfile: Dockerfile
-#    image: eisbaer-frontend
-#    ports:
-#      - "4200:80"
-#    restart: unless-stopped
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    image: eisbaer-frontend
+    ports:
+      - "4200:80"
+    restart: unless-stopped
 
 volumes:
   postgres:
