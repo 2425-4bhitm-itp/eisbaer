@@ -215,3 +215,23 @@ Either the polar bear moves too much, the background changes or the camera moves
 From now on I won't document every single try, but only the most promising ones.
 This is to avoid cluttering the progress document with too many bad or sloppy AI-Videos.
 Also, I will try to use the best practices for prompt engineering that is mentioned above.
+
+=== New AI-Video generation attempts
+==== mindvideo.ai
+* Prompt: Animate a polar bear peacefully seated in a bathtub, maintaining a
+stationary body posture. Gradually have the bear tilt its head towards the camera
+in a deliberate, controlled manner. The bear should speak for a few seconds with gentle,
+expressive mouth movements and calm eyes. After the short talk, it should slowly bring
+its head back to its initial neutral position. The camera remains fixed throughout,
+with a medium shot framing that highlights the bear’s head and upper torso, emphasizing
+its quiet interaction without any abrupt motions.
+
+==== Result
+video::../media/ai-videos/mindvideo.mp4[]
+* Note: Overall not too bad. The only real problem is that the bathtub overflows and this seems
+to be a common problem with AI-Video generators.
+
+==== Tried once more with mindvideo.ai
+I tweaked the prompt to also mention that the bathtub must not overflow and that there should not be
+any unnecessary movement in the background or within the bathtub. Problem now is that the polar bear just moves his
+head towards the camera and then back to the side without talking.
