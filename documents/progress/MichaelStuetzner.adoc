@@ -166,3 +166,41 @@ https://help.openai.com/en/articles/6654000-best-practices-for-prompt-engineerin
 - https://www.character.ai/
 - https://www.replicate.com/
 - https://www.genies.com/
+
+== 2025-01-12
+=== Reconstruction of Aula in bulk_data_aula
+During the lesson we went upstairs to the Aula. We created a new file called bulk_data_aula, where
+we tried to reconstruct some core elements of the aula like the stage, the window to the streaming room, the main
+camera, the smartboards, ...
+This will later help us demonstrate our project in a more realistic environment. It will be used
+to showcase that the project works and can be used in a real-world scenario.
+
+=== Fixing Project locally
+First I had to fix some issues with the project locally.
+When I tried to open the project, IntelliJ told me that my folder is corrupted.
+After trying out a few things, I just deleted the folder and freshly cloned the repository.
+The issue probably occurred, because I moved some folders and files onto a hard drive and this somehow
+corrupted the git repository.
+
+=== Deciding which approach to use
+We discussed which approach to use for the Avatar generation.
+We have two main options:
+
+1. Have a static background and a second layer with the polar bear in the bathtub cut out.
+- Pros:
+    * More control over the background and polar bear separately
+    * No unnecessary movements in the background
+- Cons:
+    * More difficult to implement the layers in the frontend
+    * Might be difficult to get a cutout video of the polar bear that looks good
+    * Creating a seamless loop with a talking and non-talking polar-bear might be difficult
+
+2. Have a full video of the polar bear in the bathtub with background.
+- Pros:
+    * Easier to implement in the frontend
+    * Easier to create a seamless loop
+- Cons:
+    * Less control over the background and polar bear separately
+    * Background might have unnecessary movements that distract the user
+
+We decided to try out both approaches and see which one works better.
