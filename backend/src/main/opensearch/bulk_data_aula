@@ -1,0 +1,41 @@
+{ "index": { "_index": "eisbaer_rag_data", "_id": "001" } }
+{ "name": "Bühne", "position": "ganz vorne in der Mitte", "text": "Bühne ganz vorne in der Mitte" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "002" } }
+{ "name": "Fenster zum Streamingraum", "position": "vorne links im Eck", "text": "Fenster zum Streamingraum vorne links im Eck" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "003" } }
+{ "name": "Hauptkamera", "position": "hinten Mitte oben", "text": "Hauptkamera hinten Mitte oben" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "004" } }
+{ "name": "Banner", "position": "vorne Mitte vor der Glaswand", "text": "Banner vorne Mitte vor der Glaswand" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "005" } }
+{ "name": "Smartboard", "position": "vorne links und rechts vor der Glaswand", "text": "Smartboard vorne links und rechts vor der Glaswand" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "006" } }
+{ "name": "Bildschirm", "position": "Mitte des Raumes an den Säulen links und rechts", "text": "Bildschirm Mitte des Raumes an den Säulen links und rechts" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "007" } }
+{ "name": "Säulen", "position": "Mitte des Raumes links und rechts", "text": "Säulen Mitte des Raumes links und rechts" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "008" } }
+{ "name": "Technikkasten", "position": "links vorne in der Ecke", "text": "Technikkasten links vorne in der Ecke" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "009" } }
+{ "name": "Item1", "position": "vorne rechts in der Ecke", "text": "Item1 vorne rechts in der Ecke" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "010" } }
+{ "name": "Item2", "position": "vorne links in der Ecke", "text": "Item2 vorne links in der Ecke" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "011" } }
+{ "name": "Item3", "position": "hinten Mitte an der Glaswand", "text": "Item3 hinten Mitte an der Glaswand" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "012" } }
+{ "name": "Item4", "position": "vorne Mitte auf der Bühne", "text": "Item4 vorne Mitte auf der Bühne" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "013" } }
+{ "name": "Item5", "position": "hinten rechts bei der Eingangstür", "text": "Item5 hinten rechts bei der Eingangstür" }
+
+{ "index": { "_index": "eisbaer_rag_data", "_id": "014" } }
+{ "name": "Item6", "position": "hinten links bei der Eingangstür", "text": "Item6 hinten links bei der Eingangstür" }

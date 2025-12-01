@@ -123,7 +123,7 @@ HOST=http://localhost:9200
 
     # Step 9: Upload Data
     echo "Uploading data..."
-    curl -X POST "$HOST/eisbaer_rag_data/_bulk" -H "Content-Type: application/json" --data-binary @new_bulk_data
+    curl -X POST "$HOST/eisbaer_rag_data/_bulk" -H "Content-Type: application/json" --data-binary @bulk_data_aula
 
     echo "All requests executed."
 
