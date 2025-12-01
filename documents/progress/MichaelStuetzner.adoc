@@ -204,3 +204,14 @@ We have two main options:
     * Background might have unnecessary movements that distract the user
 
 We decided to try out both approaches and see which one works better.
+
+=== Further difficulties with AI-Video generation
+It is really hard to find an AI-Video generator that allows us to create a video for free.
+Most of them have a limited number of free tries or require a paid subscription.
+Even with a paid subscription one of the main difficulties is to get the prompt right.
+Either the polar bear moves too much, the background changes or the camera moves.
+
+=== Further documentation of AI-Video generation attempts
+From now on I won't document every single try, but only the most promising ones.
+This is to avoid cluttering the progress document with too many bad or sloppy AI-Videos.
+Also, I will try to use the best practices for prompt engineering that is mentioned above.
