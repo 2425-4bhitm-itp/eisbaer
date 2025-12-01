@@ -24,8 +24,10 @@ body {
 #content {
     display: flex;
     background-color: #D9D9D9;
-    /*background-image: url("./../../public/img/eisbaer-scholle_landscape.jpg");*/
-    /*background-size: cover;*/
+
+    background-image: url("./../../public/img/scholle_landscape.png");
+    background-size: contain;
+
     width: 100vw;
     height: 100vh;
 }
@@ -36,6 +38,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    top: 16%;
+    left: 3%;
 }
 
 #outputContainer {
@@ -216,7 +221,8 @@ h1 {
     #content {
         display: flex;
         flex-direction: column;
-        /*background-image: url("./../../public/img/eisbaer-scholle_portrait.jpg");*/
+
+        background-image: url("./../../public/img/eisbaer-scholle_portrait.jpg");
 
         width: 100vw;
         height: 100vh;
