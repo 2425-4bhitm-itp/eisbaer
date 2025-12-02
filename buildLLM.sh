@@ -2,8 +2,8 @@
 
 set -e
 set -u
-#HOST=https://it210176.cloud.htl-leonding.ac.at
-HOST=http://localhost:9200
+HOST=https://it210176.cloud.htl-leonding.ac.at
+#HOST=http://localhost:9200
 
     # Load environment variables
     source .env

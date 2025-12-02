@@ -16,9 +16,6 @@ spec:
       containers:
         - name: opensearch
           image: opensearchproject/opensearch:2.18.0
-          ports:
-            - containerPort: 9200
-            - containerPort: 9600
           env:
             - name: OPENSEARCH_SERVER_SSL_ENABLED
               value: "false"
@@ -47,6 +44,16 @@ spec:
               value: X-Requested-With,Content-Type,Authorization
             - name: http.cors.allow-credentials
               value: "true"
+          ports:
+            - containerPort: 9200
+            - containerPort: 9600
+          volumeMounts:
+            - name: data
+              mountPath: /usr/share/opensearch/data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: opensearch-data-0
 #          startupProbe:
 #            httpGet:
 #              path: /api/q/health
@@ -94,24 +101,6 @@ spec:
   selector:
     app: opensearch
 ---
-
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: opensearch
-spec:
-  ingressClassName: nginx
-  rules:
-    - host: it210176.cloud.htl-leonding.ac.at
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: opensearch
-                port:
-                  number: 9200
 
 
 
