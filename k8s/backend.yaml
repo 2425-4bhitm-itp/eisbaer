@@ -54,39 +54,6 @@ spec:
         - name: data
           persistentVolumeClaim:
             claimName: opensearch-data-0
-#          startupProbe:
-#            httpGet:
-#              path: /api/q/health
-#              port: 8080
-#            timeoutSeconds: 5
-#            initialDelaySeconds: 30
-#          readinessProbe:
-#            tcpSocket:
-#              port: 8080
-#            initialDelaySeconds: 30
-#            periodSeconds: 10
-#          livenessProbe:
-#            httpGet:
-#              path: /api/q/health
-#              port: 8080
-#            timeoutSeconds: 5
-#            initialDelaySeconds: 30
-#            periodSeconds: 120
-      # initContainers:
-      #   - name: wait
-      #     image: {{ .Values.postgres.image }}
-      #     command: ["/bin/bash", "-c", 'until pg_isready -h postgres; do;echo "waiting for database...";sleep 2;done']
-      #     env:
-      #       - name: POSTGRES_PASSWORD
-      #         valueFrom:
-      #           secretKeyRef:
-      #             name: postgres-admin
-      #             key: password
-      #       - name: POSTGRES_USERNAME
-      #         valueFrom:
-      #           secretKeyRef:
-      #             name: postgres-admin
-      #             key: username
 ---
 
 apiVersion: v1
@@ -101,6 +68,7 @@ spec:
   selector:
     app: opensearch
 ---
+
 
 
 
