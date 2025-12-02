@@ -311,5 +311,16 @@ VM82:1 Uncaught (in promise) SyntaxError: Unexpected token '<', "<html>
 <h"... is not valid JSON
 ----
 
+== 28.11.2025
+
+=== Ai Video Generation via Sora2
+
+- Account erstellen & VPN holen da Sora 2 nur in den USA erhältlich ist#
+- In den Discord Server beitreten um einen Beitrittscode von einem Developer zu bekommen im #sora2-codes channel
+- Video Erstellen, herum probieren und das beste Ergebnis ist folgenden:
+
+video::/home/jakob-klaffenboeck/Downloads/IceBeerVideo.mp4[options="loop"]
+
+
 
 
