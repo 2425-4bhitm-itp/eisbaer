@@ -7,3 +7,88 @@ toc::[]
 == 2024-10-12
 * added JS text to speech (AI Text to speech Libraries need
 to be paid. Google api has 1 Mio free Characters per month)
+
+= Dokumentation: Fehlgeschlagene Verbesserungsversuche im Prompting
+Autor: Eisbär
+Version: 1.0
+:toc:
+
+== Einleitung
+
+Im Rahmen der Optimierung eines Conversational-AI-Setups wurden verschiedene Ansätze ausprobiert, um die Qualität des Promptings zu verbessern. Trotz intensiver Tests führten diese Maßnahmen jedoch nicht zu den gewünschten Ergebnissen. Dieses Dokument fasst die unterschiedlichen Versuche zusammen und beschreibt, warum sie letztlich keine Wirkung erzielt haben.
+
+== Ausgangssituation
+
+Das Ziel bestand darin, die Antworten des Modells konsistenter, kontextbewusster und präziser zu gestalten. Dabei sollten sowohl die System-Prompts als auch die dynamischen Nutzer-Prompts optimiert werden.
+
+== Versuch 1: Erweiterte System-Prompts
+
+Es wurde versucht, die grundlegenden Regeln und Verhaltensrichtlinien des Modells durch umfangreiche System-Prompts zu verbessern.
+
+=== Ausprobierte Maßnahmen
+- Erstellung sehr langer System-Prompts mit detaillierten Rollenbeschreibungen
+- Hinzufügen expliziter Do/Don't-Listen
+- Definition von Antwortformaten (z. B. Tabellen, Listen, JSON-Strukturen)
+- Nutzung von „Chain-of-Thought“-Anweisungen
+
+=== Ergebnis
+
+Die Änderungen führten zu keiner stabilen Verbesserung. Teilweise ignorierte das Modell die Vorgaben oder reagierte sogar schlechter, weil die Prompts zu komplex wurden.
+
+== Versuch 2: Step-by-Step-Instructions im User-Prompt
+
+Es wurde versucht, jede Aufgabe in klar definierte Teilschritte aufzuteilen.
+
+=== Beispiele möglicher Techniken
+- „Bitte löse diese Aufgabe in drei Schritten“
+- „Denke zuerst laut, formuliere dann eine Antwort“
+- „Überprüfe deine Antwort am Ende selbst“
+
+=== Ergebnis
+
+Trotz strukturiertem Vorgehen wurden die Aufgaben häufig nicht korrekt umgesetzt. Teilweise ignorierte das Modell Schritte oder vermischte sie. Eine Verbesserung des Gesamtergebnisses blieb aus.
+
+== Versuch 3: Kontextpräzisierung
+
+Ein weiterer Ansatz bestand darin, möglichst viele Kontextinformationen zu liefern.
+
+=== Mögliche getestete Varianten
+- Bereitstellung zusätzlicher Hintergrundinformationen
+- Wiederholung von Zieldefinitionen im Prompt
+- Explizite Nennung von Einschränkungen und Grenzen
+
+=== Ergebnis
+
+Der zusätzliche Kontext führte nicht zu erkennbar besseren Antworten. In manchen Fällen erzeugte das Modell sogar unnötig lange oder vom Kern abweichende Antworten.
+
+== Versuch 4: Format- und Output-Constraints
+
+Es wurde versucht, das Modell durch strikte Formatvorgaben zu klareren Ergebnissen zu bewegen.
+
+=== Techniken, die angewendet wurden
+- Anforderungen wie „antworte ausschließlich im JSON-Format“
+- Nutzung von Platzhaltern, Validierungsregeln oder Beispieldaten
+- Versuche, das Modell zu einer streng deterministischen Struktur zu zwingen
+
+=== Ergebnis
+
+Die Formatvorgaben wurden häufig nicht eingehalten oder nur teilweise umgesetzt. Zudem nahm die Fehlerrate zu, sobald die Prompts zu stark eingeschränkt wurden.
+
+== Versuch 5: Meta-Prompting und Prompt-Optimierer
+
+Auch moderne Optimierungsansätze wurden getestet.
+
+=== Potenzielle Ansätze
+- Prompt-Refactoring-Tools
+- „Rewrite my prompt for better results“
+- Nutzung generischer Prompt-Vorlagen (z. B. aus Best-Practice-Sammlungen)
+- Automatisierte Prompt-Evaluierung
+
+=== Ergebnis
+
+Die generierten Prompts waren zwar teilweise interessant, führten jedoch nicht zu einer signifikanten Verbesserung im eigentlichen Use-Case.
+
+== Fazit
+
+Trotz intensiver Testreihen konnten keine der ausprobierten Ansätze die gewünschte Wirkung erzielen. Die Ergebnisse zeigen, dass reine Prompt-Optimierung in bestimmten Szenarien an ihre Grenzen stößt und möglicherweise durch technische, modellseitige oder architektonische Anpassungen ergänzt werden muss.
+
