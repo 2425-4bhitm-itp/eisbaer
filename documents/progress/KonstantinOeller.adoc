@@ -8,7 +8,7 @@ toc::[]
 * added JS text to speech (AI Text to speech Libraries need
 to be paid. Google api has 1 Mio free Characters per month)
 
-= Dokumentation: Fehlgeschlagene Verbesserungsversuche im Prompting
+== Dokumentation: Fehlgeschlagene Verbesserungsversuche im Prompting
 Autor: Eisbär
 Version: 1.0
 :toc:
