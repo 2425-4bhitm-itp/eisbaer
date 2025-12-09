@@ -1,0 +1,93 @@
+= Eisbär Teaser Video
+:author: ---
+:revdate: 2025-12-09
+
+== Option 1
+
+=== Szene 1: Einführung
+*Ort:* Werkstattbereich
+
+*Beschreibung:*
+Ein Kunde betritt den Bereich und wirkt suchend.
+
+*Bildgestaltung:* Totale auf den Kunden, leichte Hintergrundgeräusche eines Baumarkts.
+
+=== Szene 2: Begegnung mit dem Eisbär
+*Ort:* Infostand mit einem Mitarbeiter im Eisbärkostüm
+
+*Beschreibung:*
+Der Kunde geht auf einen freundlich wirkenden "Eisbär"-Mitarbeiter zu.
+
+*Kunde:* „Entschuldigung, wissen Sie, wo die Gestellschraube ist?“
+
+*Eisbär-Mitarbeiter:* Zuckt ahnungslos mit den Schultern und deutet auf ein Terminal.
+
+*Hinweis:* Komödiantischer Moment.
+
+=== Szene 3: Der digitale Eisbär
+*Ort:* Digitales Terminal
+
+*Beschreibung:*
+Der Kunde spricht mit dem digitalen Eisbär-Assistenten.
+
+*Digitaler Eisbär:* „Die Gestellschraube finden Sie im Gang 5, Regal 3, obere Ablage.“
+
+*Bildgestaltung:* Nahaufnahme auf Bildschirm
+
+=== Szene 4: Der Fund
+*Ort:* Gang 5, Regal 3
+
+*Beschreibung:*
+Der Kunde geht zum angegebenen Ort, sucht kurz und findet dann die Gestellschraube.
+
+*Bildgestaltung:* Close-up, wie die Hand die Schraube greift.
+
+*Kunde:* Lächelt, wirkt zufrieden.
+
+=== Notizen zur Produktion
+* Kostüm: Eisbärkostüm erforderlich, gut sichtbar und sympathisch.
+* Requisiten: Monitor, Regal mit Schrauben, Beschilderung.
+* Ton: Leichte Hintergrundmusik, Fokus auf klaren Dialog.
+* Ziel: Humorvolle Darstellung eines modernen Kundenservices.
+
+== Option 2
+
+=== Szene 1: Der ratlose Kunde
+*Ort:* Baumarktgang
+
+*Beschreibung:*
+Ein Kunde sucht ratlos eine Gestellschraube im Baumarkt. Er sucht hektisch mehrere Regale durch.
+
+*Musik*: Hektische Musik, steigert sich langsam (in the hall of the mountain king).
+
+=== Szene 2: Die ratlosen Mitarbeiter
+*Ort:* Baumarktgang
+
+*Beschreibung:*
+Der Kunde geht zu einem Mitarbeiter.
+*Kunde:* „Entschuldigung, wissen Sie, wo die Gestellschraube ist?“
+Mitarbeiter sieht schockiert und ratlos aus, eine Schweißperle läuft ihm die Stirn runter.
+*Mitarbeiter:* „Ähm... ich... ich frag mal meinen Kollegen?“
+Der Mitarbeiter geht zu seinem kollegen, flüstert ihm etwas unverständlich zu.
+Der andere Mitarbeiter erstarrt.
+*Mitarbeiter 2:* „Ähm... ich... ich glaub ich weiß es auch nicht...“
+
+=== Szene 3: Der Eisbär
+
+*Ort:* Baumarktgang
+
+*Beschreibung:*
+Kunde geht traurig weiter.
+Kamera Einstellung over Shoulder von hinten, Eisbär Pfote legt sich auf seine Schulter.
+Musik pausiert, Herzklopfen.
+Kameraschwenk rund um den Kunden, zeigt Mensch in Eisbär Kostüm hinter ihm stehend.
+Der Eisbär streckt seine Pfote aus und gibt dem Kunden eine Gestellschraube.
+
+=== Szene 4: Der glückliche Kunde
+*Ort:* Baumarktgang
+
+*Beschreibung:*
+Kunde nimmt die Schraube und schaut sie ungläubig an.
+Er dreht sich zum Eisbär um.
+Eisbär beginnt zu breakdancen und Kunde freut sich.
+Bild wird unscharf, Voice over über den KI-Eisbär Assistenten mit Screen Cast.
