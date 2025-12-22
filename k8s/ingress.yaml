@@ -10,6 +10,13 @@ spec:
     - host: it210176.cloud.htl-leonding.ac.at
       http:
         paths:
+          - path: /.*(eisbaer_rag_data|_search|_cluster|_plugins).*
+            pathType: ImplementationSpecific
+            backend:
+              service:
+                name: opensearch
+                port:
+                  number: 9200
           - path: /
             pathType: Prefix
             backend:
@@ -17,10 +24,3 @@ spec:
                 name: frontend
                 port:
                   number: 80
-          - path: /(_plugins|_cluster|_search|eisbaer_rag_data)(/|$)(.*)
-            pathType: ImplementationSpecific
-            backend:
-              service:
-                name: opensearch
-                port:
-                  number: 9200
