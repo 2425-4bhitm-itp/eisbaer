@@ -55,7 +55,6 @@ body {
 
 #transcriptContainer {
     box-sizing: border-box;
-    height: 100%;
     margin-top: 3em;
     overflow-y: auto;
 
@@ -63,21 +62,26 @@ body {
     /*box-shadow: 0 -2em 1em -1em #000000 inset;*/
 }
 
+query-input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #queryInputContainer {
     position: relative;
-    bottom: 2.5em;
-    margin-top: 2em;
 }
 
 #inputButtons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 45vw;
     align-items: center;
     justify-self: center;
     position: relative;
+    margin-bottom: 3em;
 }
 
 /* PROPERTIES */
@@ -91,7 +95,7 @@ h1 {
     width: 80%;
     height: 2.5em;
     padding: 1em;
-    margin-bottom: 1.5em;
+    margin-right: 2.5em;
     background-color: #F0F0F0;
     border-radius: 0.5em;
     border: 0 solid #005691;
@@ -107,9 +111,8 @@ h1 {
 
 #start {
     border: none;
-    width: 5em;
-    height: 5em;
-    margin: 0 0 1.5em 1em;
+    width: 4em;
+    height: 4em;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -253,14 +256,13 @@ h1 {
         top: unset;
     }
 
-    #queryInputContainer {
-        position: relative;
-        top: 0;
-        margin-bottom: 5em;
-    }
-
     #inputButtons {
         width: 65vw;
         flex-direction: column;
+    }
+
+    #userInput {
+        margin-right: 0;
+        margin-bottom: 2em;
     }
 }
