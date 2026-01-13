@@ -89,5 +89,5 @@ Der Eisbär streckt seine Pfote aus und gibt dem Kunden eine Gestellschraube.
 *Beschreibung:*
 Kunde nimmt die Schraube und schaut sie ungläubig an.
 Er dreht sich zum Eisbär um.
-Eisbär beginnt zu breakdancen und Kunde freut sich.
+(Eisbär beginnt zu breakdancen und Kunde freut sich.)
 Bild wird unscharf, Voice over über den KI-Eisbär Assistenten mit Screen Cast.
