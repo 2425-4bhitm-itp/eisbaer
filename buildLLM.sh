@@ -5,6 +5,7 @@ set -u
 HOST=https://it210176.cloud.htl-leonding.ac.at
 #HOST=http://localhost:9200
 
+    #test
     # Load environment variables
     source .env
 
