@@ -69,7 +69,6 @@ query-input {
     align-items: center;
 }
 
-
 #queryInputContainer {
     position: relative;
 }
@@ -81,7 +80,8 @@ query-input {
     align-items: center;
     justify-self: center;
     position: relative;
-    padding-bottom: 3em;
+    padding: 3em 0;
+    flex-shrink: 0;
 }
 
 /* PROPERTIES */
@@ -207,6 +207,7 @@ h1 {
     width: 100%;
     display: flex;
     flex-direction: column;
+    overflow: visible;
 }
 
 .chatEntry {
