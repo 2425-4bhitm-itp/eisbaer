@@ -17,6 +17,27 @@ responsiveVoice.setDefaultVoice(voice);
 let textQueue: string[] = []
 let isSpeaking = false;
 
+// initialize start button for pulsating animation
+let startButton: HTMLButtonElement | null = null;
+document.addEventListener("DOMContentLoaded", () => {
+    startButton = document.getElementById("start") as HTMLButtonElement | null;
+
+    if (!startButton) return;
+
+    startButton.addEventListener("click", () => {
+        // Activate pulse
+        startPulsating();
+    });
+});
+
+function startPulsating() {
+    startButton.classList.add("button-pulse");
+}
+
+function stopPulsating() {
+    startButton.classList.remove("button-pulse");
+}
+
 function speak(text: string) {
     // Füge den Text zur Warteschlange hinzu
     textQueue.push(text);
@@ -44,7 +65,7 @@ function processQueue() {
             changeToDefaultAvatar();
             console.log("Sprechen beendet");
             // Verarbeite den nächsten Text
-
+            stopPulsating();
             processQueue();
         }
     });
