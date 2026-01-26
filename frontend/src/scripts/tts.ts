@@ -61,7 +61,7 @@ const img: HTMLImageElement = <HTMLImageElement>document.getElementById("2dAvata
 
 function changeToSpeakAvatar() {
     console.log("changeToSpeakAvatar");
-    img.src = "./video/seamless-loop-talking-unscreen.gif";
+    img.src = "./video/eisbar_talking.gif";
 }
 
 function changeToDefaultAvatar() {
