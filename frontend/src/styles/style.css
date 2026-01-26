@@ -56,10 +56,16 @@ body {
 #transcriptContainer {
     box-sizing: border-box;
     margin-top: 3em;
-    overflow-y: auto;
+    overflow-y: scroll;
 
     position: relative;
     /*box-shadow: 0 -2em 1em -1em #000000 inset;*/
+
+    margin-bottom: 1em;
+    bottom: 1em;
+    top: unset;
+
+    flex:1;
 }
 
 query-input {
@@ -166,7 +172,7 @@ h1 {
     font-size: 90%;
     font-style: italic;
     width: fit-content;
-    color: #8E8D94;
+    color: #ffffff;
 }
 
 .transcriptText {
@@ -241,19 +247,12 @@ h1 {
 
         width: 100vw;
         height: 60vh;
+
+        justify-content: space-between;
     }
 
     .transcriptText {
         font-size: 1rem;
-    }
-
-    #transcriptContainer {
-        margin-bottom: 1em;
-
-
-        position: relative;
-        bottom: 1em;
-        top: unset;
     }
 
     #inputButtons {
