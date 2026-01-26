@@ -68,6 +68,10 @@ body {
     flex:1;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 query-input {
     display: flex;
     width: 100%;
@@ -275,7 +279,11 @@ h1 {
     }
 
     .transcriptText {
-        font-size: 1rem;
+        font-size: 1.5em
+    }
+
+    .transcriptName {
+        font-size: 175%;
     }
 
     #inputButtons {
@@ -284,7 +292,13 @@ h1 {
     }
 
     #userInput {
+        font-size: 2em;
         margin-right: 0;
         margin-bottom: 2em;
+    }
+
+    #start {
+        width: 7.5em;
+        height: 7.5em;
     }
 }
