@@ -1,3 +1,5 @@
+import {startPulsating, stopPulsating} from "./query-input";
+
 export class SpeechToText {
     private recognition: SpeechRecognition;
     private debouncedWrite: (text: string) => void;
@@ -47,11 +49,13 @@ export class SpeechToText {
         this.allowWrite = true;
         this.hasSubmitted = false;
         this.recognition.start();
+        startPulsating();
     }
 
     stop() {
         if (!this.isListening) return;
         this.recognition.stop();
+        stopPulsating()
     }
 
     private finishOnce() {

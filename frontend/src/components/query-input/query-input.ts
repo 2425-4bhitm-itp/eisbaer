@@ -12,6 +12,8 @@ const template = `
   </div>
 </div>`;
 
+let startButton: HTMLButtonElement = null;
+
 class QueryInput extends HTMLElement {
 
     private speechToText = new SpeechToText();
@@ -21,7 +23,12 @@ class QueryInput extends HTMLElement {
         this.innerHTML = template;
 
         const userInput = this.querySelector<HTMLInputElement>('input[name="userInput"]')!;
-        const startButton = this.querySelector<HTMLButtonElement>('button[name="start"]')!;
+        startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
+
+        userInput.focus();
+        userInput.addEventListener('blur', () => {
+            setTimeout(() => userInput.focus(), 0); //this is very performance-demanding!
+        });
 
         userInput.addEventListener("keydown", async (event) => {
             if (event.key === "Enter") {
@@ -65,3 +72,11 @@ class QueryInput extends HTMLElement {
 }
 
 customElements.define('query-input', QueryInput);
+
+export function startPulsating() {
+    startButton.classList.add("button-pulse");
+}
+
+export function stopPulsating() {
+    startButton.classList.remove("button-pulse");
+}
