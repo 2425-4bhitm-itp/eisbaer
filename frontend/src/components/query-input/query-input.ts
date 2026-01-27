@@ -1,80 +1,67 @@
-import {createSpeechRecognition} from "./create-speech-recognition";
-import {writeText} from "../text-writer/text-writer";
 import {getArticlePositionWithLLM} from "../recognition/llm-recognizer";
 import {Sender} from "../text-writer/sender";
 import {SpeechToText} from "./speechToText";
 
-const DEBOUNCE_TIMEOUT = 1500
-
-const template = `<div id="queryInputContainer">
-                  <div id="inputButtons">
-                    <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." autofocus>
-                    <button id="start" name="start"><img src="img/microphone_icon.svg"></button>
-                  </div>
-              </div>`
-
-let startButton: HTMLButtonElement = null;
+const template = `
+<div id="queryInputContainer">
+  <div id="inputButtons">
+    <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
+    <button id="start" name="start">
+      <img src="img/microphone_icon.svg">
+    </button>
+  </div>
+</div>`;
 
 class QueryInput extends HTMLElement {
 
-    speechToText = new SpeechToText()
-    debouncedProcess: () => void;
+    private speechToText = new SpeechToText();
 
     connectedCallback() {
-        console.log("connected query input.ts")
-        this.innerHTML = template
+        console.log("connected query input.ts");
+        this.innerHTML = template;
 
-        const userInput = this.querySelector('input[name="userInput"]') as HTMLInputElement
-        startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
+        const userInput = this.querySelector<HTMLInputElement>('input[name="userInput"]')!;
+        const startButton = this.querySelector<HTMLButtonElement>('button[name="start"]')!;
 
-        this.debouncedProcess = debounce(async () => {
-            let result;
-            result = await getArticlePositionWithLLM(userInput.value);
-
-            this.dispatchEvent(new CustomEvent("message", {
-                detail: { text: userInput.value, sender: Sender.CUSTOMER },
-                bubbles: true,
-                composed: true
-            }));
-
-            userInput.value = "";
-
-            this.dispatchEvent(new CustomEvent("message", {
-                detail: { text: result, sender: Sender.EISBAER },
-                bubbles: true,
-                composed: true
-            }));
-
-        });
-
-        this.debouncedProcess();
-
-        userInput.addEventListener("input", () => {
-            this.debouncedProcess()
+        userInput.addEventListener("keydown", async (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                await this.processQuery();
+            }
         });
 
         startButton.addEventListener("click", () => {
-            console.log('Start listening...');
-            startPulsating();
-            this.speechToText.start()
+            console.log("Start listening...");
+            this.speechToText.start();
         });
 
+        document.addEventListener("speech-finished", async () => {
+            await this.processQuery();
+        });
     }
 
-}
-customElements.define('query-input', QueryInput)
+    private async processQuery() {
+        const userInput = this.querySelector<HTMLInputElement>('input[name="userInput"]')!;
+        const query = userInput.value.trim();
 
-// Debounce code from https://www.freecodecamp.org/news/javascript-debounce-example/
-function debounce(func: any, timeout = DEBOUNCE_TIMEOUT) {
-    let timer: any;
-    return (...args: any[]) => {
-        clearTimeout(timer);
-        timer = setTimeout(() => {
-            func.apply(this, args);
-        }, timeout);
-    };
+        if (!query) return;
+
+        this.dispatchEvent(new CustomEvent("message", {
+            detail: { text: query, sender: Sender.CUSTOMER },
+            bubbles: true,
+            composed: true
+        }));
+
+        userInput.value = "";
+
+        const result = await getArticlePositionWithLLM(query);
+
+        this.dispatchEvent(new CustomEvent("message", {
+            detail: { text: result, sender: Sender.EISBAER },
+            bubbles: true,
+            composed: true
+        }));
+    }
 }
 
-function startPulsating() {
-    startButton.classList.add("button-pulse");
-}
+customElements.define('query-input', QueryInput);
