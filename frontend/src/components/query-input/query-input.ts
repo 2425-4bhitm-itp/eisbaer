@@ -8,7 +8,7 @@ const DEBOUNCE_TIMEOUT = 1500
 
 const template = `<div id="queryInputContainer">
                   <div id="inputButtons">
-                    <input type="text" id="userInput" name="userInput" placeholder="Hier suchen...">
+                    <input type="text" id="userInput" name="userInput" placeholder="Hier suchen..." autofocus>
                     <button id="start" name="start"><img src="img/microphone_icon.svg"></button>
                   </div>
               </div>`
@@ -77,8 +77,4 @@ function debounce(func: any, timeout = DEBOUNCE_TIMEOUT) {
 
 function startPulsating() {
     startButton.classList.add("button-pulse");
-}
-
-function stopPulsating() {
-    startButton.classList.remove("button-pulse");
 }
