@@ -13,6 +13,8 @@ const template = `<div id="queryInputContainer">
                   </div>
               </div>`
 
+let startButton: HTMLButtonElement = null;
+
 class QueryInput extends HTMLElement {
 
     speechToText = new SpeechToText()
@@ -23,7 +25,7 @@ class QueryInput extends HTMLElement {
         this.innerHTML = template
 
         const userInput = this.querySelector('input[name="userInput"]') as HTMLInputElement
-        const startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
+        startButton = this.querySelector('button[name="start"]') as HTMLButtonElement
 
         this.debouncedProcess = debounce(async () => {
             let result;
@@ -53,6 +55,7 @@ class QueryInput extends HTMLElement {
 
         startButton.addEventListener("click", () => {
             console.log('Start listening...');
+            startPulsating();
             this.speechToText.start()
         });
 
@@ -70,4 +73,12 @@ function debounce(func: any, timeout = DEBOUNCE_TIMEOUT) {
             func.apply(this, args);
         }, timeout);
     };
+}
+
+function startPulsating() {
+    startButton.classList.add("button-pulse");
+}
+
+function stopPulsating() {
+    startButton.classList.remove("button-pulse");
 }
