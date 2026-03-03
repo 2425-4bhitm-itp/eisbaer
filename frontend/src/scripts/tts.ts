@@ -52,6 +52,21 @@ function processQueue() {
     });
 }
 
+function interrupt() {
+    console.log("Interrupt: laufende Sprachausgabe wird abgebrochen");
+
+    // Aktuelle Sprachausgabe sofort stoppen
+    responsiveVoice.cancel();
+
+    // Queue leeren, damit nichts Altes mehr gesprochen wird
+    textQueue = [];
+
+    // Status zurücksetzen
+    isSpeaking = false;
+
+    changeToDefaultAvatar();
+}
+
 document.body.addEventListener("click", function() {
      if(checkIfFirstTime) {
          speak(beginningText);
@@ -72,3 +87,4 @@ function changeToDefaultAvatar() {
 }
 
 export { speak }
+export {interrupt}

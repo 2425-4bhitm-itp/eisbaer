@@ -1,6 +1,7 @@
 import {getArticlePositionWithLLM} from "../recognition/llm-recognizer";
 import {Sender} from "../text-writer/sender";
 import {SpeechToText} from "./speechToText";
+import {interrupt}  from "scripts/tts";
 
 const template = `
 <div id="queryInputContainer">
@@ -39,6 +40,7 @@ class QueryInput extends HTMLElement {
 
         startButton.addEventListener("click", () => {
             console.log("Start listening...");
+            interrupt();
             this.speechToText.start();
         });
 
